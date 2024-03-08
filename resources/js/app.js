@@ -1,5 +1,8 @@
 import './bootstrap';
 import '../css/app.css';
+import '@/assets/css/main.css';
+import '@/assets/scss/main.scss';
+import '@/assets/scss/main.css';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
