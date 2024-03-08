@@ -1,0 +1,96 @@
+
+
+<script setup>
+import { reactive } from "vue";
+const menu_data = reactive([
+  {
+    id: 1,
+    mega_menu: false,
+    has_dropdown: true,
+    home_icon:
+      '<svg width="11" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.04088 0L0.535156 4.125V11H4.26484V8.59381C4.26484 7.64165 5.05698 6.87506 6.04088 6.87506C7.02477 6.87506 7.81692 7.64165 7.81692 8.59381V11H11.5466V4.125L6. 04088 0Z" fill="#05DAC3"></path></svg>',
+    title: "Home",
+    link: "/",
+    active: "",
+    sub_menus: [
+      { link: "/", title: "Home 1" },
+      { link: "/home-2", title: "Home 2" },
+      { link: "/home-3", title: "Home 3" },
+    ],
+  },
+  {
+    id: 2,
+    mega_menu: false,
+    has_dropdown: false,
+    title: "Company",
+    link: "/about",
+    active: "",
+  },
+  {
+    id: 3,
+    mega_menu: false,
+    has_dropdown: true,
+    title: "Services",
+    link: "/service",
+    active: "",
+    sub_menus: [
+      { link: "/service", title: "Service" },
+      { link: "/service-details", title: "Services Details" },
+    ],
+  },
+  {
+    id: 4,
+    mega_menu: false,
+    has_dropdown: true,
+    title: "Pages",
+    link: "/about",
+    active: "",
+    sub_menus: [
+      { link: "/portfolio", title: "Portfolio" },
+      { link: "/portfolio-details", title: "Portfolio Details" },
+      { link: "/team", title: "Team" },
+      { link: "/team-details", title: "Team Details" },
+      { link: "/404", title: "404" },
+    ],
+  },
+
+  {
+    id: 5,
+    mega_menu: false,
+    has_dropdown: true,
+    title: "Blog",
+    link: "/blog",
+    active: "",
+    sub_menus: [
+      { link: "/blog", title: "Blog" },
+      { link: "/blog-details", title: "Blog Details" },
+    ],
+  },
+  {
+    id: 6,
+    mega_menu: false,
+    has_dropdown: false,
+    title: "Contact",
+    link: "/contact",
+    active: "",
+  },
+]);
+</script>
+
+<template>
+  <ul>
+    <li
+      v-for="(item, i) in menu_data"
+      :key="i"
+      :class="item?.has_dropdown ? 'has-dropdown' : ''">
+      <router-link :to="item.link"> <span></span>{{ item.title }}</router-link>
+      <ul v-if="item.has_dropdown" class="submenu">
+        <li v-for="(sub_menu, index) in item?.sub_menus" :key="index">
+          <router-link :to="sub_menu.link"
+            ><span>{{ sub_menu.title }}</span></router-link
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</template>
