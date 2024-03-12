@@ -13,17 +13,14 @@ import "@/assets/css/spacing.css";
 import "vue3-circle-progress/dist/circle-progress.css"; 
 import "@/assets/css/bootstrap.css";
 import "@/assets/fonts/fa-light-300.woff2"
-// import "@/assets/css/nouislider.css"
-// import "@/assets/css/font-awesome-pro.css
-// import "@/assets/fonts/fa-solid-900.woff2"
-
-
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
+import router from '@/routes';
 
+ 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -33,6 +30,7 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
+            .use(router)
             .mount(el);
     },
     progress: {

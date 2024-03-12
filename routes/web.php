@@ -27,6 +27,14 @@ Route::get('/', function () {
 );
 });
 
+Route::get('/contact', function () {
+    return Inertia::render('Contact',);
+});
+Route::get('/about', function () {
+    return Inertia::render('About',);
+});
+
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
