@@ -85,7 +85,7 @@ const router = createRouter({
 // Global navigation guard
 router.beforeEach((to, from, next) => {
   window.scrollTo(0, 0); 
-  next();
+  next(); 
 })
 
 export default router
