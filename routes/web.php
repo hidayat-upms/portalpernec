@@ -17,15 +17,14 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Home',);
-});
-
-Route::get('/home-2', function () {
-    return Inertia::render('HomeTwo',);
-});
-
-Route::get('/home-3', function () {
-    return Inertia::render('HomeThree',);
+    return Inertia::render('App', 
+    // [
+    //     'canLogin' => Route::has('login'),
+    //     'canRegister' => Route::has('register'),
+    //     'laravelVersion' => Application::VERSION,
+    //     'phpVersion' => PHP_VERSION,
+    // ]
+);
 });
 
 Route::get('/contact', function () {
