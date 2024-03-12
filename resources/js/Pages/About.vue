@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted } from "vue";
-import About from "../components/about/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import About from "../Components/about/index.vue";
+import ScrollToTop from "../Components/common/ScrollToTop.vue";
 
 
 

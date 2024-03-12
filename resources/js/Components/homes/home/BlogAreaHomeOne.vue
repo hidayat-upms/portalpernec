@@ -4,12 +4,15 @@ import { reactive } from "vue";
 import AboutLineIcon from "@/svg/AboutLineIcon.vue";
 import TitleUnderIcon from "@/svg/TitleUnderIcon.vue";
 import LongRightArrow from "@/svg/LongRightArrow.vue";
+import img1 from "@/assets/img/blog/img-1.jpg"
+import img2 from "@/assets/img/blog/img-2.jpg"
+import img3 from "@/assets/img/blog/img-3.jpg"
 
 
 const blog_data = reactive([
   {
     id: 1,
-    img: "@/assets/img/blog/img-1.jpg",
+    img:img1 ,
     category: "Business",
     date: "02 Apr 2023",
     comments: 23,
@@ -17,7 +20,7 @@ const blog_data = reactive([
   },
   {
     id: 2,
-    img: "@/assets/img/blog/img-2.jpg",
+    img:img2,
     category: "Business",
     date: "02 Apr 2023",
     comments: 25,
@@ -25,7 +28,7 @@ const blog_data = reactive([
   },
   {
     id: 3,
-    img: "@/assets/img/blog/img-3.jpg",
+    img:img3,
     category: "Business",
     date: "02 Apr 2023",
     comments: 33,

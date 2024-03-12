@@ -1,8 +1,8 @@
 
 
 <script setup>
-import HomeTwo from "../components/homes/home-2/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import HomeTwo from "@/Components/homes/home-2/index.vue";
+import ScrollToTop from "@/Components/common/ScrollToTop.vue";
 </script>
 
 <template>

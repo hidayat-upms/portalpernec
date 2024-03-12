@@ -1,8 +1,8 @@
 
 
 <script setup>
-import PortfolioDetails from "../components/portfolio-details/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import PortfolioDetails from "../Components/portfolio-details/index.vue";
+import ScrollToTop from "../Components/common/ScrollToTop.vue";
 </script>
 
 <template>

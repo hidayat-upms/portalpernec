@@ -15,6 +15,14 @@ import slider_shape_2 from "@/assets/img/hero/shape-2.png";
 import slider_shape_3 from "@/assets/img/hero/shape-3.png";
 import slider_shape_4 from "@/assets/img/hero/shape-4.png";
 import slider_shape_5 from "@/assets/img/hero/shape-7.png"; 
+
+import shape_6 from "@/assets/img/hero/shape-6.png"; 
+
+
+import hero2 from "@/assets/img/hero/hero-2.jpg"
+import hero1 from "@/assets/img/hero/hero-1.jpg"
+import hero3 from "@/assets/img/hero/hero-3.jpg"
+
 // shape data 
 const shape_data = reactive([
 	{ id: 1, cls: "shape-1", img: slider_shape_1 },
@@ -27,7 +35,7 @@ const shape_data = reactive([
 const sliderData = reactive([
 	{
 		id: 1,
-		bg_img: "@/assets/img/hero/hero-2.jpg",
+		bg_img:hero2 ,
 		sub_title_1: "best",
 		sub_title_2: "it solutions",
 		hero_title_1: "platform of",
@@ -36,7 +44,7 @@ const sliderData = reactive([
 	},
 	{
 		id: 2,
-		bg_img: "@/assets/img/hero/hero-1.jpg",
+		bg_img:hero1,
 		sub_title_1: "best",
 		sub_title_2: "it solutions",
 		hero_title_1: "IT service & ",
@@ -45,7 +53,7 @@ const sliderData = reactive([
 	},
 	{
 		id: 3,
-		bg_img: "@/assets/img/hero/hero-3.jpg",
+		bg_img:hero3,
 		sub_title_1: "best",
 		sub_title_2: "it solutions",
 		hero_title_1: "platform of",
@@ -154,7 +162,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 					</span>
 				</div>
 			</div>
-			<div class="tp-hero-service" :style="{ backgroundImage: 'url(/assets/img/hero/shape-6.png)' }">
+			<div class="tp-hero-service" :style="{ backgroundImage:shape_6 }">	
 				<div class="tp-hero-service-shape">
 					<img :src="shape_5" alt="image-title-here">
 				</div>

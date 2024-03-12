@@ -7,6 +7,7 @@ import SearchPopup from "@/Components/common/SearchPopup.vue";
 import Sidebar from "@/Components/common/Sidebar.vue";
 import HamburgerButton from "@/svg/HamburgerButton.vue";
 import LongLogo from "@/assets/img/logo/logo-lang.png";
+import HeaderHamburger from "@/assets/img/icon/header-hamburger-shape.png"
 
 
  
@@ -102,7 +103,7 @@ const toggleActive = () => {
 					<div class="row gx-0 align-items-center">
 						<div class="col-xxl-3 col-xl-3">
 							<div class="tp-header-main-left d-flex align-items-center p-relative">
-								<div @click="setSidebarOpen(true)" class="tp-header-hamburger-btn offcanvas-open-btn" :style="{ 'background-image': 'url(/assets/img/icon/header-hamburger-shape.png)'}">
+								<div @click="setSidebarOpen(true)" class="tp-header-hamburger-btn offcanvas-open-btn" :style="{ 'background-image': HeaderHamburger}">
 									<button class="hamburger-btn" >
 										<span>
 											<HamburgerButton /> 

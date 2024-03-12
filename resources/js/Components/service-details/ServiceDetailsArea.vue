@@ -64,7 +64,7 @@ const { service_details_tab, title, description, title_2, description_2, feture_
 
 // video popup
 import VideoModal from "../common/VideoModal.vue";
-import {useVideoModal} from @/composables/useVideoModal';
+import {useVideoModal} from "@/composables/useVideoModal.js";
 const {playVideo } = useVideoModal();
 const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 

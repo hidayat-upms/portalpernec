@@ -9,8 +9,8 @@ import NavMenu from "./NavMenu.vue";
 import HamburgerButton from "@/svg/HamburgerButton.vue";
 
 
-import Sidebar from "../../components/common/Sidebar.vue";
-import SearchPopup from "../../components/common/SearchPopup.vue";
+import Sidebar from "../../Components/common/Sidebar.vue";
+import SearchPopup from "../../Components/common/SearchPopup.vue";
 
 const isSticky = ref(false)
 const handleSticky = () => {

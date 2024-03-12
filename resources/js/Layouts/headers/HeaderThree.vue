@@ -10,8 +10,8 @@ import PhoneIcon from "@/assets/img//icon/call.svg";
 
 import FooterLogo from "@/assets/img/logo/logo-lang.png";
 
-import Sidebar from "../../components/common/Sidebar.vue";
-import SearchPopup from "../../components/common/SearchPopup.vue";
+import Sidebar from "../../Components/common/Sidebar.vue";
+import SearchPopup from "../../Components/common/SearchPopup.vue";
 
 const isSticky = ref(false)
 const handleSticky = () => {

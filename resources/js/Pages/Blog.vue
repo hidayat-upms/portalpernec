@@ -1,6 +1,6 @@
 <script setup>
-import Blog from "../components/blog/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import Blog from "../Components/blog/index.vue";
+import ScrollToTop from "../Components/common/ScrollToTop.vue";
 </script>
 
 <template>
