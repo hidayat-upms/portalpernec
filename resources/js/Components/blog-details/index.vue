@@ -1,7 +1,7 @@
 
 <script setup>
 import Breadcrumb from "../common/Breadcrumb.vue";
-import HeaderOne from "@/layouts/headers/HeaderOne.vue";
+import HeaderOne from "@/Layouts/headers/HeaderOne.vue";
 import BlogDetailsPostbox from "./BlogDetailsPostbox.vue";
 import FooterContact from "../portfolio/FooterContact.vue";
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";

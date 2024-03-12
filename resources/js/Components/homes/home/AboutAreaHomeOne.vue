@@ -1,5 +1,4 @@
 
-
 <script setup>
 import { reactive } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -9,26 +8,28 @@ import AboutLineIcon from "@/svg/AboutLineIcon.vue";
 
 import shape_1 from "@/assets/img/about/shape-1.png";
 import about_img_1 from "@/assets/img/about/about-1.png";
-
+import icon1 from "@/assets/img/about/icon-1.png"
+import icon2 from "@/assets/img/about/icon-2.png"
+import icon3 from "@/assets/img/about/icon-3.png"
 
 const about_data = reactive([
   {
     id: 1,
-    img: "@/assets/img/about/icon-1.png",
+    img:icon1,
     title: "Business services",
     description:
-      "As far as we might be concerned <br> making an extraordinary advanc<br> ed experience is a blend bet",
+      "yuhuuuuu <br> making an extraordinary advanc<br> ed experience is a blend bet",
   },
   {
     id: 2,
-    img: "@/assets/img/about/icon-2.png",
+    img:icon2,
     title: "Education and training",
     description:
       "As far as we might be concerned <br> making an extraordinary advanc<br> ed experience is a blend bet",
   },
   {
     id: 3,
-    img: "@/assets/img/about/icon-3.png",
+    img:icon3 ,
     title: "Artificial intelligence",
     description:
       "As far as we might be concerned <br> making an extraordinary advanc<br> ed experience is a blend bet",
@@ -36,21 +37,21 @@ const about_data = reactive([
   // update for swiper
   {
     id: 1,
-    img: "@/assets/img/about/icon-1.png",
+    img:icon1,
     title: "Business services",
     description:
-      "As far as we might be concerned <br> making an extraordinary advanc<br> ed experience is a blend bet",
+      "hello testing 1 23  <br> making an extraordinary advanc<br> ed experience is a blend bet",
   },
   {
     id: 2,
-    img: "@/assets/img/about/icon-2.png",
+    img:icon2,
     title: "Education and training",
     description:
       "As far as we might be concerned <br> making an extraordinary advanc<br> ed experience is a blend bet",
   },
   {
     id: 3,
-    img: "@/assets/img/about/icon-3.png",
+    img:icon3,
     title: "Artificial intelligence",
     description:
       "As far as we might be concerned <br> making an extraordinary advanc<br> ed experience is a blend bet",

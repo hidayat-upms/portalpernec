@@ -1,6 +1,6 @@
 <script setup> 
-import FooterCopyright from "@/components/common/FooterCopyright.vue";
-import SocailLinkTwo from "@/components/common/SocailLinkTwo.vue";
+import FooterCopyright from "@/Components/common/FooterCopyright.vue";
+import SocailLinkTwo from "@/Components/common/SocailLinkTwo.vue";
 
 import FooterLogo from "@/assets/img/logo/footer-logo.png";
 const footer_content = {

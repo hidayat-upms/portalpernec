@@ -1,5 +1,5 @@
 <script setup>
-import HeaderThree from "@/layouts/headers/HeaderThree.vue";
+import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 import HeroAreaHomeThree from "./HeroAreaHomeThree.vue";
 import CounterAreaHomeThree from "./CounterAreaHomeThree.vue";
 import AboutAreaHomeThree from "./AboutAreaHomeThree.vue";
@@ -12,7 +12,7 @@ import AboutBrand from "../../about/AboutBrand.vue";
 import AboutTeamArea from "../../about/AboutTeamArea.vue";
 import AboutBlogArea from "../../about/AboutBlogArea.vue";
 import FooterContact from "../../service/FooterContact.vue";
-import CommonFooter from "../../../layouts/footers/CommonFooter.vue";
+import CommonFooter from "../../../Layouts/footers/CommonFooter.vue";
 import { provide, ref } from "vue";
 
 //  props passing

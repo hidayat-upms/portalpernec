@@ -1,7 +1,7 @@
 
 <script setup>
-import ServiceDetails from "../components/service-details/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import ServiceDetails from "../Components/service-details/index.vue";
+import ScrollToTop from "../Components/common/ScrollToTop.vue";
 </script>
 
 <template>

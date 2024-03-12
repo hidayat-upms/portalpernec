@@ -1,8 +1,23 @@
 import './bootstrap';
 import '../css/app.css';
-import '@/assets/css/main.css';
-import '@/assets/scss/main.scss';
-import '@/assets/scss/main.css';
+import '@/assets/css/main.css'
+import '@/assets/scss/main.scss'
+import '@/assets/scss/main.css'
+import "vue3-carousel/dist/carousel.css";
+import "@splidejs/vue-splide/css";
+import '@splidejs/splide/dist/css/splide.min.css';
+import "swiper/css/bundle"; 
+import "@/assets/css/font-awesome-pro.css";
+import "bootstrap/scss/bootstrap.scss";  
+import "@/assets/css/spacing.css";
+import "vue3-circle-progress/dist/circle-progress.css"; 
+import "@/assets/css/bootstrap.css";
+import "@/assets/fonts/fa-light-300.woff2"
+// import "@/assets/css/nouislider.css"
+// import "@/assets/css/font-awesome-pro.css
+// import "@/assets/fonts/fa-solid-900.woff2"
+
+
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';

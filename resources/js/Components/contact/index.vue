@@ -4,8 +4,8 @@ import ContactArea from "./ContactArea.vue";
 import GoogleMapArea from "./GoogleMapArea.vue";
 import FooterContact from "./FooterContact.vue";
 import Breadcrumb from "../common/Breadcrumb.vue";
-import HeaderOne from "@/layouts/headers/HeaderOne.vue";
-import CommonFooter from "@/layouts/footers/CommonFooter.vue";
+import HeaderOne from "@/Layouts/headers/HeaderOne.vue";
+import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
 </script>
 
 <template>

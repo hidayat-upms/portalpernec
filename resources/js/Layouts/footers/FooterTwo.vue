@@ -2,7 +2,7 @@
 <script setup> 
 import shape_1 from "@/assets/img/footer/shape-1.png";
 import footer_logo from "@/assets/img/logo/footer-logo.png";
-import SocailLinkTwo from "../../components/common/SocailLinkTwo.vue";
+import SocailLinkTwo from "../../Components/common/SocailLinkTwo.vue";
 
 const footer_two_content = { 
     footer_widget: [

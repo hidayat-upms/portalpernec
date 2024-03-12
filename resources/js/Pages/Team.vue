@@ -1,7 +1,7 @@
 
 <script setup>
-import Team from "../components/team/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import Team from "../Components/team/index.vue";
+import ScrollToTop from "../Components/common/ScrollToTop.vue";
 </script>
 
 <template>

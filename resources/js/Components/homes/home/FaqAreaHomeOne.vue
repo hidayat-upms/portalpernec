@@ -1,4 +1,3 @@
-
 <script setup>
 
 import { reactive } from "vue";
@@ -54,9 +53,10 @@ const answer_question_data = reactive([
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap");
 }
+
+ console.log("answer_question_data:", answer_question_data);
+
 </script>
-
-
 <template>
   <section class="tp-support-area tp-support-bg p-relative pb-110">
     <div class="container container-large">
@@ -68,11 +68,11 @@ if (typeof window !== "undefined") {
         <div class="col-xxl-8 col-xl-10">
           <div class="tp-support-title-wrapper text-center">
             <span class="tp-section-title__pre">
-              best IT <span class="title-pre-color">Support</span>
+              kene <span class="title-pre-color">tukarr sini juga</span>
 							<TitleUnderIcon /> 
             </span>
             <h3 class="tp-section-title">
-              Frequently Ask <span class="title-color">Question?</span>
+              need to change  <span class="title-color">here tooo</span>
               <span class="title-center-shape">
 								<AboutLineIcon /> 
               </span>
@@ -86,24 +86,22 @@ if (typeof window !== "undefined") {
                   v-for="(item, i) in answer_question_data"
                   :key="i"
                   class="accordion-item">
-                  <h2
-                    class="accordion-header"
+                  <h2 class="accordion-header"
                     :id="'heading' + item.accordion_id">
                     <button
                       class="accordion-button"
-                      :class="item.collapsed"
+                      :class= item.collapsed
                       type="button"
                       data-bs-toggle="collapse"
                       :data-bs-target="'#collapse' + item.accordion_id"
-                      :aria-expanded="item.aria_expanded"
+                      :aria-expanded=true
                       :aria-controls="'collapse' + item.accordion_id">
                       {{ item.question }}
                     </button>
                   </h2>
-                  <div
+                  <div class="accordion-collapse collapse show"
                     :id="'collapse' + item.accordion_id"
-                    class="accordion-collapse collapse"
-                    :class="item.show ? 'show' : ''"
+                    :class="item.show ? 'true' : 'false'"
                     :aria-labelledby="'heading' + item.accordion_id"
                     data-bs-parent="#general_accordion">
                     <div class="accordion-body">
@@ -119,4 +117,3 @@ if (typeof window !== "undefined") {
     </div>
   </section>
 </template>
-

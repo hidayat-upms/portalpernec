@@ -1,6 +1,6 @@
 <script setup>
-import Contact  from "../components/contact/index.vue";
-import ScrollToTop from "../components/common/ScrollToTop.vue";
+import Contact  from "@/Components/contact/index.vue";
+import ScrollToTop from "@/Components/common/ScrollToTop.vue";
 </script>
 
 <template>
