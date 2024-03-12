@@ -17,21 +17,39 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Home', 
-    // [
-    //     'canLogin' => Route::has('login'),
-    //     'canRegister' => Route::has('register'),
-    //     'laravelVersion' => Application::VERSION,
-    //     'phpVersion' => PHP_VERSION,
-    // ]
-);
+    return Inertia::render('Home',);
+});
+
+Route::get('/home-2', function () {
+    return Inertia::render('HomeTwo',);
+});
+
+Route::get('/home-3', function () {
+    return Inertia::render('HomeThree',);
 });
 
 Route::get('/contact', function () {
     return Inertia::render('Contact',);
 });
+
 Route::get('/about', function () {
     return Inertia::render('About',);
+});
+
+Route::get('/service', function () {
+    return Inertia::render('Service',);
+});
+
+Route::get('/blog', function () {
+    return Inertia::render('Blog',);
+});
+
+Route::get('/blog-details', function () {
+    return Inertia::render('BlogDetails',);
+});
+
+Route::get('/service-details', function () {
+    return Inertia::render('ServiceDetails',);
 });
 
 
