@@ -3,6 +3,9 @@ import FooterCopyright from "@/Components/common/FooterCopyright.vue";
 import SocailLinkTwo from "@/Components/common/SocailLinkTwo.vue";
 
 import FooterLogo from "@/assets/img/logo/footer-logo.png";
+
+import footer from "@/assets/img/footer/footer-bg.jpg"
+
 const footer_content = {
 	footer_info: " The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy",
 	google_map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
@@ -30,7 +33,7 @@ const { footer_info, google_map, address, email, phone, service_title, links, ne
 
 <template>  
 	<footer class="tp-footer-3-area p-relative">
-		<div class="tp-footer-bg" :style="{ 'background-image': 'url(' + '/assets/img/footer/footer-bg.jpg' + ')'}"></div>
+		<div class="tp-footer-bg" :style="{ backgroundImage: `url(${footer})` }"></div>
 		<div class="container">
 			<div class="tp-footer-3-main-area">
 				<div class="row">

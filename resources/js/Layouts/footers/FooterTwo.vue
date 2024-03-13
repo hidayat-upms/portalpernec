@@ -3,6 +3,7 @@
 import shape_1 from "@/assets/img/footer/shape-1.png";
 import footer_logo from "@/assets/img/logo/footer-logo.png";
 import SocailLinkTwo from "../../Components/common/SocailLinkTwo.vue";
+import footer2 from "@/assets/img/footer/footer-2-bg.png"
 
 const footer_two_content = { 
     footer_widget: [
@@ -36,7 +37,7 @@ const {footer_widget, google_map, about_us, address, phone, email, footer_nav, m
 
 <template>
   <footer class="tp-footer-2-area p-relative">
-      <div class="tp-footer-overlay" style="background-image: url(assets/img/footer/footer-2-bg.png);">
+      <div class="tp-footer-overlay" :style="{ backgroundImage: `url(${footer2})` }">
          <div class="tp-footer-2-shape">
             <img :src="shape_1" alt="image-title-here">
          </div>
