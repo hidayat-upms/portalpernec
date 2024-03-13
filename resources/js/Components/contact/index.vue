@@ -1,8 +1,8 @@
    
-   <script setup>
+<script setup>
 import ContactArea from "./ContactArea.vue";
 import GoogleMapArea from "./GoogleMapArea.vue";
-import FooterContact from "./FooterContact.vue";
+// import FooterContact from "./FooterContact.vue";
 import Breadcrumb from "../common/Breadcrumb.vue";
 import HeaderOne from "@/Layouts/headers/HeaderOne.vue";
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
@@ -14,7 +14,7 @@ import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
     <Breadcrumb title="Contact Us" page_title="Contact Us" />
     <ContactArea />
     <GoogleMapArea />
-    <FooterContact />
+    <!-- <FooterContact /> -->
   </main>
   <CommonFooter />
 </template>

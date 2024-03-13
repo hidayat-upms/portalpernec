@@ -4,26 +4,23 @@ import SocailLinkTwo from "@/Components/common/SocailLinkTwo.vue";
 
 import FooterLogo from "@/assets/img/logo/footer-logo.png";
 const footer_content = {
-	footer_info: " The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy",
-	google_map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
-	address: "86 Road Broklyn Street, 600 <br /> New York, USA",
-	email: "needhelp@company.com",
-	phone: "92 666 888 0000",
-	service_title: "Services Required",
+	footer_info: " The one and only in the world PERNECCCCCC",
+	google_map: "https://maps.app.goo.gl/Lg19jXFwNCLVnpGx6",
+	address: "No 21, Jalan Setiawangsa 8, Taman Setiawangsa <br /> Kuala Lumpur, Malaysia",
+	email: "marketing@pernec.com.my",
+	phone: "603 4259 6000",
+	service_title: "Miscellaneous",
 	links: [
-		"Parking permission",
-		"Fire Service Noc",
-		"Report a Parking Violation",
-		"Residential Parking",
-		"Vendor Registration",
-		"City Board Applications",
+		"Sitemap",
+		"Privacy Policy",
+		"Procurement-General Terms and Conditions To Purchase Order",
 	],
-	news_letter: "Subscribe to our newsletter",
-	agree: "I agree to the terms and conditions",
-	trams: "Terms & Conditions",
-	policy: "Privacy Policy",
+	// news_letter: "Subscribe to our newsletter",
+	// agree: "I agree to the terms and conditions",
+	// trams: "Terms & Conditions",
+	// policy: "Privacy Policy",
 }
-const { footer_info, google_map, address, email, phone, service_title, links, news_letter, agree, trams, policy } = footer_content
+const { footer_info, google_map, address, email, phone, service_title, links } = footer_content
 
 
 </script>
@@ -68,7 +65,7 @@ const { footer_info, google_map, address, email, phone, service_title, links, ne
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
+					<!-- <div class="col-lg-4 col-md-6">
 						<div class="tp-footer-widget tp-footer-3-col-3">
 							<h3 class="tp-footer-widget-title">{{ news_letter }}</h3>
 							<div class="tp-footer-from">
@@ -93,7 +90,7 @@ const { footer_info, google_map, address, email, phone, service_title, links, ne
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="tp-footer-copyright-area p-relative">
