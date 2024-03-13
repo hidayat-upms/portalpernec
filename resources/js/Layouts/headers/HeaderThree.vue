@@ -63,61 +63,6 @@ const toggleActiveCurrency = () => {
 
 <template>
   <header class="tp-header-3-area tp-header-3-transparent tp-header-height p-relative">
-      <div class="tp-header-3-top tp-header-3-space d-none d-xl-block">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-xl-10 col-xxl-8">
-                  <div class="tp-header-3-top-info d-flex">
-                    <div class="tp-header-3-top-call d-flex">
-                        <span>Call</span>
-                        <p>Consult With It Advisor? <a href="#">Click Now</a></p>
-                    </div>
-                    <ul>
-                        <li>
-                          <a href="https://www.google.com/maps/@36.0758266,-79.4558848,17z" target="_blank">
-                            <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>734 H, Bryan Burlington, NC 27215
-                          </a>
-                        </li>
-                        <li>
-                          <a href="mailto:technix@support.com"><span><i class="fa-solid fa-envelope"></i></span>technix@support.com</a>
-                        </li>
-                    </ul>
-                  </div>
-              </div>
-              <div class="col-xl-2 col-xxl-4">
-                  <div class="tp-header-3-top-right d-flex justify-content-end align-items-center">
-                    <div class="header-social d-xxl-block d-none">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                    <div class="tp-header-usd">
-                        <span class="tp-header-usd-selected-usd tp-usd-toggle" @click="toggleActiveCurrency" id="tp-header-usd-toggle">USD</span>
-                        <ul class="tp-header-usd-list tp-usd-list" :class="activeClass2? 'tp-usd-list-open' : ''">
-                          <li>EUR</li>
-                          <li>AFN</li>
-                          <li>XCD</li>
-                        </ul>
-                    </div>
-                    <div class="tp-header-3-lang-wrapper d-flex align-items-center">
-                        <div class="tp-header-lang-img">
-                          <img :src="FooterLogo" alt="image-title-here" />
-                        </div>
-                        <div class="tp-header-lang">
-                          <span class="tp-header-lang-selected-lang tp-lang-toggle" @click="toggleActive" id="tp-header-lang-toggle">English</span>
-                          <ul class="tp-header-lang-list tp-lang-list" :class="activeClass? 'tp-lang-list-open' : ''">
-                              <li>Spanish</li>
-                              <li>English</li>
-                              <li>Canada</li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-      </div>
       <div id="header-sticky" class="tp-header-3-bottom header__sticky p-relative" :class="isSticky ?  'tp-header-sticky' : ''">
         <div class="tp-header-3-bottom-inner p-relative">
             <div class="container-fluid gx-0">

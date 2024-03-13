@@ -8,6 +8,9 @@ import feature_icon_2 from "@/assets/img/feature/home-3/icon-2.png";
 import feature_icon_3 from "@/assets/img/feature/home-3/icon-3.png";
 import feature_icon_4 from "@/assets/img/feature/home-3/icon-4.png";
 
+import feature from "@/assets/img/feature/home-3/feature-bg.png";
+import textimg from "@/assets/img/feature/home-3/text-img.jpg"
+
 const feature_data =reactive([
     {
         id: 1, 
@@ -62,7 +65,7 @@ const feature_data =reactive([
 </script>
 
 <template>
-  <section class="tp-feature-3-area pt-100" style="background-image: url(/assets/img/feature/home-3/feature-bg.png)">
+  <section class="tp-feature-3-area pt-100" :style="{ backgroundImage: `url(${feature})` }">
     <div class="container-fluid gx-0">
         <div class="row gx-0">
           <swiper  :slides-per-view="4"
@@ -108,7 +111,7 @@ const feature_data =reactive([
     <div class="row gx-0">
         <div class="col-xl-12">
           <div class="tp-feature-3-text-style text-center fadeUp pt-80">
-              <h3 class="feature-title" style="background-image: url(/assets/img/feature/home-3/text-img.jpg);">testimonial</h3>
+              <h3 class="feature-title" :style="{ backgroundImage: `url(${textimg})`}">testimonial</h3>
           </div>
         </div>
     </div>
