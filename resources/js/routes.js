@@ -20,14 +20,14 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: Home
+      component: HomeTwo
     },
     {
       path: '/home',
-      component: Home
+      component: HomeTwo
     },
     {
-      path: '/home-2',
+      path: '/',
       component: HomeTwo
     },
     {

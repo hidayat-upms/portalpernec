@@ -8,6 +8,7 @@ import HeroLineIcon from "../../../svg/HeroLineIcon.vue";
 import shape_1 from "@/assets/img/hero/hero-2/shape-1.png";
 import shape_2 from "@/assets/img/hero/hero-2/shape-2.png";
 import shape_3 from "@/assets/img/hero/hero-2/shape-3.png";  
+import img1 from "@/assets/img/hero/hero-2/hero-bg.png"
 
 import hero from "@/assets/img/hero/hero-2/hero-bg.png"
 
@@ -21,7 +22,7 @@ const slider_data = [
 
 <template>
   <section
-    class="tp-hero-2-area p-relative" :style="{ backgroundImage:hero }">
+    class="tp-hero-2-area p-relative" style="background-image: url(assets/img/hero/hero-2/hero-bg.png);">
     <div class="tp-hero-2-wrapper p-relative">
       <div class="container">
         <div class="row align-items-center justify-content-center">

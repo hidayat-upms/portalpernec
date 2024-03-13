@@ -8,6 +8,7 @@ import service_icon_1 from "@/assets/img/services/home-3/icon-1.png";
 import service_icon_2 from "@/assets/img/services/home-3/icon-2.png";
 import service_icon_3 from "@/assets/img/services/home-3/icon-3.png";
 import service_icon_4 from "@/assets/img/services/home-3/icon-4.png"; 
+import servicebg from "@/assets/img/services/home-3/service-bg.png"
 
 // service data
 const service_data = reactive([
@@ -41,7 +42,7 @@ const service_data = reactive([
 </script>
 
 <template>
-  <section class="tp-service-3-area p-relative pt-120 pb-60" style="background-image: url(/assets/img/services/home-3/service-bg.png)">
+  <section class="tp-service-3-area p-relative pt-120 pb-60" :style="{ backgroundImage: `url(${servicebg})` }">
     <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6">

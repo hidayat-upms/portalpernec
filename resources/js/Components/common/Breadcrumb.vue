@@ -1,8 +1,13 @@
 
 <script setup>
+import bg1 from "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg";
+import line1 from "@/assets/img/breadcrumb/titile.svg";
+import bgb from  "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg"
+import titleimg from "@/assets/img/breadcrumb/titile.svg"
+
 const breadcrumb_content = {
-  bg_img: require("@/assets/img/breadcrumb/breadcrumb-bg-1.jpg"), 
-  title_img: require("@/assets/img/breadcrumb/titile.svg"),
+  bg_img:bgb,
+  title_img: titleimg
 }
 
 defineProps({

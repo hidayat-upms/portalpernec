@@ -2,7 +2,7 @@
 <script setup>
 import { reactive } from "vue";
 import CountUp from 'vue-countup-v3'
-
+import counter1 from "@/assets/img/fun-fact/counter-bg.png"
 const counter_data = reactive([
   {
     id: 1,
@@ -40,7 +40,7 @@ const counter_data = reactive([
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="tp-counter-box" style="background-image: url(/assets/img/fun-fact/counter-bg.png);">
+          <div class="tp-counter-box" :style="{ backgroundImage: `url(${counter1})` }">
             <div class="row">
               <div v-for="(item, i) in counter_data" :key="i" class="col-lg-3 col-md-6 col-sm-6">
                 <div class="tp-counter-wrapper text-center" :class="item.border">
