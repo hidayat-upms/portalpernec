@@ -7,7 +7,3 @@ import ScrollToTop from "@/Components/common/ScrollToTop.vue";
   <MainHome />
   <ScrollToTop />
 </template>
-
-
-
-

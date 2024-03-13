@@ -93,7 +93,7 @@ const { date, comments, upload_time, title_1, des_1, des_2, des_3, quate_icon, b
 
 // video popup
 import VideoModal from "../common/VideoModal.vue";
-import {useVideoModal} from @/composables/useVideoModal';
+import {useVideoModal} from '@/composables/useVideoModal';
 const {playVideo } = useVideoModal();
 const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 

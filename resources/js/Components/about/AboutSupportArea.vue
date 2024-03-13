@@ -23,7 +23,7 @@ const support_contact = {
 const {sub_title_1, sub_title_2, info, lists} = support_contact
 
  
-import {useVideoModal} from @/composables/useVideoModal';
+import {useVideoModal} from '@/composables/useVideoModal';
 const {playVideo } = useVideoModal();
 const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 

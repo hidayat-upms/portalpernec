@@ -4,7 +4,7 @@ import { inject } from "vue";
 const {playVideo } = useVideoModal();
 import video_thumb from "@/assets/img/others/video-img.jpg";
 import VideoModal from "../common/VideoModal.vue";
-import {useVideoModal} from "@/composables/useVideoModal";
+import {useVideoModal} from '@/composables/useVideoModal';
 const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
 
