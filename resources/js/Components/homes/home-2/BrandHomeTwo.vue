@@ -5,11 +5,12 @@ import brand_img_2 from "@/assets/img/brand/home-2/shape-2.png";
 import brand_img_3 from "@/assets/img/brand/home-2/shape-3.png";
 import brand_img_4 from "@/assets/img/brand/home-2/shape-4.png";
 import brand_img_5 from "@/assets/img/brand/home-2/shape-5.png";
+import shape_bg from "@/assets/img/brand/home-2/shape-bg.png"
 </script>
 
 <template>
   <div class="tp-brand-2-area p-relative pt-120 pb-80">
-    <div class="tp-brand-2-bg" style="background-image: url(assets/img/brand/home-2/shape-bg.png)"></div>
+    <div class="tp-brand-2-bg" :style="{ backgroundImage: `url(${shape_bg})` }"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-md-4">
