@@ -26,21 +26,6 @@ Route::get('/', function () {
 );
 });
 
-Route::get('/service', function () {
-    return Inertia::render('Service',);
-});
-
-Route::get('/blog', function () {
-    return Inertia::render('Blog',);
-});
-
-Route::get('/blog-details', function () {
-    return Inertia::render('BlogDetails',);
-});
-
-Route::get('/service-details', function () {
-    return Inertia::render('ServiceDetails',);
-});
 
 
 // Route::get('/dashboard', function () {
