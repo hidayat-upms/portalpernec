@@ -6,6 +6,7 @@ import FooterContact from "./FooterContact.vue";
 import Breadcrumb from "../common/Breadcrumb.vue";
 import HeaderOne from "@/Layouts/headers/HeaderOne.vue";
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
+import ContactForm from "@/Components/forms/ContactForm.vue";
 </script>
 
 <template>
