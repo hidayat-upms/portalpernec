@@ -9,6 +9,9 @@ import EmailIcon from "@/svg/EmailIcon.vue";
 import cta_shape_1 from "@/assets/img/cta/img.png";
 import cta_shape_2 from "@/assets/img/cta/img-2.png";
 import cta_shape_3 from "@/assets/img/cta/bg.png";
+
+import cta_shape from "@/assets/img/cta/bg-shape.png";
+
  
 const cta_contact = { 
  phone: "+1 0208 446 4695",
@@ -21,7 +24,7 @@ const {phone, email, sub_title_1, title} = cta_contact
 </script>
 
 <template>
-  <section class="tp-cta-2-area p-relative pt-200 pb-90" style="background-image: url(/assets/img/cta/bg-shape.png)">
+  <section class="tp-cta-2-area p-relative pt-200 pb-90" :style="{ backgroundImage: `url(${cta_shape})` }">
     <div class="tp-cta-2-shape">
         <img class="shape-1" :src="cta_shape_1" alt="image-title-here">
         <img class="shape-2" :src="cta_shape_2" alt="image-title-here">

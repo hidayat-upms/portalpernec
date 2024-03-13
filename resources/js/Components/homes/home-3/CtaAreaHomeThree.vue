@@ -2,6 +2,7 @@
 <script setup>
 import shape_1 from "@/assets/img/cta/home-3/shape-1.png";
 import call_icon from "@/assets/img//icon/call.svg";
+import servicebg from "@/assets/img/services/home-3/service-bg.png"
 
 const cta_data = {
   title: "We're Ready to Growth <br> IT Business",
@@ -15,7 +16,7 @@ const { title, phone, about } = cta_data;
 <template>
   <section
     class="tp-cta-3-area pb-120"
-    style="background-image: url(/assets/img/services/home-3/service-bg.png)"
+    :style="{ backgroundImage: `url(${servicebg})` }"
   >
     <div class="container">
       <div class="row">
