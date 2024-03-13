@@ -1,14 +1,14 @@
 
 <script setup>
-import bg1 from "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg";
-import line1 from "@/assets/img/breadcrumb/titile.svg";
+
 import bgb from  "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg"
 import titleimg from "@/assets/img/breadcrumb/titile.svg"
 
-const breadcrumb_content = {
-  bg_img:bgb,
-  title_img: titleimg
-}
+// const breadcrumb_content = {
+//   bg_img:bgb,
+//   title_img: titleimg
+// }
+
 
 defineProps({
   title: {
@@ -24,7 +24,7 @@ defineProps({
 
 <template>
   <section class="breadcrumb__area breadcrumb-style pt-190 pb-210 p-relative z-index-1"
-    :style="{ 'background-image': 'url(' + bg_img + ')' }">
+    :style="{ 'background-image': 'url(' + bgb + ')' }">
     <div class="breadcrumb__bg-overlay m-img"></div>
     <div class="container">
       <div class="row justify-content-center">
@@ -32,7 +32,7 @@ defineProps({
           <div class="breadcrumb__content text-center">
             <h3 class="breadcrumb__title">
               {{ title }}
-              <img :src="title_img" alt="Title Image" />
+              <img :src="titleimg" alt="Title Image" />
             </h3>
             <div class="breadcrumb__list breadcrumb__list-translate">
               <span> <router-link to="/">Home</router-link> </span>
