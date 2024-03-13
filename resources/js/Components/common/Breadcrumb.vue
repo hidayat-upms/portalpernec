@@ -1,8 +1,10 @@
 
 <script setup>
+import bg1 from "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg";
+import line1 from "@/assets/img/breadcrumb/titile.svg";
 const breadcrumb_content = {
-  bg_img: "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg", 
-  title_img: "@/assets/img/breadcrumb/titile.svg",
+  bg_img: bg1, 
+  title_img: line1,
 }
 const { bg_img,  title_img } = breadcrumb_content
  
