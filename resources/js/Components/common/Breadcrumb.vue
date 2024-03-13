@@ -1,11 +1,10 @@
 
 <script setup>
 const breadcrumb_content = {
-  bg_img: "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg", 
-  title_img: "@/assets/img/breadcrumb/titile.svg",
+  bg_img: require("@/assets/img/breadcrumb/breadcrumb-bg-1.jpg"), 
+  title_img: require("@/assets/img/breadcrumb/titile.svg"),
 }
-const { bg_img,  title_img } = breadcrumb_content
- 
+
 defineProps({
   title: {
     type: String,  
@@ -16,28 +15,25 @@ defineProps({
     default: "technix page title",
   }, 
 })
-
-
 </script>
 
-
 <template>
-  <section className="breadcrumb__area breadcrumb-style pt-190 pb-210 p-relative z-index-1"
+  <section class="breadcrumb__area breadcrumb-style pt-190 pb-210 p-relative z-index-1"
     :style="{ 'background-image': 'url(' + bg_img + ')' }">
-    <div className="breadcrumb__bg-overlay m-img"></div>
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-xl-10">
-          <div className="breadcrumb__content text-center">
-            <h3 className="breadcrumb__title">
+    <div class="breadcrumb__bg-overlay m-img"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="breadcrumb__content text-center">
+            <h3 class="breadcrumb__title">
               {{ title }}
-              <img :src="title_img" />
+              <img :src="title_img" alt="Title Image" />
             </h3>
-            <div className="breadcrumb__list breadcrumb__list-translate">
+            <div class="breadcrumb__list breadcrumb__list-translate">
               <span> <router-link to="/">Home</router-link> </span>
-              <span className="dvdr"><i className="fa-regular fa-angle-right"></i></span>
+              <span class="dvdr"><i class="fa-regular fa-angle-right"></i></span>
               <span>pages</span>
-              <span className="dvdr"> <i className="fa-regular fa-angle-right"></i> </span>
+              <span class="dvdr"> <i class="fa-regular fa-angle-right"></i> </span>
               <span>{{ page_title }}</span>
             </div>
           </div>
@@ -46,6 +42,5 @@ defineProps({
     </div>
   </section>
 </template>
-
 
 
