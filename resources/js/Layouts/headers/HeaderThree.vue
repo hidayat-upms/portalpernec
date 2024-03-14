@@ -2,7 +2,7 @@
 <script setup>
 import { provide, ref } from "vue";
 import NavMenu from "./NavMenu.vue";
-import HeaderLogo from "@/assets/img/logo/footer-logo.png";
+import PernecLogo from "@/assets/img/logo/PernecLogo.gif";
 import SearchIconHomeThree from "@/svg/SearchIconHomeThree.vue";
 
 import HamburgerButton from "@/svg/HamburgerButton.vue";
@@ -71,7 +71,7 @@ const toggleActiveCurrency = () => {
                     <div class="tp-header-2-main-left d-flex align-items-center justify-content-xl-center p-relative">
                     <div class="tp-header-3-logo">
                         <router-link to="/">
-                          <img :src="HeaderLogo" alt="image-title-here" />
+                          <img :src="PernecLogo" alt="image-title-here" />
                         </router-link>
                     </div>
                     </div>

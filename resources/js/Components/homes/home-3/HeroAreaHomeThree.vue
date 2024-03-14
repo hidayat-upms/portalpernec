@@ -18,9 +18,9 @@ const hero_slider = reactive([
         id: 1,
         bg_slider_img: slider_img_1,
         title: "Trusted it &",
-        title_color: "Tech",
-        title_2: "Solution",
-        bottom_title: "technology",        
+        title_color: "Managed",
+        title_2: "Service Solutions",
+        bottom_title: "Services",        
     },
     {
         id: 2,
