@@ -13,25 +13,30 @@ import testimonial_shape_2 from "@/assets/img/testimonial/shape-2.png";
 import testimonial_shape_3 from "@/assets/img/testimonial/shape-3.png";
 import testimonial_shape_4 from "@/assets/img/testimonial/shape-4.png";
 import testimonial_shape_5 from "@/assets/img/testimonial/shape-blur.png"; 
+import quote from "@/assets/img/testimonial/quot2.png";
+import cat from "@/assets/img/testimonial/cat.jpg";
 
 // slider data 
 const testimonial_data = reactive([
   {
       id: 1, 
-      name: "Hahimlam Dirat",
-      title: "Web Developer",
-      description: "“It is wanting to come here and afterward Our office is something We consider it the little we are pleased with. magnet; difficult to leave it. <br /> Our office is additionally a big name.”"
+      name: "Mohamed Hidayat",
+      title: "Software Developer,Team Lead",
+      img:quote,
+      description: "“Within our esteemed company, we cherish more than just our renowned reputation. Our office transcends a mere workspace; it's a dynamic environment pulsating with creativity and teamwork. <br /> Just like a magnetic pull, upon entering, you'll feel compelled to stay, enchanted by the lively atmosphere and strong sense of camaraderie that characterizes our culture.”"
   },
   {
       id: 2, 
       name: "Akuma Till",
       title: "ui/ux Developer",
+      img:quote,
       description: "“A big name Our office is additionally . Our office is something <br /> we are pleased with. We consider it the little  magnet;  <br />it is wanting to come here and afterward difficult to leave it.”"
   },
   {
       id: 3, 
       name: "Moktir Rahman",
       title: "Graphics Developer",
+      img:quote,
       description: "“Our office is something we are pleased with. We consider it the little <br /> magnet; it is wanting to come here and afterward difficult to leave it. <br /> Our office is additionally a big name.”"
   },
 ])
@@ -72,7 +77,7 @@ const testimonial_data = reactive([
                     :loop="true"  
                     :modules="[Navigation, Autoplay]" 
                     :autoplay="{
-                        delay: 3000,
+                        delay: 9000,
                         disableOnInteraction: false,
                     }"
                     :navigation="{nextEl: '.testimonial-button-next-1', prevEl:'.testimonial-button-prev-1'}" 
@@ -81,7 +86,7 @@ const testimonial_data = reactive([
                   <swiper-slide v-for="(item, i) in testimonial_data" :key="i" class="testimonial-item">
                       <div class="tp-testimonial-2-content">
                         <div class="tp-testimonial-2-thumb text-center">
-                            <img src="@/assets/img/testimonial/quot-2.png" alt="image-title-here">
+                            <img :src="item.img" alt="image-title-here">
                         </div>
                         <div class="tp-testimonial-2-info">
                             <h4 class="tp-testimonial-2-info-title text-center">{{ item.name }}</h4>
