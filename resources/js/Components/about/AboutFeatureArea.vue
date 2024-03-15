@@ -9,9 +9,8 @@ import shape_2 from "@/assets/img/feature/shape-2.png";
 import shape_3 from "@/assets/img/feature/img-shape.png"; 
 
 
-import feature_img_1 from "@/assets/img/feature/img-1.jpg";
-import feature_img_2 from "@/assets/img/feature/img-2.jpg";
-import feature_img_3 from "@/assets/img/feature/img-3.jpg";
+import feature_img_1 from "@/assets/img/feature/m1.jpg";
+import feature_img_3 from "@/assets/img/feature/v1.jpg";
 
 
 const feature_data = reactive([
@@ -19,22 +18,22 @@ const feature_data = reactive([
         id: 1,
         img: feature_img_1,
         title: "Our mission",
-        description: 'As far as we might be concerned <br /> making an extraordinary ad',
+        description: 'To provide excellent service to create maximum value for customers.</br>To inspire innovations through collaboration and partnership.</br>To contribute to nation building and the growth of a knowledge economy.',
         delay: ".3s"
     },
-    {
-        id: 2,
-        img: feature_img_2,
-        title: "About History",
-        description: 'Concerned as far as we might be <br /> making an extraordinary ad',
-        delay: ".5s"
-    },
+   //  {
+   //      id: 2,
+   //      img: feature_img_2,
+   //      title: "About History",
+   //      description: 'Concerned as far as we might be <br /> making an extraordinary ad',
+   //      delay: ".5s"
+   //  },
     {
         id: 3,
         img: feature_img_3,
-        title: "Our Partners",
-        description: 'Extraordinary as far as we might be <br /> concerned making an ad',
-        delay: ".7s"
+        title: "Our Vision",
+        description: 'To be a technology company that inspires innovation towards providing excellent service and enabling value creation.</br>                  </br> ',
+        delay: ".5s"
     },
 ])
 
@@ -49,28 +48,20 @@ const feature_data = reactive([
             <div class="row align-items-center">
                <div class="col-lg-6">
                   <div class="tp-feature-title-wrapper">
-                     <span class="tp-section-title__pre">
-                        feature <span class="title-pre-color">IT Solutions</span>
-                        <AboutTitleUnderLineIcon />  
-                     </span>
-                     <h3 class="tp-section-title">We've Been Stay <span class="title-color">38 years</span>
+                     <h3 class="tp-section-title">We've Been Stay <span class="title-color">51 years</span>
                         <span class="title-left-shape">
                           <AboutLineIcon /> 
                         </span>
                      </h3>
                   </div>
                </div>
-               <div class="col-lg-6">
-                  <div class="tp-feature-wrapper p-relative">
-                     <p>As the complexity of buildings to increase, the field of architecture <br> became multi-disciplinary with technological expertise.</p>
-                  </div>
-               </div>
+               
             </div>
             <div class="row">
               
-              <div v-for="(item, i)  in feature_data" :key="i" class="col-lg-4 col-md-6">
+              <div v-for="(item, i)  in feature_data" :key="i" class="col-lg-6 col-md-6">
                   <div class="tp-feature-item-box p-relative wow fadeInUp" data-wow-duration="1s" :data-wow-delay="item.delay">
-                     <div class="tp-feature-item p-relative mb-30">
+                     <div class="tp-feature-item p-relative mb-100">
                         <div class="tp-feature-item-shape">
                            <img :src="shape_2" alt="image-title-here">
                         </div>
@@ -92,9 +83,9 @@ const feature_data = reactive([
                            </div>
                         </div>
                      </div>
-                     <div class="tp-feature-item-btn">
+                     <!-- <div class="tp-feature-item-btn">
                         <router-link to="/about"><i class="fa-regular fa-arrow-right"></i></router-link>
-                     </div>
+                     </div> -->
                   </div>
                </div> 
             </div>

@@ -1,22 +1,22 @@
 
 <script setup>
-import shape_1 from "@/assets/img/cta/home-3/shape-2.png";
-import shape_2 from "@/assets/img/cta/home-3/shape-3.png";
-import shape_3 from "@/assets/img/cta/home-3/conversation.png";
-import shape_4 from "@/assets/img/cta/home-3/headphone.png";
+// import shape_1 from "@/assets/img/cta/home-3/shape-2.png";
+// import shape_2 from "@/assets/img/cta/home-3/shape-3.png";
+// import shape_3 from "@/assets/img/cta/home-3/conversation.png";
+// import shape_4 from "@/assets/img/cta/home-3/headphone.png";
 
-const footer_content = {
-	email: '@themepure.com',
-	title: 'Contact us at',
-	contact_title: 'PERFECT SOLUTION From <span>It Advisor</span>',
-	phone: '+92 666 888 0000',
-}
-const {email, title, contact_title, phone} = footer_content
+// const footer_content = {
+// 	email: '@themepure.com',
+// 	title: 'Contact us at',
+// 	contact_title: 'PERFECT SOLUTION From <span>It Advisor</span>',
+// 	phone: '+92 666 888 0000',
+// }
+// const {email, title, contact_title, phone} = footer_content
 
 </script>
 
 <template>
-	<div class="tp-cta-4-area p-relative">
+	<!-- <div class="tp-cta-4-area p-relative">
 		<div class="tp-cta-4-shape fadeUp">
 			<img :src="shape_1" alt="image-title-here">
 		</div>
@@ -46,7 +46,7 @@ const {email, title, contact_title, phone} = footer_content
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </template>
 
 

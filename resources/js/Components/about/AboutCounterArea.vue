@@ -1,42 +1,42 @@
   
 <script setup>
-import { reactive } from "vue";
-import CountUp from 'vue-countup-v3'
-import counter1 from "@/assets/img/fun-fact/counter-bg.png"
-const counter_data = reactive([
-  {
-    id: 1,
-    count: 560,
-    text: "Total Services",
-    symbol: "",
-    border: "tp-counter-border",
-  },
-  {
-    id: 2,
-    count: 98,
-    text: "Client Satisfiction",
-    symbol: "%",
-    border: "tp-counter-border",
-  },
-  {
-    id: 3,
-    count: 3,
-    text: "Monthly Review",
-    symbol: "m+",
-    border: "tp-counter-border",
-  },
-  {
-    id: 4,
-    count: 30,
-    text: "Years Experince",
-    symbol: "+",
-    border: "",
-  },
-]);
+// import { reactive } from "vue";
+// import CountUp from 'vue-countup-v3'
+// import counter1 from "@/assets/img/fun-fact/counter-bg.png"
+// const counter_data = reactive([
+//   {
+//     id: 1,
+//     count: 560,
+//     text: "Total Services",
+//     symbol: "",
+//     border: "tp-counter-border",
+//   },
+//   {
+//     id: 2,
+//     count: 98,
+//     text: "Client Satisfiction",
+//     symbol: "%",
+//     border: "tp-counter-border",
+//   },
+//   {
+//     id: 3,
+//     count: 3,
+//     text: "Monthly Review",
+//     symbol: "m+",
+//     border: "tp-counter-border",
+//   },
+//   {
+//     id: 4,
+//     count: 30,
+//     text: "Years Experince",
+//     symbol: "+",
+//     border: "",
+//   },
+// ]);
 </script>
 
 <template>
-  <section class="tp-counter-area p-relative counter-breadcrumb pb-100">
+  <!-- <section class="tp-counter-area p-relative counter-breadcrumb pb-100">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -56,6 +56,6 @@ const counter_data = reactive([
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 

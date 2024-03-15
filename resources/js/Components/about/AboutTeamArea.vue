@@ -1,95 +1,95 @@
 
 <script setup>
-import { inject, reactive } from "vue";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import {Navigation}  from "swiper/modules";  
-import AboutTitleUnderLineIcon from "../../svg/AboutTitleUnderLineIcon.vue";
+// import { inject, reactive } from "vue";
+// import { Swiper, SwiperSlide } from "swiper/vue";
+// import {Navigation}  from "swiper/modules";  
+// import AboutTitleUnderLineIcon from "../../svg/AboutTitleUnderLineIcon.vue";
 
-// team member img import here  
-import avatar_img_1 from "@/assets/img/team/team-5.jpg";
-import avatar_img_2 from "@/assets/img/team/team-1.jpg";
-import avatar_img_3 from "@/assets/img/team/team-2.jpg";
-import avatar_img_4 from "@/assets/img/team/team-3.jpg";
-import avatar_img_5 from "@/assets/img/team/team-4.jpg"; 
+// // team member img import here  
+// import avatar_img_1 from "@/assets/img/team/team-5.jpg";
+// import avatar_img_2 from "@/assets/img/team/team-1.jpg";
+// import avatar_img_3 from "@/assets/img/team/team-2.jpg";
+// import avatar_img_4 from "@/assets/img/team/team-3.jpg";
+// import avatar_img_5 from "@/assets/img/team/team-4.jpg"; 
   
-import SocailLinkTwo from "../common/SocailLinkTwo.vue";
-import PlusIcon from  "../../svg/PlusIcon.vue"
+// import SocailLinkTwo from "../common/SocailLinkTwo.vue";
+// import PlusIcon from  "../../svg/PlusIcon.vue"
 
-const team_data = reactive([
-    {
-        id: 1,
-        img: avatar_img_1,
-        name: "Alextina Ditarson",
-        job_title: "App Developer",
-    },
-    {
-        id: 2,
-        img: avatar_img_2,
-        name: "Leslie Alexander",
-        job_title: "Web Developer",
-    },
-    {
-        id: 3,
-        img: avatar_img_3,
-        name: "Brooklyn Simmons",
-        job_title: "Game Developer",
-    },
-    {
-        id: 4,
-        img: avatar_img_4,
-        name: "Marvin McKinney",
-        job_title: "Website Developer",
-    },
-    {
-        id: 5,
-        img: avatar_img_5,
-        name: "Kathryn Murphy",
-        job_title: "GRAPHIC DESIGNER",
-    },
-    {
-        id: 6,
-        img: avatar_img_1,
-        name: "Alextina Ditarson",
-        job_title: "App Developer",
-    },
-    {
-        id: 7,
-        img: avatar_img_2,
-        name: "Leslie Alexander",
-        job_title: "Web Developer",
-    },
-    {
-        id: 8,
-        img: avatar_img_3,
-        name: "Brooklyn Simmons",
-        job_title: "Game Developer",
-    },
-    {
-        id: 9,
-        img: avatar_img_4,
-        name: "Marvin McKinney",
-        job_title: "Website Developer",
-    },
-    {
-        id: 10,
-        img: avatar_img_5,
-        name: "Kathryn Murphy",
-        job_title: "GRAPHIC DESIGNER",
-    },
-])
+// const team_data = reactive([
+//     {
+//         id: 1,
+//         img: avatar_img_1,
+//         name: "Alextina Ditarson",
+//         job_title: "App Developer",
+//     },
+//     {
+//         id: 2,
+//         img: avatar_img_2,
+//         name: "Leslie Alexander",
+//         job_title: "Web Developer",
+//     },
+//     {
+//         id: 3,
+//         img: avatar_img_3,
+//         name: "Brooklyn Simmons",
+//         job_title: "Game Developer",
+//     },
+//     {
+//         id: 4,
+//         img: avatar_img_4,
+//         name: "Marvin McKinney",
+//         job_title: "Website Developer",
+//     },
+//     {
+//         id: 5,
+//         img: avatar_img_5,
+//         name: "Kathryn Murphy",
+//         job_title: "GRAPHIC DESIGNER",
+//     },
+//     {
+//         id: 6,
+//         img: avatar_img_1,
+//         name: "Alextina Ditarson",
+//         job_title: "App Developer",
+//     },
+//     {
+//         id: 7,
+//         img: avatar_img_2,
+//         name: "Leslie Alexander",
+//         job_title: "Web Developer",
+//     },
+//     {
+//         id: 8,
+//         img: avatar_img_3,
+//         name: "Brooklyn Simmons",
+//         job_title: "Game Developer",
+//     },
+//     {
+//         id: 9,
+//         img: avatar_img_4,
+//         name: "Marvin McKinney",
+//         job_title: "Website Developer",
+//     },
+//     {
+//         id: 10,
+//         img: avatar_img_5,
+//         name: "Kathryn Murphy",
+//         job_title: "GRAPHIC DESIGNER",
+//     },
+// ])
 
 
-const propValue = inject('addClass');
-const emit = defineEmits(["handleAddClass"]);
+// const propValue = inject('addClass');
+// const emit = defineEmits(["handleAddClass"]);
 
 </script>
 <template>
-  <section class="tp-team-area p-relative" :class="propValue? 'pb-100' : 'pb-120'">
-         <div class="tp-team-shape">
+  <!-- <section class="tp-team-area p-relative" :class="propValue? 'pb-100' : 'pb-120'">
+         <div class="tp-team-shape"> -->
 
             <!-- <img src="assets/img/testimonial/home-3/shape-3.png" alt="image-title-here" /> -->
 
-         </div>
+         <!-- </div>
          <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-6">
@@ -142,9 +142,9 @@ const emit = defineEmits(["handleAddClass"]);
                 }" 
                 :modules="[Navigation]"
                 :navigation="{nextEl: '.team-button-next-1', prevEl:'.team-button-prev-1'}"
-               class="team-active swiper-container">
+               class="team-active swiper-container"> -->
 
-                    <SwiperSlide v-for="(item , index) in team_data" :key="index"  class="swiper-slide">
+                    <!-- <SwiperSlide v-for="(item , index) in team_data" :key="index"  class="swiper-slide">
                         <div class="tp-team-wrapper p-relative">
                            <div class="tp-team-wrapper-thumb">
                               <router-link to="/team-details">
@@ -170,7 +170,7 @@ const emit = defineEmits(["handleAddClass"]);
                </Swiper>
             </div>
          </div>
-      </section>
+      </section> -->
 </template>
 
 

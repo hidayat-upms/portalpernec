@@ -42690,7 +42690,7 @@ div.demo img {
   }
 }
 .tp-brand-2-item .shape-4:hover {
-  webkit-transform: translate(-20px, -30px);
+  -webkit-transform: translate(-20px, -30px);
   transform: translate(-20px, -30px);
   transition-delay: all 4s cubic-bezier(0.2, 0.8, 0.2, 1) 0s !important;
 }
