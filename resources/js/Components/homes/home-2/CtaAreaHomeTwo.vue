@@ -27,7 +27,6 @@ const {phone, email, sub_title_1, title} = cta_contact
   <section class="tp-cta-2-area p-relative pt-200 pb-90" :style="{ backgroundImage: `url(${cta_shape})` }">
     <div class="tp-cta-2-shape">
         <img class="shape-1" :src="cta_shape_1" alt="image-title-here">
-        <img class="shape-2" :src="cta_shape_2" alt="image-title-here">
         <img class="shape-3" :src="cta_shape_3" alt="image-title-here">
     </div>
     <div class="container">

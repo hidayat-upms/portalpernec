@@ -5,8 +5,6 @@ import CtaAreaHomeTwo from "./CtaAreaHomeTwo.vue";
 import BlogAreaHomeTwo from "./BlogAreaHomeTwo.vue";
 import HeroAreaHomeThree from "@/Components/homes/home-3/HeroAreaHomeThree.vue";
 import OfferAreaHomeTwo from "./OfferAreaHomeTwo.vue";
-import CounterAreaHomeTwo from "./CounterAreaHomeTwo.vue";
-import IndustryArea from "../../service/IndustryArea.vue";
 import FeatureAreaHomeTwo from "./FeatureAreaHomeTwo.vue";
 import FooterTwo from "@/Layouts/footers/FooterTwo.vue";
 import BusinessAreaHomeTwo from "./BusinessAreaHomeTwo.vue";
@@ -18,10 +16,6 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 const addClass = ref(true);
 provide('addClass', addClass)
 
-const handleAddClass = (value = true) => { 
-	addClass.value = value ;
-};
-
 
 </script>
 
@@ -32,8 +26,6 @@ const handleAddClass = (value = true) => {
     <HeroAreaHomeThree />
     <OfferAreaHomeTwo />
     <BusinessAreaHomeTwo />
-    <CounterAreaHomeTwo />  
-    <IndustryArea @handleAddClass="handleAddClass" />
     <FeatureAreaHomeTwo />
     <BrandHomeTwo />
     <BlogAreaHomeTwo />
