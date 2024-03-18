@@ -24,8 +24,8 @@ provide('addClass', addClass)
   <HeaderThree />
   <main>
     <HeroAreaHomeThree />
-    <OfferAreaHomeTwo />
     <BusinessAreaHomeTwo />
+    <OfferAreaHomeTwo />
     <FeatureAreaHomeTwo />
     <BrandHomeTwo />
     <BlogAreaHomeTwo />

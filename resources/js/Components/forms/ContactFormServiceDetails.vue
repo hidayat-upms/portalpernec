@@ -8,7 +8,7 @@
     <div class="row tp-gx-10">
       <div class="col-md-6">
         <div class="tp-service-contact-input">
-          <input name="name" type="text" placeholder="Fast Name">
+          <input name="name" type="text" placeholder="First Name">
         </div>
       </div>
       <div class="col-md-6">
