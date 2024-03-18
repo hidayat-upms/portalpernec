@@ -14,7 +14,7 @@ import testimonial_shape_3 from "@/assets/img/testimonial/shape-3.png";
 import testimonial_shape_4 from "@/assets/img/testimonial/shape-4.png";
 import testimonial_shape_5 from "@/assets/img/testimonial/shape-blur.png"; 
 import quote from "@/assets/img/testimonial/quot2.png";
-import cat from "@/assets/img/testimonial/cat.jpg";
+import hidayat3 from "@/assets/img/testimonial/hidayat3.png";
 
 // slider data 
 const testimonial_data = reactive([
@@ -22,7 +22,7 @@ const testimonial_data = reactive([
       id: 1, 
       name: "Mohamed Hidayat",
       title: "Software Developer,Team Lead",
-      img:quote,
+      img:hidayat3,
       description: "“Within our esteemed company, we cherish more than just our renowned reputation. Our office transcends a mere workspace; it's a dynamic environment pulsating with creativity and teamwork. <br /> Just like a magnetic pull, upon entering, you'll feel compelled to stay, enchanted by the lively atmosphere and strong sense of camaraderie that characterizes our culture.”"
   },
   {

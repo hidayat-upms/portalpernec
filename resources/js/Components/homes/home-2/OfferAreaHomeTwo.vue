@@ -22,47 +22,56 @@ const offering_data = reactive([
     {
         id: 1,
         img: offering_img_1,
-        title: "ICT<br /> Essentials", 
+        title: "ICT<br /> Essentials",
+        link: "it-essentials" 
     },
     {
         id: 2,
         img: offering_img_2,
-        title: "IT Productivity <br /> Suites", 
+        title: "IT Productivity <br /> Suites",
+        link: "it-essentials" 
     },
     {
         id: 3,
         img: offering_img_3,
-        title: "Digital Transformation & <br /> Enabler", 
+        title: "Digital Transformation & <br /> Enabler",
+        link: "it-essentials"
     },
     {
         id: 4,
         img: cyseca,
-        title: "Cyber Security <br /> Solution", 
+        title: "Cyber Security <br /> Solution",
+        link: "it-essentials" 
     },
     {
         id: 5,
         img: telecom,
-        title: "Telecommunication <br /> Solutions", 
+        title: "Telecommunication <br /> Solutions",
+        link: "it-essentials"
     },
     {
         id: 6,
         img: power,
-        title: "Power &<br /> Utilities", 
+        title: "Power &<br /> Utilities",
+        link: "it-essentials"
     },
     {
         id: 7,
         img: publicsafety,
-        title: "Public<br /> Safety", 
+        title: "Public<br /> Safety",
+        link: "it-essentials"
     },
     {
         id: 8,
         img: offering_img_4,
-        title: "Defence Tactical <br /> Solutions", 
+        title: "Defence Tactical <br /> Solutions",
+        link: "it-essentials"
     },
     {
         id: 9,
         img: deployment,
-        title: "Deployment Operation <br /> Services", 
+        title: "Deployment Operation <br /> Services",
+        link: "tba"
     },
 ])
   
@@ -73,7 +82,7 @@ const offering_content = reactive({
   info_2: 'Bring them together and you overcome the ordinary.',
 
 })
-const {sub_title, title, info, info_2} = offering_content
+const {sub_title, title, info, info_2, link} = offering_content
 
 </script>
 
@@ -91,7 +100,7 @@ const {sub_title, title, info, info_2} = offering_content
                   <span class="tp-section-title__pre"> <span v-html="sub_title"></span> 
                   <TitleUnderIcon />  
                   </span>
-                  <h3 class="tp-section-title">{{title }}
+                  <h3 class="tp-section-title">{{ title }}
                      <span class="title-left-shape">
                         <AboutLineIcon /> 
                      </span>
@@ -113,7 +122,7 @@ const {sub_title, title, info, info_2} = offering_content
                      <img :src="item.img" alt="image-title-here">
                   </div>
                   <div class="tp-offer-wrapper-btn">
-                     <router-link to="/service-details">Read Out More <i class="fa-solid fa-arrow-up-right"></i></router-link>
+                     <router-link :to="`/${item.link}`">Read Out More <i class="fa-solid fa-arrow-up-right"></i></router-link>
                   </div>
                </div>
             </div> 

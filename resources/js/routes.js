@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Team from '@/Pages/Team.vue';
 import Blog from '@/Pages/Blog.vue';
-import Home from '@/Pages/Home.vue';
 import HomeTwo from '@/Pages/HomeTwo.vue';
 import Contact from '@/Pages/Contact.vue';
 import HomeThree from '@/Pages/HomeThree.vue';
@@ -12,8 +11,8 @@ import PortfolioDetails from '@/Pages/PortfolioDetails.vue';
 import ServiceDetails from '@/Pages/ServiceDetails.vue';
 import Service from '@/Pages/Service.vue';
 import About from '@/Pages/About.vue'; 
-
 import NotFound from '@/Pages/NotFound.vue' 
+import Itessentials from './Pages/Itessentials.vue';
 
 const router = createRouter({ 
   history: createWebHistory(),
@@ -69,7 +68,11 @@ const router = createRouter({
     {
       path: '/service-details',
       component: ServiceDetails
-    },  
+    }, 
+    {
+      path: '/it-essentials',
+      component: Itessentials
+    },   
     {
       path: '/about',
       component: About
