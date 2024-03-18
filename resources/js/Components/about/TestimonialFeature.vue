@@ -4,13 +4,11 @@
 import { reactive, ref, onMounted } from "vue"; 
 
 import {Splide , SplideSlide} from "@splidejs/vue-splide";
-// import AboutLineIcon from "../../svg/AboutLineIcon.vue";
 
 import testimonial_shape_1 from "@/assets/img/testimonial/home-3/shape-1.png";
 import testimonial_shape_2 from "@/assets/img/testimonial/home-3/shape-2.png";
 
 import testimonial_img_1 from "@/assets/img/testimonial/home-3/img-2.png";
-// import testimonial_img_2 from "@/assets/img/testimonial/home-3/img-3.png";
 
 import testimonial_slider_img_1 from "@/assets/img/testimonial/home-3/img1.jpg";
 import testimonial_slider_img_2 from "@/assets/img/testimonial/home-3/img2.jpg";
@@ -94,7 +92,6 @@ onMounted(() => {
 
                      </Splide>
                      <img class="shape-1" :src="testimonial_img_1" alt="image-title-here">
-                     <!-- <img class="shape-2" :src="testimonial_img_2" alt="image-title-here"> -->
                   </div>
                </div>
             </div>
