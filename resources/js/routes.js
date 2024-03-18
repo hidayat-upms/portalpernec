@@ -54,14 +54,6 @@ const router = createRouter({
       component: TeamDetails
     },
     {
-      path: '/blog',
-      component: Blog
-    },
-    {
-      path: '/blog-details',
-      component: BlogDetails
-    },
-    {
       path: '/service',
       component: Service
     }, 

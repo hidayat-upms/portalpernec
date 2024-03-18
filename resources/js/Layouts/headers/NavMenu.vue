@@ -24,14 +24,10 @@ const menu_data = reactive([
   {
     id: 3,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Services",
     link: "/service",
     active: "",
-    sub_menus: [
-      { link: "/service", title: "Service" },
-      { link: "/service-details", title: "Services Details" },
-    ],
   },
   {
     id: 4,
@@ -48,21 +44,8 @@ const menu_data = reactive([
       { link: "/404", title: "404" },
     ],
   },
-
   {
     id: 5,
-    mega_menu: false,
-    has_dropdown: true,
-    title: "Blog",
-    link: "/blog",
-    active: "",
-    sub_menus: [
-      { link: "/blog", title: "Blog" },
-      { link: "/blog-details", title: "Blog Details" },
-    ],
-  },
-  {
-    id: 6,
     mega_menu: false,
     has_dropdown: false,
     title: "Contact",
