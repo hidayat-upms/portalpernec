@@ -6,6 +6,7 @@ import ScrollToTop from "../Components/common/ScrollToTop.vue";
 </script>
 
 <template>
+  
   <PortfolioDetails />
   <ScrollToTop />
 </template>

@@ -12,7 +12,6 @@ import "bootstrap/scss/bootstrap.scss";
 import "@/assets/css/spacing.css";
 import "vue3-circle-progress/dist/circle-progress.css"; 
 import "@/assets/css/bootstrap.css";
-import "@/assets/fonts/fa-light-300.woff2"
 import '@/assets/scss/main.scss'
 
 import { createApp, h } from 'vue';
@@ -40,3 +39,6 @@ createInertiaApp({
         color: '#4B5563',
     },
 });
+
+
+

@@ -1,38 +1,38 @@
 <script setup> 
-import VideoModal from "../common/VideoModal.vue";
+// import VideoModal from "../common/VideoModal.vue";
 
-import AboutTitleUnderLineIcon from "@/svg/AboutTitleUnderLineIcon.vue";
-import AboutLineIcon from "@/svg/AboutLineIcon.vue";
-import RightSymble from "@/svg/RightSymble.vue";
+// import AboutTitleUnderLineIcon from "@/svg/AboutTitleUnderLineIcon.vue";
+// import AboutLineIcon from "@/svg/AboutLineIcon.vue";
+// import RightSymble from "@/svg/RightSymble.vue";
 
-import support_img_1 from "@/assets/img/about/home-3/img-1.jpg";
-import support_img_2 from "@/assets/img/about/home-3/img-2.jpg";
-import support_img_3 from "@/assets/img/about/home-3/img-3.jpg";
-import support_shape from "@/assets/img/about/home-3/shape-1.png";
+// import support_img_1 from "@/assets/img/about/home-3/img-1.jpg";
+// import support_img_2 from "@/assets/img/about/home-3/img-2.jpg";
+// import support_img_3 from "@/assets/img/about/home-3/img-3.jpg";
+// import support_shape from "@/assets/img/about/home-3/shape-1.png";
 
-const support_contact = {
-   sub_title_1: "We've been stay",
-   sub_title_2: " 38 years",
-   info: 'Our company provides a full range of services for the <br /> construction of private houses and cottages since 19',
-   lists: [
-      'series of manual and semi-manual activities.',
-      'Construction is different from other industries.',
-      'Construction is different from other industries.',
-   ]   
-}
-const {sub_title_1, sub_title_2, info, lists} = support_contact
+// const support_contact = {
+//    sub_title_1: "We've been stay",
+//    sub_title_2: " 38 years",
+//    info: 'Our company provides a full range of services for the <br /> construction of private houses and cottages since 19',
+//    lists: [
+//       'series of manual and semi-manual activities.',
+//       'Construction is different from other industries.',
+//       'Construction is different from other industries.',
+//    ]   
+// }
+// const {sub_title_1, sub_title_2, info, lists} = support_contact
 
  
-import {useVideoModal} from '@/composables/useVideoModal';
-const {playVideo } = useVideoModal();
-const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
+// import {useVideoModal} from '@/composables/useVideoModal';
+// const {playVideo } = useVideoModal();
+// const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
  
 
 </script>
 
 <template>
-  <section class="tp-support-breadcrumb fix pt-120 pb-210">
+  <!-- <section class="tp-support-breadcrumb fix pt-120 pb-210">
          <div class="container">
             <div class="row">
                <div class="col-lg-6">
@@ -75,10 +75,10 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
 
         <!-- video modal start -->
-        <video-modal ref="video_modal" :video-url="videoUrl" />
+        <!-- <video-modal ref="video_modal" :video-url="videoUrl" /> -->
         <!-- video modal end -->
 </template>
 

@@ -6624,7 +6624,7 @@
   margin-top: 10px;
 }
 .tp-brand-2-item .shape-1:hover {
-  webkit-transform: translate(-20px, -30px);
+  -webkit-transform-: translate(-20px, -30px);
   transform: translate(-20px, -30px);
   transition-delay: all 4s cubic-bezier(0.2, 0.8, 0.2, 1) 0s !important;
 }
@@ -6643,7 +6643,7 @@
   }
 }
 .tp-brand-2-item .shape-2:hover {
-  webkit-transform: translate(-20px, -30px);
+  -webkit-transform: translate(-20px, -30px);
   transform: translate(-20px, -30px);
   transition-delay: all 4s cubic-bezier(0.2, 0.8, 0.2, 1) 0s !important;
 }
@@ -6733,7 +6733,7 @@
   }
 }
 .tp-brand-2-item .shape-5:hover {
-  webkit-transform: translate(-20px, -30px);
+  -webkit-transform: translate(-20px, -30px);
   transform: translate(-20px, -30px);
   transition-delay: all 4s cubic-bezier(0.2, 0.8, 0.2, 1) 0s !important;
 }
@@ -7386,7 +7386,7 @@
   top: -117px;
   right: 0;
   content: "";
-  background: var(--tp-common-white);
+  background: var(--tp-common-black);
   height: 651px;
   width: calc(100% - 203px);
   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.04);
