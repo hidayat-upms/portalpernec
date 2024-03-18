@@ -20,24 +20,18 @@ const blog_data = reactive([
             blog_slide_img_1, blog_slide_img_2,
         ],
         category: "Rasalina",
-        date: "02 Apr 2023",
-        comments: "Comments (03)",
         title: "Providing solutions for Industrial <br /> and restoration.",
     }, 
     {
         id: 2, 
         img: blog_img_2,
         category: "Donali",
-        date: "02 Apr 2023",
-        comments: "Comments (15)",
         title: "Discovery incommode earnestly no he comm",
     },
     {
         id: 2, 
         img: blog_img_3,
         category: "Jon duo",
-        date: "02 Apr 2023",
-        comments: "Comments (18)",
         title: "Technology information & solutions are just like…",
     },
 ])
@@ -127,11 +121,6 @@ const blog_data = reactive([
               </div>
               <div class="tp-blog-2-content">
                   <div class="tp-blog-2-details">
-                    <div class="tp-blog-date">
-                        <span><i class="fa-light fa-calendar-days"></i> {{ item.date }} </span>
-                        <span>-</span>
-                        <span><i class="fa-sharp fa-solid fa-comments"></i>{{ item.comments }}</span>
-                    </div>
                   </div>
                   <h3 class="tp-blog-2-title"><router-link to="/blog-details"> <span v-html="item.title"></span> </router-link></h3>
                   <div class="tp-blog-2-btn">

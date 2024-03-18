@@ -2,13 +2,8 @@
 <script setup>
 import { provide, ref } from "vue";
 import NavMenu from "./NavMenu.vue";
-import HeaderLogo from "@/assets/img/logo/footer-logo.png";
+import PernecLogo from "@/assets/img/logo/PernecLogo.gif";
 import SearchIconHomeThree from "@/svg/SearchIconHomeThree.vue";
-
-import HamburgerButton from "@/svg/HamburgerButton.vue";
-import PhoneIcon from "@/assets/img//icon/call.svg";
-
-import FooterLogo from "@/assets/img/logo/logo-lang.png";
 
 import Sidebar from "../../Components/common/Sidebar.vue";
 import SearchPopup from "../../Components/common/SearchPopup.vue";
@@ -71,7 +66,7 @@ const toggleActiveCurrency = () => {
                     <div class="tp-header-2-main-left d-flex align-items-center justify-content-xl-center p-relative">
                     <div class="tp-header-3-logo">
                         <router-link to="/">
-                          <img :src="HeaderLogo" alt="image-title-here" />
+                          <img :src="PernecLogo" alt="image-title-here" />
                         </router-link>
                     </div>
                     </div>
@@ -87,27 +82,6 @@ const toggleActiveCurrency = () => {
                           <a @click="setSearchOpen(true)" style="cursor: pointer"> 
                             <SearchIconHomeThree /> 
                             </a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-2 col-6">
-                    <div class="tp-header-3-right">
-                        <div class="tp-header-3-main-right d-flex align-items-center justify-content-end">
-                          <div class="tp-header-3-phone d-flex align-items-center">
-                              <div class="tp-header-3-phone-icon">
-                                <img :src="PhoneIcon" alt="image-title-here" />
-                              </div>
-                              <div class="tp-header-3-phone-content">
-                                <span>Phone: <br> <a href="tel:01900678956"> +14842634813</a></span>
-                              </div>
-                          </div>
-                          <div class="tp-header-3-hamburger-btn offcanvas-open-btn" @click="setSidebarOpen(true)">
-                              <button class="hamburger-btn" >
-                                <span>
-                                  <HamburgerButton />     
-                                </span>
-                              </button>
-                          </div>                                
                         </div>
                     </div>
                   </div>
