@@ -9,155 +9,77 @@ import team_img_3 from '@/assets/img/breadcrumb/team/img-3.jpg';
 import team_img_4 from '@/assets/img/breadcrumb/team/img-4.jpg';
 import team_img_5 from '@/assets/img/breadcrumb/team/img-5.jpg';
 import team_img_6 from '@/assets/img/breadcrumb/team/img-6.jpg';
-
-
-
-const team_pc = reactive([
-  {
-    id: 1,
-    img: team_img_1,
-    name: "Alextina Ditarson",
-    job_title: "GRAPHIC DESIGNER",
-  },
-  {
-    id: 2,
-    img: team_img_2,
-    name: "Marvin McKinney",
-    job_title: "App DESIGNER",
-  },
-  {
-    id: 3,
-    img: team_img_3,
-    name: "Kathryn Murphy",
-    job_title: "Web DESIGNER",
-  },
-
-])
-
-const team_pins = reactive([
-  {
-    id: 1,
-    img: team_img_1,
-    name: "Alextina Ditarson",
-    job_title: "GRAPHIC DESIGNER",
-  },
-  {
-    id: 2,
-    img: team_img_2,
-    name: "Marvin McKinney",
-    job_title: "App DESIGNER",
-  },
-  {
-    id: 3,
-    img: team_img_3,
-    name: "Kathryn Murphy",
-    job_title: "Web DESIGNER",
-  },
-  {
-    id: 4,
-    img: team_img_1,
-    name: "Alextina Ditarson",
-    job_title: "GRAPHIC DESIGNER",
-  },
-  {
-    id: 5,
-    img: team_img_2,
-    name: "Marvin McKinney",
-    job_title: "App DESIGNER",
-  },
-  {
-    id: 6,
-    img: team_img_3,
-    name: "Kathryn Murphy",
-    job_title: "Web DESIGNER",
-  },
-  {
-    id: 7,
-    img: team_img_3,
-    name: "Kathryn Murphy",
-    job_title: "Web DESIGNER",
-  },
-
-])
-
-const team_pat = reactive([
-  {
-    id: 1,
-    img: team_img_1,
-    name: "Alextina Ditarson",
-    job_title: "GRAPHIC DESIGNER",
-  },
-  {
-    id: 2,
-    img: team_img_2,
-    name: "Marvin McKinney",
-    job_title: "App DESIGNER",
-  },
-
-])
-
-const team_cs = reactive([
-  {
-    id: 1,
-    img: team_img_1,
-    name: "Alextina Ditarson",
-    job_title: "GRAPHIC DESIGNER",
-  },
-  {
-    id: 2,
-    img: team_img_2,
-    name: "Marvin McKinney",
-    job_title: "App DESIGNER",
-  },
-  {
-    id: 3,
-    img: team_img_2,
-    name: "Marvin McKinney",
-    job_title: "App DESIGNER",
-  },
-
-])
+const industry_content = reactive({
+  industry_data: [
+    {
+      id: 1,
+      tab_id: "BOD",
+      tab_title: "Board of Director",
+      content: [
+        {
+          id: 1,
+          img: team_img_1,
+          name: "John Doe",
+          job_title: "CEO",
+        },
+        {
+          id: 2,
+          img: team_img_2,
+          name: "Jane Smith",
+          job_title: "CFO",
+        },
+      ],
+    },
+    {
+      id: 2,
+      tab_id: "sm",
+      tab_title: "Senior Management",
+      content: [
+        {
+          id: 1,
+          img: team_img_3,
+          name: "Mark Johnson",
+          job_title: "COO",
+        },
+        {
+          id: 2,
+          img: team_img_4,
+          name: "Emily Brown",
+          job_title: "CTO",
+        },
+      ],
+    },
+  ],
+});
 
 const title1 = "Pernec Corporation";
 const title2 = "Pernec Integrated Network System";
 const title3 = "Pernec Advance Technology";
 const title4 = "Cyseca Solution";
 
-const industry_content = reactive({
+// const industry_content = reactive({
 
 
-  industry_data: [
-    {
-      id: 1,
-      tab_id: "BOD",
-      tab_title: "Board of Director",
+//   industry_data: [
+//     {
+//       id: 1,
+//       tab_id: "BOD",
+//       tab_title: "Board of Director",
 
-    },
-    {
-      id: 2,
-      tab_id: "sm",
-      tab_title: "Senior Management",
-    },
-  ],
-})
+//     },
+//     {
+//       id: 2,
+//       tab_id: "sm",
+//       tab_title: "Senior Management",
+//     },
+//   ],
+// })
 
 const { industry_data } = industry_content
 
 if (typeof window !== 'undefined') {
   import('bootstrap/dist/js/bootstrap');
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 </script>
 
@@ -171,136 +93,42 @@ if (typeof window !== 'undefined') {
 
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li v-for="(item, i) in industry_data" :key="i" class="nav-item" role="presentation">
-                  <button class="nav-link" :class="{ active: i == 0 }" :id="'pills-' + item.tab_id + 'home-tab'"
+                  <button class="nav-link" :class="{ active: i === activeTabIndex }" :id="'pills-' + item.tab_id + 'home-tab'"
                     data-bs-toggle="pill" :data-bs-target="'#pills-' + item.tab_id" type="button" role="tab"
-                    :aria-controls="'pills-' + item.tab_id" :aria-selected="i == 0 ? true : false">{{
-                  item.tab_title }}
+                    :aria-controls="'pills-' + item.tab_id" @click="activeTabIndex = i">{{ item.tab_title }}
                   </button>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div v-for="(tab_item, index) in industry_data" :key="index" class="tab-pane fade"
-                  :class="index == 0 ? 'show active' : ''" :id="'pills-' + tab_item.tab_id" role="tabpanel"
+                  :class="index === activeTabIndex ? 'show active' : ''" :id="'pills-' + tab_item.tab_id" role="tabpanel"
                   :aria-labelledby="'pills-' + tab_item.tab_id + '-tab'">
                   <div class="tp-industry-tab-content">
-                    <div class="tp-industry-area p-relative" :class="propValue ? 'pb-90' : 'pt-50'">
-                      <div class="container">
-                        <div class="row">
-                          <h3>{{ title1 }}</h3>
-                          <div v-for="(item, i) in team_pc" :key="i" class="col-lg-3 col-sm-4">
-                            <div class="tp-team-wrapper p-relative mb-30">
-                              <div class="tp-team-wrapper-thumb ">
-                                <router-link to="/team-details"><img :src="item.img"
-                                    alt="image-title-here"></router-link>
-                                <div class="tp-team-social-info">
-                                  <SocailLinks />
-                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                  <a href="#"><i class="fab fa-twitter"></i></a>
-                                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                                  <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                              </div>
-                              <div class="tp-team-wrapper-content d-flex justify-content-between">
-                                <div class="tp-team-wrapper-content-text">
-                                  <h3 class="team-title"><router-link to="/team-deteails">{{ item.name }}</router-link>
-                                  </h3>
-                                  <p>{{ item.job_title }}</p>
-                                </div>
-                                <div class="tp-team-wrapper-icon">
-                                  <span class="tp-team-social">
-                                    <PlusCrosIicon />
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div :class="propValue ? 'pb-90' : 'pt-50'"></div>
-                          <h3>{{ title2 }}</h3>
-                          <div v-for="(item, i) in team_pins" :key="i" class="col-lg-3 col-sm-4">
-                            <div class="tp-team-wrapper p-relative mb-30">
-                              <div class="tp-team-wrapper-thumb ">
-                                <router-link to="/team-details"><img :src="item.img"
-                                    alt="image-title-here"></router-link>
-                                <div class="tp-team-social-info">
-                                  <SocailLinks />
-                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                  <a href="#"><i class="fab fa-twitter"></i></a>
-                                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                                  <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                              </div>
-                              <div class="tp-team-wrapper-content d-flex justify-content-between">
-                                <div class="tp-team-wrapper-content-text">
-                                  <h3 class="team-title"><router-link to="/team-deteails">{{ item.name }}</router-link>
-                                  </h3>
-                                  <p>{{ item.job_title }}</p>
-                                </div>
-                                <div class="tp-team-wrapper-icon">
-                                  <span class="tp-team-social">
-                                    <PlusCrosIicon />
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div :class="propValue ? 'pb-90' : 'pt-50'"></div>
-                          <h3>{{ title3 }}</h3>
-                          <div v-for="(item, i) in team_pat" :key="i" class="col-lg-3 col-sm-4">
-                            <div class="tp-team-wrapper p-relative mb-30">
-                              <div class="tp-team-wrapper-thumb ">
-                                <router-link to="/team-details"><img :src="item.img"
-                                    alt="image-title-here"></router-link>
-                                <div class="tp-team-social-info">
-                                  <SocailLinks />
-                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                  <a href="#"><i class="fab fa-twitter"></i></a>
-                                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                                  <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                              </div>
-                              <div class="tp-team-wrapper-content d-flex justify-content-between">
-                                <div class="tp-team-wrapper-content-text">
-                                  <h3 class="team-title"><router-link to="/team-deteails">{{ item.name }}</router-link>
-                                  </h3>
-                                  <p>{{ item.job_title }}</p>
-                                </div>
-                                <div class="tp-team-wrapper-icon">
-                                  <span class="tp-team-social">
-                                    <PlusCrosIicon />
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div :class="propValue ? 'pb-90' : 'pt-50'"></div>
-                          <h3>{{ title4 }}</h3>
-                          <div v-for="(item, i) in team_cs" :key="i" class="col-lg-3 col-sm-4">
-                            <div class="tp-team-wrapper p-relative mb-30">
-                              <div class="tp-team-wrapper-thumb ">
-                                <router-link to="/team-details"><img :src="item.img"
-                                    alt="image-title-here"></router-link>
-                                <div class="tp-team-social-info">
-                                  <SocailLinks />
-                                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                  <a href="#"><i class="fab fa-twitter"></i></a>
-                                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                                  <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                              </div>
-                              <div class="tp-team-wrapper-content d-flex justify-content-between">
-                                <div class="tp-team-wrapper-content-text">
-                                  <h3 class="team-title"><router-link to="/team-deteails">{{ item.name }}</router-link>
-                                  </h3>
-                                  <p>{{ item.job_title }}</p>
-                                </div>
-                                <div class="tp-team-wrapper-icon">
-                                  <span class="tp-team-social">
-                                    <PlusCrosIicon />
-                                  </span>
+                    <div class="tp-industry-tab-content-inner d-flex mb-30">
+                      <div class="tp-industry-tab-thumb p-relative">
+                        <div class="tp-industry-area p-relative">
+                          <div class="container">
+                            <div class="row">
+                              <div v-for="(member, i) in tab_item.content" :key="i" class="col-lg-3 col-sm-4">
+                                <div class="tp-team-wrapper p-relative mb-30">
+                                  <div class="tp-team-wrapper-thumb">
+                                    <router-link to="/team-details"><img :src="member.img" alt="Team Member"></router-link>
+                                    <div class="tp-team-social-info">
+                                      <SocailLinks />
+                                      <!-- Add your social links here -->
+                                    </div>
+                                  </div>
+                                  <div class="tp-team-wrapper-content d-flex justify-content-between">
+                                    <div class="tp-team-wrapper-content-text">
+                                      <h3 class="team-title"><router-link to="/team-details">{{ member.name }}</router-link></h3>
+                                      <p>{{ member.job_title }}</p>
+                                    </div>
+                                    <div class="tp-team-wrapper-icon">
+                                      <span class="tp-team-social">
+                                        <PlusCrosIicon />
+                                      </span>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -309,7 +137,6 @@ if (typeof window !== 'undefined') {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>

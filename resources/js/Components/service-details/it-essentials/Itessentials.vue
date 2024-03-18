@@ -31,16 +31,19 @@ const service_details_content = {
 const { service_details_tab, title, description, title_2, description_2, feture_list, description_3, accordion_data } = service_details_content
 
 const business_data = reactive([
-  { id: 1, img: hosting, title: "Server and Storage", sm_des: [
-    "Storage and Database",
-    "Endpoint Devices"
-  ]
-},
-  { id: 2, img: networking, title: "Networking", sm_des: [
-    "Wired and Wireless Network",
-    "Structured Cabling",
-    "Server"
-  ]},
+  {
+    id: 1, img: hosting, title: "Server and Storage", sm_des: [
+      "Storage and Database",
+      "Endpoint Devices"
+    ]
+  },
+  {
+    id: 2, img: networking, title: "Networking", sm_des: [
+      "Wired and Wireless Network",
+      "Structured Cabling",
+      "Server"
+    ]
+  },
 ])
 
 // video popup
@@ -85,29 +88,33 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             </div>
             <h3 class="tp-service-details-title">{{ title }}</h3>
             <p>{{ description }}</p>
-                <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
-                  <div class="tp-business-box mb-30">
-                    <div class="tp-business-box-title d-flex align-items-center">
-                      <span v-if="index === 0"> <img :src="item.img"> </span>
-                      <span v-if="index === 1"> <img :src="item.img"> </span>
-                      <h4 class="tp-business-title">{{ item.title }}</h4>
-                    </div>
-                    <div class="tp-service-details-list">
-                      <ul>
-                        <li v-for="(feture, index) in item.sm_des" :key="index">
-                          <span>
-                            <RightSymble />
-                          </span> {{ feture }}
-                        </li>
-                      </ul>
-                    </div>
+            <div class="row">
+              <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
+                <div class="tp-business-box mb-30">
+
+                  <div class="tp-business-box-title d-flex align-items-center">
+                    <span v-if="index === 0"> <img :src="item.img"> </span>
+                    <span v-if="index === 1"> <img :src="item.img"> </span>
+                    <h4 class="tp-business-title">{{ item.title }}</h4>
+                  </div>
+
+                  <div class="tp-service-details-list">
+                    <ul>
+                      <li v-for="(feture, index) in item.sm_des" :key="index">
+                        <span>
+                          <RightSymble />
+                        </span> {{ feture }}
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <p>{{ description_3 }}</p>
           </div>
         </div>
+        <p>{{ description_3 }}</p>
+      </div>
+    </div>
   </section>
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
