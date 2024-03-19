@@ -1,60 +1,60 @@
 <script setup>
 import { inject, reactive } from "vue";
 import AboutLineIcon from "@/svg/AboutLineIcon.vue";
-import TitleUnderIcon from "@/svg/TitleUnderIcon.vue"; 
+import TitleUnderIcon from "@/svg/TitleUnderIcon.vue";
 import SmallrightIcon from "@/svg/SmallrightIcon.vue";
 
 import industry_icon_1 from "@/assets/img/industry/icon-1.svg";
 import industry_icon_2 from "@/assets/img/industry/icon-2.svg";
-import industry_icon_3 from "@/assets/img/industry/icon-3.svg"; 
+import industry_icon_3 from "@/assets/img/industry/icon-3.svg";
 
-import industry_img_1 from "@/assets/img/industry/img-1.jpg"; 
-import industry_img_2 from "@/assets/img/industry/img-2.jpg"; 
+import industry_img_1 from "@/assets/img/industry/img-1.jpg";
+import industry_img_2 from "@/assets/img/industry/img-2.jpg";
 import industry_img_3 from "@/assets/img/industry/img-3.jpg";
- 
+
 
 const industry_features = reactive([
   {
-    id: 1, 
+    id: 1,
     img: industry_icon_1,
     title: "Business",
-  }, 
+  },
   {
-    id: 2, 
+    id: 2,
     img: industry_icon_2,
     title: "It Consultancy",
-  }, 
+  },
   {
-    id: 3, 
+    id: 3,
     img: industry_icon_3,
     title: "Cloud Server",
   },
 ])
 
 const industry_content = reactive({
-  sub_title: 'feature <span class="title-pre-color">IT Solutions</span>',  
+  sub_title: 'feature <span class="title-pre-color">IT Solutions</span>',
   title: "It Industry & Our Strategy",
   industry_title: "Best It & Technology Agency <br> For Your Business",
-  
+
   industry_data: [
     {
       id: 1,
       tab_id: "home",
       tab_title: "integrity",
-      img: industry_img_1, 
-      progressbar: "65",    
+      img: industry_img_1,
+      progressbar: "65",
     },
     {
       id: 2,
       tab_id: "profile",
       tab_title: "obejectives",
-      img: industry_img_2, 
+      img: industry_img_2,
       progressbar: "80",
     },
     {
-      id: 3,  
+      id: 3,
       tab_id: "contact",
-      tab_title: "excellence",      
+      tab_title: "excellence",
       img: industry_img_3,
       progressbar: "90",
     }
@@ -64,35 +64,35 @@ const industry_content = reactive({
 const { sub_title, title, industry_title, industry_data } = industry_content
 
 
-if (typeof window !== 'undefined') { 
-      import('bootstrap/dist/js/bootstrap');
-  }
+if (typeof window !== 'undefined') {
+  import('bootstrap/dist/js/bootstrap');
+}
 
 const propValue = inject('addClass');
 const emit = defineEmits(["handleAddClass"]);
 
 import VideoModal from "../common/VideoModal.vue";
 
-import {useVideoModal} from '@/composables/useVideoModal';
-const {playVideo } = useVideoModal();
+import { useVideoModal } from '@/composables/useVideoModal';
+const { playVideo } = useVideoModal();
 const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
 
 </script>
 
 <template>
-  <section class="tp-industry-area p-relative" :class="propValue? 'pb-90' : 'pt-100'">
+  <section class="tp-industry-area p-relative" :class="propValue ? 'pb-90' : 'pt-100'">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="tp-industry-title-wrapper text-center">
             <span class="tp-section-title__pre">
-               <span v-html="sub_title"></span>
-              <TitleUnderIcon /> 
+              <span v-html="sub_title"></span>
+              <TitleUnderIcon />
             </span>
             <h3 class="tp-section-title"> {{ title }}
               <span class="title-center-shape">
-                <AboutLineIcon /> 
+                <AboutLineIcon />
               </span>
             </h3>
           </div>
@@ -105,7 +105,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
                 <div v-for="(item, i) in industry_features" :key="i" class="tp-industry-thumb text-center">
                   <img :src="item.img" alt="image-title-here">
                   <h4 class="tp-industry-title">{{ item.title }}</h4>
-                </div> 
+                </div>
               </div>
               <div class="tp-industry-btn">
                 <span class="icon">
@@ -144,27 +144,24 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             </div>
           </div>
         </div>
+        <!-- "second choice" -->
         <div class="col-xl-6 col-lg-12">
           <div class="tp-industry-wrapper mb-30 fadeRight">
             <div class="tp-industry-tab">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                
+
                 <li v-for="(item, i) in industry_data" :key="i" class="nav-item" role="presentation">
-                  <button 
-                  class="nav-link" 
-                  :class="{ active: i == 0 }" 
-                  :id="'pills-' + item.tab_id + 'home-tab'" 
-                  data-bs-toggle="pill" 
-                  :data-bs-target="'#pills-' + item.tab_id"
-                  type="button"
-                  role="tab" :aria-controls="'pills-' + item.tab_id" :aria-selected="i == 0? true : false">{{ item.tab_title }}</button>
-                </li> 
+                  <button class="nav-link" :class="{ active: i == 0 }" :id="'pills-' + item.tab_id + 'home-tab'"
+                    data-bs-toggle="pill" :data-bs-target="'#pills-' + item.tab_id" type="button" role="tab"
+                    :aria-controls="'pills-' + item.tab_id" :aria-selected="i == 0 ? true : false">{{ item.tab_title
+                    }}</button>
+                </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
 
-                <div v-for="(tab_item, index) in industry_data" :key="index" 
-                class="tab-pane fade" :class="index == 0 ? 'show active' : ''" 
-                :id="'pills-' + tab_item.tab_id" role="tabpanel" :aria-labelledby="'pills-' +tab_item.tab_id+ '-tab'">
+                <div v-for="(tab_item, index) in industry_data" :key="index" class="tab-pane fade"
+                  :class="index == 0 ? 'show active' : ''" :id="'pills-' + tab_item.tab_id" role="tabpanel"
+                  :aria-labelledby="'pills-' + tab_item.tab_id + '-tab'">
                   <div class="tp-industry-tab-content">
                     <div class="tp-industry-tab-content-inner d-flex mb-30">
                       <div class="tp-industry-tab-thumb p-relative">
@@ -173,34 +170,35 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
                           <i class="fa-sharp fa-solid fa-play"></i>
                         </button>
                       </div>
-                      <ul>
+                      <!-- <ul>
                         <li><span> <SmallrightIcon /> </span> Technology Growth</li>
                         <li><span> <SmallrightIcon /> </span> Customer Oriented Program</li>
                         <li><span> <SmallrightIcon /> </span> Dedicated Team member</li>
                         <li><span> <SmallrightIcon /></span> Customer Oriented Program</li>
-                      </ul>
+                      </ul> -->
                     </div>
+                    
                     <div class="tp-industry-progress-bar fix">
                       <div class="tp-industry__progresss">
                         <h4>Digital Strategy</h4>
                         <div class="progress">
                           <div class="progress-bar wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s"
-                            role="progressbar" aria-label="Example with label" :style="{ width: `${tab_item.progressbar}%` }"  aria-valuenow="25"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <span>{{tab_item.progressbar}}%</span>
+                            role="progressbar" aria-label="Example with label"
+                            :style="{ width: `${tab_item.progressbar}%` }" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <span>{{ tab_item.progressbar }}%</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div> 
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<video-modal ref="video_modal" :video-url="videoUrl" />
+  </section>
+  <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
-
