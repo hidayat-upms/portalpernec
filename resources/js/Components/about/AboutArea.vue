@@ -1,5 +1,4 @@
 <script setup> 
-// import CircleProgress from "vue3-circle-progress";
 
 import TitleUnderIcon from "../../svg/TitleUnderIcon.vue";
 import about_shape from "@/assets/img/business/shape-5.png";
@@ -63,94 +62,15 @@ const today = date.getDate();
               We provide transformative solutions that are adaptable to each project's unique circumstances, enabling us to navigate digital transformation challenges 
               with agility and precision. With a rich history as an ICT System Integrator, we offer global best practices tailored to local contexts. 
               Our solutions are designed to optimize operations, enhance customer experiences, and drive business growth, empowering organizations to achieve their strategic objectives with confidence.
-
-
-            </p>
-            <!-- <div class="tp-about-progressbar-inner d-flex flex-wrap pt-20">
-              <div class="tp-about-3-progressbar d-flex align-items-center">
-                <div class="circular tl-progress">
-                  <circle-progress
-                    :border-width="7"
-                    style="
-                      width: 96px;
-                      height: 96px;
-                      font-weight: 700;
-                      font-size: 18px;
-                    "
-                    fill-color="#05dac3"
-                    :bg-shadow="{
-                      inset: true,
-                      vertical: 2,
-                      horizontal: 2,
-                      blur: 1,
-                      opacity: 0.4,
-                      color: '#000000',
-                    }"
-                    :border-bg-width="7"
-                    percent="65"
-                    show-percent="true"
-                  />
-                </div> -->
-                <!-- <div class="tp-about-3-progressbar-title">
-                  <p>
-                    Business <br />
-                    Strategy Growth
-                  </p>
-                </div> -->
-              <!-- </div>
-              <div class="tp-about-3-progressbar d-flex align-items-center">
-                <div class="circular tl-progress">
-                  <circle-progress
-                    :border-width="7"
-                    style="
-                      width: 96px;
-                      height: 96px;
-                      font-weight: 700;
-                      font-size: 18px;
-                    "
-                    fill-color="#05dac3"
-                    :bg-shadow="{
-                      inset: true,
-                      vertical: 2,
-                      horizontal: 2,
-                      blur: 1,
-                      opacity: 0.4,
-                      color: '#000000',
-                    }"
-                    :border-bg-width="7"
-                    percent="75"
-                    show-percent="true"
-                  />
-                </div>
-                <div class="tp-about-3-progressbar-title">
-                  <p>
-                    Health Valuable <br />
-                    Ideas
-                  </p>
-                </div> -->
-              <!-- </div>
-            </div> --> 
-            <!-- <div class="tp-about-3-btn-inner d-flex flex-wrap">
-              <div class="tp-about-btn">
-                <router-link class="tp-btn" to="/about">
-                  Our History
-                  <i class="fa-regular fa-arrow-right-long"></i>
-                </router-link>
-              </div>
-              <div class="tp-about-3-year">
-                <p>
-                  BRENDON GARREY
-                  <br />
-                  <span>
-                    mayor, since {{ today }} {{ getMonthName(date) }},
-                    {{ fullYear }}
-                  </span>
-                </p>
-              </div>
-            </div> -->
+            </p>     
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+<style>
+.text{
+   text-align: justify;
+}
+</style>

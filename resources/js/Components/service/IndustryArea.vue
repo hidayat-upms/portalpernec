@@ -165,7 +165,6 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
                   <div class="tp-industry-tab-content">
                     <div class="tp-industry-tab-content-inner d-flex mb-30">
                       <div class="tp-industry-tab-thumb p-relative">
-                        
                         <img :src="tab_item.img" alt="image-title-here" />
                         <button class="popup-video" @click.prevent="playVideo(videoUrl)">
                           <i class="fa-sharp fa-solid fa-play"></i>

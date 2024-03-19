@@ -112,5 +112,9 @@ onMounted(() => {
    </section>
 </template>
 
-
+<style>
+.slider_text{
+   text-align: justify;
+}
+</style>
 

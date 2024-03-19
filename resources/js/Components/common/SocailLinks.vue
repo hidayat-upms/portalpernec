@@ -13,12 +13,8 @@ const social_links = reactive([
     icon: "fab fa-twitter",
   },
   {
-    link: "https://www.instagram.com",
-    icon: "fa-brands fa-instagram",
-  },
-  {
-    link: "https://www.pinterest.com",
-    icon: "fa-brands fa-pinterest",
+    link: "https://www.linkedin.com",
+    icon: "fab fa-linkedin-in",
   },
 ])
 

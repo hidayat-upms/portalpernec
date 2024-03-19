@@ -21,13 +21,7 @@ const feature_data = reactive([
         description: 'To provide excellent service to create maximum value for customers.</br>To inspire innovations through collaboration and partnership.</br>To contribute to nation building and the growth of a knowledge economy.',
         delay: ".3s"
     },
-   //  {
-   //      id: 2,
-   //      img: feature_img_2,
-   //      title: "About History",
-   //      description: 'Concerned as far as we might be <br /> making an extraordinary ad',
-   //      delay: ".5s"
-   //  },
+   
     {
         id: 3,
         img: feature_img_3,
@@ -83,9 +77,6 @@ const feature_data = reactive([
                            </div>
                         </div>
                      </div>
-                     <!-- <div class="tp-feature-item-btn">
-                        <router-link to="/about"><i class="fa-regular fa-arrow-right"></i></router-link>
-                     </div> -->
                   </div>
                </div> 
             </div>
