@@ -7,6 +7,9 @@ import HomeThree from '@/Pages/HomeThree.vue';
 import Portfolio from '@/Pages/Portfolio.vue';
 import TeamDetails from '@/Pages/TeamDetails.vue';
 import BlogDetails from '@/Pages/BlogDetails.vue';
+import Whistleblowing from '@/Pages/Whistleblowing.vue';
+import AntiBribery from '@/Pages/AntiBribery.vue';
+import Nogift from '@/Pages/Nogift.vue'
 import CyberSecurity from '@/Pages/CyberSecurity.vue';
 import Telecommunication from '@/Pages/Telecommunication.vue';
 import PortfolioDetails from '@/Pages/PortfolioDetails.vue';
@@ -74,6 +77,18 @@ const router = createRouter({
     {
       path: '/telecommunication',
       component: Telecommunication
+    },
+    {
+      path: '/whistleblowing',
+      component: Whistleblowing
+    }, 
+    {
+      path: '/anti-bribery-corruption',
+      component: AntiBribery
+    },
+    {
+      path: '/no-gift',
+      component: Nogift
     }, 
     {
       path: '/about',

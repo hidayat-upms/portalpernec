@@ -11,7 +11,7 @@ import bg_img from "@/assets/img/offering/bg.png";
 import offering_img_1 from "@/assets/img/offering/img-1.svg";
 import cyseca from "@/assets/img/offering/cyseca.png";
 import telecom from "@/assets/img/offering/telecom.png";
-import deployment from "@/assets/img/offering/deployment.png";
+import moreservice from "@/assets/img/offering/moreservice.png";
 
 const offering_data = reactive([
     {
@@ -34,9 +34,9 @@ const offering_data = reactive([
     },
     {
         id: 4,
-        img: deployment,
-        title: "Deployment Operation <br /> Services",
-        link: "tba"
+        img: moreservice,
+        title: "Click Here to <br /> Explore More Services",
+        link: "service"
     },
 ])
   

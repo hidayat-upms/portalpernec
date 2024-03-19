@@ -1,7 +1,5 @@
 <script setup>
-import AOS from 'aos';
-import '/Users/apple/portalpernec/resources/js/assets/css/aos.css'; 
-import { reactive,onMounted } from "vue";
+import { reactive } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
 import itessentials from "@/assets/img/services/service-details/itessentials.jpg";
 import RightSymble from "@/svg/RightSymble.vue";
@@ -16,40 +14,40 @@ if (typeof window !== 'undefined') {
 const service_details_content = {
   service_details_tab: reactive([
     {
-    service: "IT Essentials",
-    link:"/it-essentials"
+      service: "IT Essentials",
+      link: "/it-essentials"
     },
     {
-    service: "IT Productivity Suites",
-    link:"/about"
+      service: "IT Productivity Suites",
+      link: "/about"
     },
     {
-    service: "Digital Transformation & Enabler",
-    link:"/about"
+      service: "Digital Transformation & Enabler",
+      link: "/about"
     },
     {
-    service: "Cyber Security Solution",
-    link:"/cyber-security"
+      service: "Cyber Security Solution",
+      link: "/cyber-security"
     },
     {
-    service: "Telecommunication Solutions",
-    link:"/telecommunication"
+      service: "Telecommunication Solutions",
+      link: "/telecommunication"
     },
     {
-    service: "Power & Utilities",
-    link:"/about"
+      service: "Power & Utilities",
+      link: "/about"
     },
     {
-    service: "Public Safety",
-    link:"/about"
+      service: "Public Safety",
+      link: "/about"
     },
     {
-    service: "Defence Tactical Solutions",
-    link:"/about"
+      service: "Defence Tactical Solutions",
+      link: "/about"
     },
     {
-    service: "Deployment Operation Services",
-    link:"/about"
+      service: "Deployment Operation Services",
+      link: "/about"
     }
   ]),
   title: "IT Essentials",
@@ -60,28 +58,23 @@ const { service_details_tab, title, description, description_2 } = service_detai
 
 const business_data = reactive([
   {
-   
+
     id: 1, img: hosting, title: "Server and Storage", sm_des: [
-        "Storage",
+      "Storage",
       "Database",
-        "Endpoint Devices"
-      ]
-    },
+      "Endpoint Devices"
+    ]
+  },
   {
-   
+
     id: 2, img: networking, title: "Networking", sm_des: [
-        "Wired and Wireless Network",
-        "Structured Cabling",
-        "Server"
-      ]
-  
+      "Wired and Wireless Network",
+      "Structured Cabling",
+      "Server"
+    ]
+
   }
 ])
-
-onMounted(() => {
-  AOS.init();
-});
-
 // video popup
 import VideoModal from "@/Components/common/VideoModal.vue";
 import { useVideoModal } from "@/composables/useVideoModal.js";
@@ -119,41 +112,43 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         </div>
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
-            <div class="tp-service-details-thumb" data-aos="fade-left">
+            <div class="tp-service-details-thumb">
               <img :src="itessentials" alt="image-title-here">
             </div>
             <h3 class="tp-service-details-title">{{ title }}</h3>
-            <p data-aos="fade-left">{{ description }}</p>
-                <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6" data-aos="flip-right">
-                  <div class="tp-business-box mb-30">
-                    <div class="tp-business-box-title d-flex align-items-center">
-                      <span v-if="index === 0"> <img :src="item.img"> </span>
-                      <span v-if="index === 1"> <img :src="item.img"> </span>
-                      <h4 class="tp-business-title">{{ item.title }}</h4>
-                    </div>
-                    <div class="tp-service-details-list">
-                      <ul>
-                        <li v-for="(feture, index) in item.sm_des" :key="index">
-                          <span>
-                            <RightSymble />
-                          </span> {{ feture }}
-                        </li>
-                      </ul>
-                    </div>
+            <p class="desc">{{ description }}</p>
+            <p class="desc">{{ description_2 }}</p>
+            <div class="row">
+              <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
+                <div class="tp-business-box mb-30">
+                  <div class="tp-business-box-title d-flex align-items-center">
+                    <span v-if="index === 0"> <img :src="item.img"> </span>
+                    <span v-if="index === 1"> <img :src="item.img"> </span>
+                    <h4 class="tp-business-title">{{ item.title }}</h4>
+                  </div>
+                  <div class="tp-service-details-list">
+                    <ul>
+                      <li v-for="(feture, index) in item.sm_des" :key="index">
+                        <span>
+                          <RightSymble />
+                        </span> {{ feture }}
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <p>{{ description_3 }}</p>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
 
 <style>
-.desc{
+.desc {
   text-align: justify;
 }
 </style>

@@ -1,8 +1,3 @@
-// import './bootstrap';
-// import '../css/app.css';
-// import '@/assets/css/main.css'
-// import '@/assets/scss/main.scss'
-// import '@/assets/scss/main.css'
 import "vue3-carousel/dist/carousel.css";
 import "@splidejs/vue-splide/css";
 import '@splidejs/splide/dist/css/splide.min.css';
