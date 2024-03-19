@@ -70,9 +70,9 @@ const business_data = reactive([
                       <AboutLineIcon />  
                       </span>
                   </h3>
-                  <p>{{ info }}</p>
+                  <p class="desc">{{ info }}</p>
                   <br>
-                  <p>{{ info2 }}</p>
+                  <p class="desc">{{ info2 }}</p>
                 </div>
                 <div class="row">
                 </div>
@@ -82,3 +82,8 @@ const business_data = reactive([
     </section>
 </template>
 
+<style>
+.desc{
+  text-align: justify;
+}
+</style>

@@ -27,7 +27,7 @@ const service_details_content = {
     },
     {
     service: "Cyber Security Solution",
-    link:"/about"
+    link:"/cyber-security"
     },
     {
     service: "Telecommunication Solutions",
@@ -114,8 +114,8 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
               <img :src="itessentials" alt="image-title-here">
             </div>
             <h3 class="tp-service-details-title">{{ title }}</h3>
-            <p>{{ description }}</p>
-            <p>{{ description_2 }}</p>
+            <p class="desc">{{ description }}</p>
+            <p class="desc"> {{ description_2 }}</p>
             <div class="row">
               <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
                 <div class="tp-business-box mb-30">
@@ -144,3 +144,9 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
+
+<style>
+.desc{
+  text-align: justify;
+}
+</style>

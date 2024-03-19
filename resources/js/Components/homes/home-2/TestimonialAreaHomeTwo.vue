@@ -1,76 +1,67 @@
 <template>
-    <div class="tp-testimonial-2-area">
-        <!-- Title -->
-        <div class="tp-testimonial-title">
-            <h3 class="text-center font-bold text-2xl">Our Team Members Insight</h3>
-        </div>
-
-        <!-- Testimonial section -->
-        <div class="p-relative pt-150 pb-120">
-            <div class="tp-testimonial-2-shape">
-                <img class="shape-1" :src="testimonial_shape_1" alt="image-title-here">
-                <img class="shape-2" :src="testimonial_shape_2" alt="image-title-here">
-                <img class="shape-3" :src="testimonial_shape_3" alt="image-title-here">
-                <img class="shape-4" :src="testimonial_shape_4" alt="image-title-here">
-                <img class="shape-5" :src="testimonial_shape_5" alt="image-title-here">
-            </div>
-            <div class="tp-testimonial-2-np">
-                <span class="prev"></span>
-                <span class="next"></span>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="circle-animation business">
-                            <div class="circle-animation business-2">
-                                <span class="tp-circle-8"></span>
-                                <span class="tp-circle-6"></span>
-                                <div class="circle-animation business-3">
-                                    <span class="tp-circle-7"></span>
-                                </div>
-                                <div class="circle-animation business-4">
-                                    <span class="tp-circle-5"></span>
-                                </div>
-                            </div>
+    <section class="tp-testimonial-2-area p-relative pt-150 pb-120">
+      <div class="tp-testimonial-2-shape">
+          <img class="shape-1" :src="testimonial_shape_1" alt="image-title-here">
+          <img class="shape-2" :src="testimonial_shape_2" alt="image-title-here">
+          <img class="shape-3" :src="testimonial_shape_3" alt="image-title-here">
+          <img class="shape-4" :src="testimonial_shape_4" alt="image-title-here">
+          <img class="shape-5" :src="testimonial_shape_5" alt="image-title-here">
+      </div>
+      <div class="tp-testimonial-2-np">
+          <span class="prev"></span>
+          <span class="next"></span>
+      </div>
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="circle-animation business">
+                  <div class="circle-animation business-2">
+                      <span class="tp-circle-8"></span>
+                      <span class="tp-circle-6"></span>
+                  <div class="circle-animation business-3">
+                      <span class="tp-circle-7"></span>
+                  </div>
+                  <div class="circle-animation business-4">
+                      <span class="tp-circle-5"></span>
+                  </div>
+                  </div>
+                </div>
+                <swiper
+                      :slides-per-view="1"
+                      :space-between="20" 
+                      :loop="true"  
+                      :modules="[Navigation, Autoplay]" 
+                      :autoplay="{
+                          delay: 9000,
+                          disableOnInteraction: false,
+                      }"
+                      :navigation="{nextEl: '.testimonial-button-next-1', prevEl:'.testimonial-button-prev-1'}" 
+                      class="testimonial-2-active swiper-container"> 
+  
+                    <swiper-slide v-for="(item, i) in testimonial_data" :key="i" class="testimonial-item">
+                        <div class="tp-testimonial-2-content">
+                          <div class="tp-testimonial-2-thumb text-center">
+                              <img :src="item.img" alt="image-title-here">
+                          </div>
+                          <div class="tp-testimonial-2-info">
+                              <h4 class="tp-testimonial-2-info-title text-center">{{ item.name }}</h4>
+                              <p class="tp-testimonial-2-info-designation text-center">({{ item.title }})</p>
+                          </div>
+                          <div class="tp-testimonial-2-text text-center">
+                              <p v-html="item.description"></p>
+                          </div>
                         </div>
-                        <!-- Testimonial swiper -->
-                        <swiper :slides-per-view="1" :space-between="20" :loop="true" :modules="[Navigation, Autoplay]"
-                            :autoplay="{
-                    delay: 9000,
-                    disableOnInteraction: false,
-                }" :navigation="{ nextEl: '.testimonial-button-next-1', prevEl: '.testimonial-button-prev-1' }"
-                            class="testimonial-2-active swiper-container">
-
-                            <swiper-slide v-for="(item, i) in testimonial_data" :key="i" class="testimonial-item">
-                                <div class="tp-testimonial-2-content">
-                                    <div class="tp-testimonial-2-thumb text-center">
-                                        <img :src="item.img" alt="image-title-here">
-                                    </div>
-                                    <div class="tp-testimonial-2-info">
-                                        <h4 class="tp-testimonial-2-info-title text-center">{{ item.name }}</h4>
-                                        <p class="tp-testimonial-2-info-designation text-center">({{ item.title }})</p>
-                                    </div>
-                                    <div class="tp-testimonial-2-text text-center">
-                                        <p v-html="item.description"></p>
-                                    </div>
-                                </div>
-                            </swiper-slide>
-                        </swiper>
-                        <!-- Navigation buttons -->
-                        <div class="tp-testimonial-2-nav d-none d-lg-block">
-                            <button type="button" class="testimonial-button-prev-1"><span>
-                                    <PrevIconHomeTwo />
-                                </span></button>
-                            <button type="button" class="testimonial-button-next-1"><span>
-                                    <NextIconHomeTwo />
-                                </span></button>
-                        </div>
-                    </div>
+                    </swiper-slide>  
+                </swiper>
+                <div class="tp-testimonial-2-nav d-none d-lg-block">
+                  <button type="button" class="testimonial-button-prev-1"><span> <PrevIconHomeTwo /></span></button>
+                  <button type="button" class="testimonial-button-next-1"><span> <NextIconHomeTwo /></span></button>
                 </div>
             </div>
-        </div>
-    </div>
-</template>
+          </div>
+      </div>
+    </section>
+  </template>
 
 <script setup>
 import { reactive } from "vue";

@@ -24,7 +24,7 @@ const offering_data = reactive([
         id: 2,
         img: cyseca,
         title: "Cyber Security <br /> Solution",
-        link: "it-essentials" 
+        link: "cyber-security" 
     },
     {
         id: 3,
