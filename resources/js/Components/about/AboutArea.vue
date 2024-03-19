@@ -154,3 +154,9 @@ const today = date.getDate();
     </div>
   </section>
 </template>
+
+<style>
+.text{
+  text-align: justify;
+}
+</style>

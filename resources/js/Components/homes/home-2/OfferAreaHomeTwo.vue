@@ -30,7 +30,7 @@ const offering_data = reactive([
         id: 3,
         img: telecom,
         title: "Telecommunication <br /> Solutions",
-        link: "it-essentials"
+        link: "telecommunication"
     },
     {
         id: 4,

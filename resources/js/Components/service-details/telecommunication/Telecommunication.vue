@@ -1,10 +1,10 @@
 <script setup>
 import { reactive } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
-import itessentials from "@/assets/img/services/service-details/itessentials.jpg";
+import telco from "@/assets/img/services/service-details/telco.jpg";
 import RightSymble from "@/svg/RightSymble.vue";
-import hosting from "@/assets/img/services/service-details/hosting.png"
-import networking from "@/assets/img/services/service-details/networking.png"
+import connection from "@/assets/img/services/service-details/connection.png"
+import system from "@/assets/img/services/service-details/system.png"
 
 
 if (typeof window !== 'undefined') {
@@ -50,25 +50,28 @@ const service_details_content = {
     link:"/about"
     }
   ]),
-  title: "IT Essentials",
-  description: "In today's dynamic digital landscape, your business's success heavily relies on the robustness of its IT infrastructure. A resilient and forward-thinking infrastructure not only facilitates rapid adaptation to change but also drives innovation and supports the integration of new business models.With over two decades of experience in ICT System Integration, we collaborate closely with you to deploy a customized IT infrastructure tailored to your specific needs. Specializing in the development of cloud-ready infrastructures, our team ensures seamless alignment with your growth objectives.",
-  description_2: "Our ICT Essentials comprise comprehensive offerings tailored to meet your business needs. This includes Server and Storage Solutions, encompassing server, storage, database, and endpoint devices, as well as Networking services, which deliver wired and wireless network solutions alongside structured cabling services",
+  title: "Telecommunication",
+  description: "Since our inception in 1973, telecommunications (Telco) has stood as a cornerstone of Pernec's business endeavors. Over the years, we have honed our expertise in every aspect of Telco operations, spanning from the foundational setup of infrastructure such as towers, to the intricate management of transmission, switching, and overall systems integration.Drawing upon our extensive knowledge in Information and Communication Technology (ICT), we've embarked on the transformative journey known as Telco 2.0. This groundbreaking convergence of ICT and Telco represents a pivotal shift in the industry landscape, facilitating a more seamless and value-driven exchange among both upstream and downstream stakeholders.",
+  description_2: "Committed to driving innovation and excellence in telecommunications, Pernec empowers businesses to thrive in the digital era. With our proven track record and unwavering dedication to technological advancement, we are poised to support your Telco needs and propel your organization towards success.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 
 const business_data = reactive([
   {
-    id: 1, img: hosting, title: "Server and Storage", sm_des: [
-      "Storage",
-      "Database",
-      "Endpoint Devices"
+    id: 1, img: connection, title: "Core & Access Network", sm_des: [
+      "Network Management System",
+      "Fiber Optics",
+      "Endpoint Public Switched Telephone Network (PSTN)",
+      "Multi Service Access Node (MSAN)",
+      "Residential Gateway",
+      "Wi-Fi"
     ]
   },
   {
-    id: 2, img: networking, title: "Networking", sm_des: [
-      "Wired and Wireless Network",
-      "Structured Cabling",
-      "Server"
+    id: 2, img: system, title: "Telco Systems & Application", sm_des: [
+      "Business Support System (BSS)",
+      "Operational Support System (OSS)",
+      "Service Performance Assurance Network Management System",
     ]
   }
 ])
@@ -91,7 +94,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
               <div class="tp-service-widget-tab">
                 <ul>
                   <li v-for="(item, i) in service_details_tab" :key="i">
-                    <router-link :class="i === 0 ? 'active' : ''" :to="item.link">
+                    <router-link :class="i === 4 ? 'active' : ''" :to="item.link">
                       {{ item.service }}
                       <i class="fa-regular fa-arrow-right-long"></i></router-link>
                   </li>
@@ -111,13 +114,13 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="itessentials" alt="image-title-here">
+              <img :src="telco" alt="image-title-here">
             </div>
             <h3 class="tp-service-details-title">{{ title }}</h3>
             <p class="desc">{{ description }}</p>
             <p class="desc"> {{ description_2 }}</p>
             <div class="row">
-              <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
+              <div v-for="(item, index) in business_data" :key="index" class="col-lg-9 col-md-6">
                 <div class="tp-business-box mb-30">
                   <div class="tp-business-box-title d-flex align-items-center">
                     <span v-if="index === 0"> <img :src="item.img"> </span>

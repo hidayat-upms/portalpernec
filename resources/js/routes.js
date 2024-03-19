@@ -8,6 +8,7 @@ import Portfolio from '@/Pages/Portfolio.vue';
 import TeamDetails from '@/Pages/TeamDetails.vue';
 import BlogDetails from '@/Pages/BlogDetails.vue';
 import CyberSecurity from '@/Pages/CyberSecurity.vue';
+import Telecommunication from '@/Pages/Telecommunication.vue';
 import PortfolioDetails from '@/Pages/PortfolioDetails.vue';
 import ServiceDetails from '@/Pages/ServiceDetails.vue';
 import Service from '@/Pages/Service.vue';
@@ -69,7 +70,11 @@ const router = createRouter({
     {
       path: '/cyber-security',
       component: CyberSecurity
-    },     
+    },   
+    {
+      path: '/telecommunication',
+      component: Telecommunication
+    }, 
     {
       path: '/about',
       component: About

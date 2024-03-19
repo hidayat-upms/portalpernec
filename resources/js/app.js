@@ -20,6 +20,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import router from '@/routes';
 import App from "@/Pages/App.vue";
+import { MotionPlugin } from "@vueuse/motion";
 
  
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
@@ -33,6 +34,7 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue)
             .use(router)
+            .use(MotionPlugin)
             .mount(el)
     },
     progress: {
