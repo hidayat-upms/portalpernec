@@ -7,7 +7,7 @@ import PhoneContactIcon from "../../svg/PhoneContactIcon.vue";
 const contact_area_content = {
 	title: 'Contact <span class="title-color">With us</span>',
 	info: 'Email, call, or complete the form to learn how Kion can <br> solve your cloud management and governance cha.',
-	email: 'thepureingsai.co.uk',
+	email: 'marketing@pernec.com.my',
 	phone: '+1 9266688000',
 	office_data: [
 		{
@@ -48,7 +48,7 @@ const {title, info, email, phone, office_data, contact_title, contact_info} = co
 										<EmailContactIcon /> 
 									</span>
 								</div>
-								<h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email">{{ email }}</router-link></h3>
+								<h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email">{{ email}}</router-link></h3>
 							</div>
 							<div class="tp-contact-content-phone d-flex align-items-center">
 								<div class="tp-contact-content-phone-icon">

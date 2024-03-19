@@ -1,8 +1,8 @@
-import './bootstrap';
-import '../css/app.css';
-import '@/assets/css/main.css'
-import '@/assets/scss/main.scss'
-import '@/assets/scss/main.css'
+// import './bootstrap';
+// import '../css/app.css';
+// import '@/assets/css/main.css'
+// import '@/assets/scss/main.scss'
+// import '@/assets/scss/main.css'
 import "vue3-carousel/dist/carousel.css";
 import "@splidejs/vue-splide/css";
 import '@splidejs/splide/dist/css/splide.min.css';
@@ -12,7 +12,7 @@ import "bootstrap/scss/bootstrap.scss";
 import "@/assets/css/spacing.css";
 import "vue3-circle-progress/dist/circle-progress.css"; 
 import "@/assets/css/bootstrap.css";
-import "@/assets/fonts/fa-light-300.woff2"
+import '@/assets/scss/main.scss'
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
@@ -39,3 +39,6 @@ createInertiaApp({
         color: '#4B5563',
     },
 });
+
+
+

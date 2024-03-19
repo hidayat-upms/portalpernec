@@ -1,42 +1,42 @@
 
 
 <script setup>
-import bg_img_1 from "@/assets/img/footer/footer-bg.jpg";
-import bg_img_2 from "@/assets/img/footer/footer-top-bg.png";
-import headphone from "@/assets/img/footer/headphone.png";
-import footer_log from "@/assets/img/logo/footer-logo.png";
-import user from "@/assets/img/footer/user.png";
+// import bg_img_1 from "@/assets/img/footer/footer-bg.jpg";
+// import bg_img_2 from "@/assets/img/footer/footer-top-bg.png";
+// import headphone from "@/assets/img/footer/headphone.png";
+// import footer_log from "@/assets/img/logo/footer-logo.png";
+// import user from "@/assets/img/footer/user.png";
  
-import SocailLinks from "@/Components/common/SocailLinks.vue";
-import FooterCopyright from "@/Components/common/FooterCopyright.vue";
-import EmailAeroplan from "@/svg/EmailAeroplan.vue";
+// import SocailLinks from "@/Components/common/SocailLinks.vue";
+// import FooterCopyright from "@/Components/common/FooterCopyright.vue";
+// import EmailAeroplan from "@/svg/EmailAeroplan.vue";
 
 
-const footer_content = { 
-    contact_us: " Contact us at <span>@themepure.com </span>",
-    mail: "@themepure.gmail.com",
-    contact_text: "PERFECT SOLUTION From  It Advisor",
-    phone: "92 666 888 0000",
-    info: "The world's first and largest digital market for crypto collectibles and non-fungible (NFTs). Buy",
-    map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
-    address: "86 Road Broklyn Street, 600 <br /> New York, USA",
-    mail_2: "needhelp@company.com", 
-    service_links: [
-        "Parking permission",
-        "Fire Service Noc",
-        "Report a Parking Violation",
-        "Residential Parking",
-        "Vendor Registration",
-        "City Board Applications",
-    ]
-}
-const {contact_us, mail, contact_text, phone, info, map, address, mail_2, service_links} = footer_content
+// const footer_content = { 
+//     contact_us: " Contact us at <span>@themepure.com </span>",
+//     mail: "@themepure.gmail.com",
+//     contact_text: "PERFECT SOLUTION From  It Advisor",
+//     phone: "92 666 888 0000",
+//     info: "The world's first and largest digital market for crypto collectibles and non-fungible (NFTs). Buy",
+//     map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
+//     address: "86 Road Broklyn Street, 600 <br /> New York, USA",
+//     mail_2: "needhelp@company.com", 
+//     service_links: [
+//         "Parking permission",
+//         "Fire Service Noc",
+//         "Report a Parking Violation",
+//         "Residential Parking",
+//         "Vendor Registration",
+//         "City Board Applications",
+//     ]
+// }
+// const {contact_us, mail, contact_text, phone, info, map, address, mail_2, service_links} = footer_content
 
 </script>
 
 
 <template>
-	<footer class="tp-footer-area p-relative">
+	<!-- <footer class="tp-footer-area p-relative">
 		<div class="tp-footer-bg" :style="{ backgroundImage: `url(${bg_img_1})` }"></div>
 		<div class="tp-footer-top-shape" :style="{ backgroundImage: `url(${bg_img_2})`}"></div>
 		<div class="container container-large">
@@ -158,7 +158,7 @@ const {contact_us, mail, contact_text, phone, info, map, address, mail_2, servic
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 </template>
 
 

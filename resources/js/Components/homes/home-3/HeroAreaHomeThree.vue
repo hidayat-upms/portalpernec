@@ -11,16 +11,17 @@ import slider_shape_3 from "@/assets/img/hero/hero-3/shape-3.png";
 import slider_img_1 from "@/assets/img/hero/hero-3/hero-1.jpg";
 import slider_img_2 from "@/assets/img/hero/hero-3/hero-2.jpg";
 import slider_img_3 from "@/assets/img/hero/hero-3/hero-3.jpg";
+import pernecHero from "@/assets/img/hero/hero-3/pernecHero.jpg";
 
 
 const hero_slider = reactive([
     {
         id: 1,
-        bg_slider_img: slider_img_1,
+        bg_slider_img: pernecHero,
         title: "Trusted it &",
-        title_color: "Tech",
-        title_2: "Solution",
-        bottom_title: "technology",        
+        title_color: "Managed",
+        title_2: "Service Solutions",
+        bottom_title: "PERNEC",        
     },
     {
         id: 2,

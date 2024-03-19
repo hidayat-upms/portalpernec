@@ -9,50 +9,58 @@ const our_service_data = reactive([
     {
         id: 1, 
         icon: service_icon_1,
-        title: "It Server & <br /> Cyber Security",
+        title: "IT Essentials",
         description: "Transmax is the world tr we uphold industry Customer Oriented ",
+        link:'/it-essentials'
     },
     {
         id: 2, 
         icon: service_icon_2,
         title: "Machine Learning <br /> And Ai",
         description: "We uphold industry Customer Oriented Transmax is the world tr ",
+        link:'/it-essentials'
     },
     {
         id: 3, 
         icon: service_icon_3,
         title: "It Server & <br /> Cyber Security",
         description: "World tr we uphold industry Transmax is the Customer Oriented ",
+        link:'/it-essentials'
     },
     {
         id: 4, 
         icon: service_icon_4,
         title: "Clouds Backup <br /> Services",
         description: "Industry Customer Oriented  Transmax is the world tr we uphold ",
+        link:'/it-essentials'
     },    
     {
         id: 5, 
         icon: service_icon_3,
         title: "It Server & <br /> Cyber Security",
         description: "Customer Oriented Transmax is the world tr we uphold industry ",
+        link:'/it-essentials'
     },
     {
         id: 6, 
         icon: service_icon_4,
         title: "Clouds Backup <br /> Services",
         description: "Uphold industry Customer Transmax is the world tr we Oriented ",
+        link:'/it-essentials'
     },
     {
         id: 7, 
         icon: service_icon_1,
         title: "It Server & <br /> Cyber Security",
         description: "industry Customer Oriented Transmax is the world tr we uphold ",
+        link:'/it-essentials'
     },
     {
         id: 8, 
         icon: service_icon_2,
         title: "Machine Learning <br /> And Ai",
         description: "Oriented we uphold industry Customer  Transmax is the world tr ",
+        link:'/it-essentials'
     },
 
 ])
@@ -92,26 +100,16 @@ const our_service_data = reactive([
               <img :src="item.icon" alt="image-title-here">
             </div>
             <h4 class="tp-service-breadcrumb-title">
-              <router-link to="/service-details"><span v-html="item.title"></span></router-link>
+              <router-link :to="item.link"><span v-html="item.title"></span></router-link>
             </h4>
             <p>{{ item.description }}</p>
             <div class="tp-service-btn">
-              <router-link to="/service-details">Read More <i class="fa-solid fa-arrow-up-right"></i></router-link>
+              <router-link :to="item.link">Read More <i class="fa-solid fa-arrow-up-right"></i></router-link>
             </div>
           </div>
         </div>
 
       </div>
-      <div class="row justify-content-center">
-        <div class="col-xl-8 text-center">
-          <div class="tp-about-call fadeUp">
-            <a href="tel:01310-069824">
-              <p><i class="fa-solid fa-phone"></i> Provide IT services to hundreds customers <span>+88 01310-069824</span>
-              </p>
-            </a>
-          </div>
-        </div>
-    </div>
   </div>
 </section></template>
 
