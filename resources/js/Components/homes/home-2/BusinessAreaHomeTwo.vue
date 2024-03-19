@@ -12,6 +12,8 @@ import  business_shape_4 from "@/assets/img/business/shape-4.png" ;
 import  business_img_1 from "@/assets/img/business/img-1.jpg" ;
 import  business_img_2 from "@/assets/img/business/img-2.png" ;
 import  business_img_3 from "@/assets/img/business/img-3.png" ;
+import  PernecHQ from "@/assets/img/business/PernecHQ.png" ;
+import  BODPERNEC from "@/assets/img/business/BODPERNEC.png" ;
 
 
 const business_content = reactive({
@@ -68,9 +70,9 @@ const business_data = reactive([
                       <AboutLineIcon />  
                       </span>
                   </h3>
-                  <p>{{ info }}</p>
+                  <p class="desc">{{ info }}</p>
                   <br>
-                  <p>{{ info2 }}</p>
+                  <p class="desc">{{ info2 }}</p>
                 </div>
                 <div class="row">
                 </div>
@@ -80,3 +82,8 @@ const business_data = reactive([
     </section>
 </template>
 
+<style>
+.desc{
+  text-align: justify;
+}
+</style>

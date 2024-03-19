@@ -6,7 +6,6 @@ import ScrollToTop from "@/Components/common/ScrollToTop.vue";
 </script>
 
 <template>
-  <RouterView></RouterView>
   <HomeTwo />
   <ScrollToTop />
 </template>

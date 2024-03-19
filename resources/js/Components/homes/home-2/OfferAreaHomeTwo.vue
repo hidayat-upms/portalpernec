@@ -9,13 +9,8 @@ import shape_2 from "@/assets/img/offering/shape-2.png";
 import bg_img from "@/assets/img/offering/bg.png";
 
 import offering_img_1 from "@/assets/img/offering/img-1.svg";
-import offering_img_2 from "@/assets/img/offering/img-2.svg";
-import offering_img_3 from "@/assets/img/offering/img-3.svg";
-import offering_img_4 from "@/assets/img/offering/img-4.svg";
 import cyseca from "@/assets/img/offering/cyseca.png";
 import telecom from "@/assets/img/offering/telecom.png";
-import power from "@/assets/img/offering/power.png";
-import publicsafety from "@/assets/img/offering/publicsafety.png";
 import deployment from "@/assets/img/offering/deployment.png";
 
 const offering_data = reactive([
@@ -27,48 +22,18 @@ const offering_data = reactive([
     },
     {
         id: 2,
-        img: offering_img_2,
-        title: "IT Productivity <br /> Suites",
-        link: "it-essentials" 
+        img: cyseca,
+        title: "Cyber Security <br /> Solution",
+        link: "cyber-security" 
     },
     {
         id: 3,
-        img: offering_img_3,
-        title: "Digital Transformation & <br /> Enabler",
-        link: "it-essentials"
-    },
-    {
-        id: 4,
-        img: cyseca,
-        title: "Cyber Security <br /> Solution",
-        link: "it-essentials" 
-    },
-    {
-        id: 5,
         img: telecom,
         title: "Telecommunication <br /> Solutions",
         link: "it-essentials"
     },
     {
-        id: 6,
-        img: power,
-        title: "Power &<br /> Utilities",
-        link: "it-essentials"
-    },
-    {
-        id: 7,
-        img: publicsafety,
-        title: "Public<br /> Safety",
-        link: "it-essentials"
-    },
-    {
-        id: 8,
-        img: offering_img_4,
-        title: "Defence Tactical <br /> Solutions",
-        link: "it-essentials"
-    },
-    {
-        id: 9,
+        id: 4,
         img: deployment,
         title: "Deployment Operation <br /> Services",
         link: "tba"
@@ -77,7 +42,7 @@ const offering_data = reactive([
   
 const offering_content = reactive({
   sub_title: 'feature <span class="title-pre-color">IT Services</span>',
-  title: "Integrate and Our Offerings",
+  title: "Thing that you might be interested",
   info: 'As building complexity rises, the architecture <br> landscape diversifies with technological prowess',
   info_2: 'Bring them together and you overcome the ordinary.',
 

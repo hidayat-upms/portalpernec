@@ -7,6 +7,7 @@ import HomeThree from '@/Pages/HomeThree.vue';
 import Portfolio from '@/Pages/Portfolio.vue';
 import TeamDetails from '@/Pages/TeamDetails.vue';
 import BlogDetails from '@/Pages/BlogDetails.vue';
+import CyberSecurity from '@/Pages/CyberSecurity.vue';
 import PortfolioDetails from '@/Pages/PortfolioDetails.vue';
 import ServiceDetails from '@/Pages/ServiceDetails.vue';
 import Service from '@/Pages/Service.vue';
@@ -54,14 +55,6 @@ const router = createRouter({
       component: TeamDetails
     },
     {
-      path: '/blog',
-      component: Blog
-    },
-    {
-      path: '/blog-details',
-      component: BlogDetails
-    },
-    {
       path: '/service',
       component: Service
     }, 
@@ -72,7 +65,11 @@ const router = createRouter({
     {
       path: '/it-essentials',
       component: Itessentials
-    },   
+    }, 
+    {
+      path: '/cyber-security',
+      component: CyberSecurity
+    },     
     {
       path: '/about',
       component: About
