@@ -198,7 +198,7 @@ const subTabsSenior = reactive([
 ]);
 
 let activeTabIndex = 0; // Default to show the first tab
-const isSocailLinksAvailable = true; // Variable to conditionally render SocailLinks component
+
 
 if (typeof window !== 'undefined') {
   import('bootstrap/dist/js/bootstrap');
@@ -234,26 +234,14 @@ if (typeof window !== 'undefined') {
                         <div class="tp-team-wrapper p-relative mb-30">
                           <div class="tp-team-wrapper-thumb">
                             <img :src="member.img" :alt="member.name" class="img-fluid" />
-                            <div class="tp-team-social-info">
-                              <!-- Include your SocailLinks component here -->
-                              <!-- You can use v-if to conditionally render -->
-                              <SocailLinks v-if="isSocailLinksAvailable" />
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="#"><i class="fab fa-linkedin"></i></a>
-                            </div>
+                            
                           </div>
                           <div class="tp-team-wrapper-content d-flex justify-content-between">
                             <div class="tp-team-wrapper-content-text">
                               <h3 class="team-title"><router-link to="/team-details">{{ member.name }}</router-link></h3>
                               <p>{{ member.job_title }}</p>
                             </div>
-                            <div class="tp-team-wrapper-icon">
-                              <span class="tp-team-social">
-                                <!-- PlusCrosIicon component or its icon -->
-                                <PlusCrosIicon />
-                              </span>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
@@ -269,27 +257,13 @@ if (typeof window !== 'undefined') {
                         <div class="tp-team-wrapper p-relative mb-30">
                           <div class="tp-team-wrapper-thumb">
                             <img :src="member.img" :alt="member.name" class="img-fluid" />
-                            <div class="tp-team-social-info">
-                              <!-- Include your SocailLinks component here -->
-                              <!-- You can use v-if to conditionally render -->
-                              <SocailLinks v-if="isSocailLinksAvailable" />
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="#"><i class="fab fa-linkedin"></i></a>
-                              <a href="#"><i class="fab fa-youtube"></i></a>
-                            </div>
                           </div>
                           <div class="tp-team-wrapper-content d-flex justify-content-between">
                             <div class="tp-team-wrapper-content-text">
                               <h3 class="team-title"><router-link to="/team-details">{{ member.name }}</router-link></h3>
                               <p>{{ member.job_title }}</p>
                             </div>
-                            <div class="tp-team-wrapper-icon">
-                              <span class="tp-team-social">
-                                <!-- PlusCrosIicon component or its icon -->
-                                <PlusCrosIicon />
-                              </span>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>

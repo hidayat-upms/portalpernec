@@ -5,5 +5,5 @@ const getYear = date.getFullYear();
 </script>
 
 <template>
-  © Copyright <span>©{{ getYear }}</span> PERNEC. All Rights Reserved
+  © Copyright <span>©{{ getYear }}</span> Pernec Corporation Bhd. All Rights Reserved
 </template>

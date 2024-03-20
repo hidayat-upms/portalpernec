@@ -21,6 +21,10 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import router from '@/routes';
 import App from "@/Pages/App.vue";
 
+import AOS from 'aos';
+import '@/assets/css/aos.css';
+
+
  
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 const app = createApp(App); 
@@ -33,12 +37,11 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue)
             .use(router)
+            .use(AOS)
             .mount(el)
     },
     progress: {
         color: '#4B5563',
     },
 });
-
-
 

@@ -16,6 +16,10 @@ const social_links = reactive([
     link: "https://www.linkedin.com",
     icon: "fab fa-linkedin-in",
   },
+  {
+    link: "https://www.youtube.com",
+    icon: "fa-brands fa-youtube",
+  },
 ])
 
 </script>

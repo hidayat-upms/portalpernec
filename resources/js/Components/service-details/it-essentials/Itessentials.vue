@@ -1,6 +1,4 @@
 <script setup>
-import AOS from 'aos';
-import '/Users/apple/portalpernec/resources/js/assets/css/aos.css'; 
 import { reactive,onMounted } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
 import itessentials from "@/assets/img/services/service-details/itessentials.jpg";
@@ -78,9 +76,6 @@ const business_data = reactive([
   }
 ])
 
-onMounted(() => {
-  AOS.init();
-});
 
 // video popup
 import VideoModal from "@/Components/common/VideoModal.vue";
@@ -119,12 +114,12 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         </div>
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
-            <div class="tp-service-details-thumb" data-aos="fade-left">
+            <div class="tp-service-details-thumb" >
               <img :src="itessentials" alt="image-title-here">
             </div>
             <h3 class="tp-service-details-title">{{ title }}</h3>
-            <p data-aos="fade-left">{{ description }}</p>
-                <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6" data-aos="flip-right">
+            <p>{{ description }}</p>
+                <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
                   <div class="tp-business-box mb-30">
                     <div class="tp-business-box-title d-flex align-items-center">
                       <span v-if="index === 0"> <img :src="item.img"> </span>
