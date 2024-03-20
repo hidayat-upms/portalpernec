@@ -30,6 +30,7 @@
         "wow.js": "^1.2.2"
     },
     "dependencies": {
-        "@vueuse/motion": "^2.1.0"
+        "@vueuse/motion": "^2.1.0",
+        "aos": "^2.3.4"
     }
 }
