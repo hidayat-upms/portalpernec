@@ -13,8 +13,9 @@ import  business_img_1 from "@/assets/img/business/img-1.jpg" ;
 import  business_img_2 from "@/assets/img/business/img-2.png" ;
 import  business_img_3 from "@/assets/img/business/img-3.png" ;
 import  PernecHQ from "@/assets/img/business/PernecHQ.png" ;
-import  BODPERNEC from "@/assets/img/business/BODPERNEC.png" ;
-
+import  PERNECALL from "@/assets/img/business/PERNECALL.png" ;
+import  ELEMENT from "@/assets/img/business/ELEMENT.png" ;
+import  pernecshape3 from "@/assets/img/business/pernecshape3.png" ;
 
 const business_content = reactive({
   title: "Company's Overview",
@@ -35,9 +36,9 @@ const business_data = reactive([
 <template>
    <section class="tp-business-area p-relative pt-110 pb-115">
       <div class="tp-business-shape">
-          <img class="shape-1 d-none d-lg-block" :src="business_shape_1" alt="business_shape_1">
+          <img class="shape-1 d-none d-lg-block" :src="ELEMENT" alt="ELEMENT">
           <img class="shape-2" :src="business_shape_2" alt="business_shape_2">
-          <img class="shape-3" :src="business_shape_3" alt="business_shape_3">
+          <img class="shape-3" :src="pernecshape3" alt="pernecshape3">
           <img class="shape-4" :src="business_shape_4" alt="business_shape_4">
       </div>
       <div class="container">
@@ -45,7 +46,7 @@ const business_data = reactive([
             <div class="col-lg-6">
                 <div class="tp-business-thumb-wrapper p-relative">
                   <div class="tp-business-thumb text-center">
-                      <img :src="business_img_1" alt="business_img_1">
+                      <img :src="PERNECALL" alt="PERNECALL">
                   </div>
                   <div class="circle-animation business-4">
                       <span class="tp-circle-1"></span>
@@ -57,7 +58,7 @@ const business_data = reactive([
                       <span class="tp-circle-3"></span>
                   </div>
                   <div class="tp-business-thumb-shape">
-                      <img class="shape-1" :src="business_img_2" alt="business_img_2">
+                      <img class="shape-1" :src="PernecHQ" alt="PernecHQ">
                       <img class="shape-2" :src="business_img_3" alt="business_img_3">
                   </div>
                 </div>

@@ -2,6 +2,7 @@
 <script setup>
 
 import bgb from  "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg"
+import bgb2 from  "@/assets/img/breadcrumb/breadcrumb-bg-2.gif"
 import titleimg from "@/assets/img/breadcrumb/titile.svg"
 
 // const breadcrumb_content = {
@@ -24,7 +25,7 @@ defineProps({
 
 <template>
   <section class="breadcrumb__area breadcrumb-style pt-190 pb-210 p-relative z-index-1"
-    :style="{ 'background-image': 'url(' + bgb + ')' }">
+    :style="{ 'background-image': 'url(' + bgb2 + ')' }">
     <div class="breadcrumb__bg-overlay m-img"></div>
     <div class="container">
       <div class="row justify-content-center">
