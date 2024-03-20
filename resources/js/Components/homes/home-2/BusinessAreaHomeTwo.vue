@@ -15,7 +15,7 @@ import  business_img_3 from "@/assets/img/business/img-3.png" ;
 import  PernecHQ from "@/assets/img/business/PernecHQ.png" ;
 import  PERNECALL from "@/assets/img/business/PERNECALL.png" ;
 import  ELEMENT from "@/assets/img/business/ELEMENT.png" ;
-
+import  pernecshape3 from "@/assets/img/business/pernecshape3.png" ;
 
 const business_content = reactive({
   title: "Company's Overview",
@@ -38,7 +38,7 @@ const business_data = reactive([
       <div class="tp-business-shape">
           <img class="shape-1 d-none d-lg-block" :src="ELEMENT" alt="ELEMENT">
           <img class="shape-2" :src="business_shape_2" alt="business_shape_2">
-          <img class="shape-3" :src="business_shape_3" alt="business_shape_3">
+          <img class="shape-3" :src="pernecshape3" alt="pernecshape3">
           <img class="shape-4" :src="business_shape_4" alt="business_shape_4">
       </div>
       <div class="container">
