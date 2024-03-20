@@ -5,6 +5,7 @@ import about_shape from "@/assets/img/business/shape-5.png";
 
 // about img import here
 import about_img_1 from "@/assets/img/about/about-1.png";
+import about_img_2 from "@/assets/img/about/about-2.png";
 
 const date = new Date();
 const fullYear = date.getFullYear();
@@ -24,7 +25,7 @@ const today = date.getDate();
       <div class="row">
         <div class="col-lg-6">
           <div class="tp-about-breadcrumb-img p-relative text-center fadeLeft">
-            <img :src="about_img_1" alt="image-title-here" />
+            <img :src="about_img_2" alt="image-title-here" />
           </div>
         </div>
         <div class="col-lg-6">

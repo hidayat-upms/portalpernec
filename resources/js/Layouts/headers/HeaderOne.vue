@@ -2,7 +2,7 @@
 import { ref, provide } from "vue";
 import NavMenu from "./NavMenu.vue";
 import HomeIcon from "@/svg/HomeIcon.vue";
-import header_logo from "@/assets/img/logo/logo.png";
+import header_logo from "@/assets/img/logo/logo2.png";
 import SearchPopup from "@/Components/common/SearchPopup.vue";
 import Sidebar from "@/Components/common/Sidebar.vue";
 import HamburgerButton from "@/svg/HamburgerButton.vue";
