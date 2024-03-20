@@ -14,45 +14,45 @@ if (typeof window !== 'undefined') {
 const service_details_content = {
   service_details_tab: reactive([
     {
-      service: "IT Essentials",
-      link: "/it-essentials"
+    service: "IT Essentials",
+    link:"/it-essentials"
     },
     {
-      service: "IT Productivity Suites",
-      link: "/about"
+    service: "IT Productivity Suites",
+    link:"/ict-productivity-suites"
     },
     {
-      service: "Digital Transformation & Enabler",
-      link: "/about"
+    service: "Digital Transformation & Enabler",
+    link:"/digital-transformation-enabler"
     },
     {
-      service: "Cyber Security Solution",
-      link: "/cyber-security"
+    service: "Cyber Security Solution",
+    link:"/cyber-security"
     },
     {
-      service: "Telecommunication Solutions",
-      link: "/telecommunication"
+    service: "Telecommunication Solutions",
+    link:"/telecommunication"
     },
     {
-      service: "Power & Utilities",
-      link: "/about"
+    service: "Power & Utilities",
+    link:"/power-and-utilities"
     },
     {
-      service: "Public Safety",
-      link: "/about"
+    service: "Public Safety",
+    link:"/public-safety"
     },
     {
-      service: "Defence Tactical Solutions",
-      link: "/about"
+    service: "Defence Tactical Solutions",
+    link:"/defence-tactical-solutions"
     },
     {
-      service: "Deployment Operation Services",
-      link: "/about"
+    service: "Deployment Operation Services",
+    link:"/deployment-operation-services"
     }
   ]),
-  title: "IT Essentials",
-  description: "In today's dynamic digital landscape, your business's success heavily relies on the robustness of its IT infrastructure. A resilient and forward-thinking infrastructure not only facilitates rapid adaptation to change but also drives innovation and supports the integration of new business models.With over two decades of experience in ICT System Integration, we collaborate closely with you to deploy a customized IT infrastructure tailored to your specific needs. Specializing in the development of cloud-ready infrastructures, our team ensures seamless alignment with your growth objectives.",
-  description_2: "Our ICT Essentials comprise comprehensive offerings tailored to meet your business needs. This includes Server and Storage Solutions, encompassing server, storage, database, and endpoint devices, as well as Networking services, which deliver wired and wireless network solutions alongside structured cabling services",
+  title: "Cyber Security Solutions",
+  description: "Amidst today's constantly evolving business landscape, the expansion of your ecosystem, be it through legacy on-premise systems or cloud infrastructure, exposes your business to heightened risks of cyber threats. PERNEC fully acknowledges the critical importance of shielding your business from these potential dangers. Our comprehensive portfolio is designed to bolster your resilience against cyber threats. From security health-checks to robust IT security systems, we offer a range of solutions tailored to your specific needs. Our in-house endpoint application control ensures that your business users can operate with confidence and safety, knowing that their digital environment is protected",
+  description_2: "At PERNEC, we deliver security solutions that work. With our in-house product development, along with a curated selection of security products and services, we provide the peace of mind that comes from knowing your business is fortified against cyber threats. Trust us to safeguard your digital assets and keep your operations secure.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 

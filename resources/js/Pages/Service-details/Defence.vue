@@ -1,12 +1,10 @@
-
-
 <script setup>
-import PortfolioDetails from "../Components/portfolio-details/index.vue";
 import ScrollToTop from "@/Components/common/ScrollToTop.vue";
+import Indexdefence from "@/Components/service-details/defence/Indexdefence.vue";
 </script>
 
 <template>
-  <PortfolioDetails />
+  <Indexdefence />
   <ScrollToTop />
 </template>
 

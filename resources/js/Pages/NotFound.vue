@@ -3,7 +3,7 @@
 import error_shape from "@/assets/img/error/error-shape.png";
 import error_img from "@/assets/img/error/404.png";
 import CommonFooter from "../Layouts/footers/CommonFooter.vue";
-import ScrollToTop from "../Components/common/ScrollToTop.vue";
+import ScrollToTop from "@/Components/common/ScrollToTop.vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 </script>
 

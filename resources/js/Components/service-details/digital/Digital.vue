@@ -1,10 +1,10 @@
 <script setup>
 import { reactive } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
-import telco from "@/assets/img/services/service-details/telco.jpg";
+import cybersecurity2 from "@/assets/img/services/service-details/cybersecurity2.jpg";
 import RightSymble from "@/svg/RightSymble.vue";
-import connection from "@/assets/img/services/service-details/connection.png"
-import system from "@/assets/img/services/service-details/system.png"
+import Cyseca2 from "@/assets/img/services/service-details/Cyseca2.png"
+import securityservice from "@/assets/img/services/service-details/securityservice.png"
 
 
 if (typeof window !== 'undefined') {
@@ -58,20 +58,25 @@ const { service_details_tab, title, description, description_2 } = service_detai
 
 const business_data = reactive([
   {
-    id: 1, img: connection, title: "Core & Access Network", sm_des: [
-      "Network Management System",
-      "Fiber Optics",
-      "Endpoint Public Switched Telephone Network (PSTN)",
-      "Multi Service Access Node (MSAN)",
-      "Residential Gateway",
-      "Wi-Fi"
+    id: 1, img: Cyseca2, title: "Security Products Product", sm_des: [
+      "CYSECA Application Whitelist",
+      "Next Generation Anti-Virus",
+      "Endpoint Detection & Response (EDR)",
+      "Next Generation Firewall",
+      "Web Application Firewall",
+      "Email Security",
+      "Network Access Control & SIEM"
     ]
   },
   {
-    id: 2, img: system, title: "Telco Systems & Application", sm_des: [
-      "Business Support System (BSS)",
-      "Operational Support System (OSS)",
-      "Service Performance Assurance Network Management System",
+    id: 2, img: securityservice, title: "Security Services", sm_des: [
+      "Managed Security Services (MSS)",
+      "Security Operation Center (SOC)",
+      "Security Posture Assessment (SPA)",
+      "Cyber Threat Forensics",
+      "Penetration Testing",
+      "Security Training ",
+      "Awareness"
     ]
   }
 ])
@@ -93,8 +98,8 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             <div class="tp-service-widget-item mb-40">
               <div class="tp-service-widget-tab">
                 <ul>
-                  <li v-for="(item, i) in service_details_tab" :key="i">
-                    <router-link :class="i === 4 ? 'active' : ''" :to="item.link">
+                  <li v-for="(item, i) in service_details_tab" :key="i" v-motion-slide-visible-left>
+                    <router-link :class="i === 2 ? 'active' : ''" :to="item.link">
                       {{ item.service }}
                       <i class="fa-regular fa-arrow-right-long"></i></router-link>
                   </li>
@@ -103,7 +108,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             </div>
             <div class="tp-service-widget-item mb-40">
               <div class="tp-service-contact">
-                <div class="tp-service-contact-form">
+                <div class="tp-service-contact-form" v-motion-slide-visible-left>
                   <ContactFormServiceDetails />
                   <p class="ajax-response"></p>
                 </div>
@@ -114,13 +119,13 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="telco" alt="image-title-here">
+              <img :src="cybersecurity2" alt="image-title-here" v-motion-pop-visible>
             </div>
-            <h3 class="tp-service-details-title">{{ title }}</h3>
-            <p class="desc">{{ description }}</p>
-            <p class="desc"> {{ description_2 }}</p>
+            <h3 class="tp-service-details-title" v-motion-slide-visible-left>{{ title }}</h3>
+            <p class="desc" v-motion-slide-visible-right>{{ description }}</p>
+            <p class="desc" v-motion-slide-visible-left> {{ description_2 }}</p>
             <div class="row">
-              <div v-for="(item, index) in business_data" :key="index" class="col-lg-9 col-md-6">
+              <div v-for="(item, index) in business_data" :key="index" class="col-lg-6 col-md-6" v-motion-slide-visible-left>
                 <div class="tp-business-box mb-30">
                   <div class="tp-business-box-title d-flex align-items-center">
                     <span v-if="index === 0"> <img :src="item.img"> </span>

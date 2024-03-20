@@ -19,11 +19,11 @@ const service_details_content = {
     },
     {
     service: "IT Productivity Suites",
-    link:"/about"
+    link:"/ict-productivity-suites"
     },
     {
     service: "Digital Transformation & Enabler",
-    link:"/about"
+    link:"/digital-transformation-enabler"
     },
     {
     service: "Cyber Security Solution",
@@ -35,19 +35,19 @@ const service_details_content = {
     },
     {
     service: "Power & Utilities",
-    link:"/about"
+    link:"/power-and-utilities"
     },
     {
     service: "Public Safety",
-    link:"/about"
+    link:"/public-safety"
     },
     {
     service: "Defence Tactical Solutions",
-    link:"/about"
+    link:"/defence-tactical-solutions"
     },
     {
     service: "Deployment Operation Services",
-    link:"/about"
+    link:"/deployment-operation-services"
     }
   ]),
   title: "Cyber Security Solutions",

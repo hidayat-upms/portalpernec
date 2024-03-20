@@ -7,16 +7,15 @@ import TitleUnderIcon from "../../../svg/TitleUnderIcon.vue";
 import shape_1 from "@/assets/img/offering/shape.png";
 import shape_2 from "@/assets/img/offering/shape-2.png";
 import bg_img from "@/assets/img/offering/bg.png";
-
-import offering_img_1 from "@/assets/img/offering/img-1.svg";
+import telco from "@/assets/img/services/home-3/telco.png";
+import essentials3 from "@/assets/img/offering/essentials3.png";
 import cyseca from "@/assets/img/offering/cyseca.png";
-import telecom from "@/assets/img/offering/telecom.png";
 import moreservice from "@/assets/img/offering/moreservice.png";
 
 const offering_data = reactive([
     {
         id: 1,
-        img: offering_img_1,
+        img: essentials3,
         title: "ICT<br /> Essentials",
         link: "it-essentials" 
     },
@@ -28,7 +27,7 @@ const offering_data = reactive([
     },
     {
         id: 3,
-        img: telecom,
+        img: telco,
         title: "Telecommunication <br /> Solutions",
         link: "telecommunication"
     },

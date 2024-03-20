@@ -1,67 +1,88 @@
-<script setup> 
+<script setup>
 import { reactive } from "vue";
-import service_icon_1 from "@/assets/img/services/home-3/icon-1.png";
-import service_icon_2 from "@/assets/img/services/home-3/icon-2.png";
-import service_icon_3 from "@/assets/img/services/home-3/icon-3.png";
-import service_icon_4 from "@/assets/img/services/home-3/icon-4.png";
+import telco from "@/assets/img/services/home-3/telco.png";
+import essentials from "@/assets/img/services/home-3/essentials.png";
+import productivity from "@/assets/img/services/home-3/productivity.png";
+import enabler from "@/assets/img/services/home-3/enabler.png";
+import cyseca from "@/assets/img/offering/cyseca.png";
+import publicsafety from "@/assets/img/services/home-3/public-safety.png";
+import power from "@/assets/img/services/home-3/power.png";
+import defence from "@/assets/img/services/home-3/defence.png";
+import deployment2 from "@/assets/img/services/home-3/deployment2.png";
+import staytuned from "@/assets/img/services/home-3/staytuned.png";
+
 
 const our_service_data = reactive([
-    {
-        id: 1, 
-        icon: service_icon_1,
-        title: "IT Essentials",
-        description: "Transmax is the world tr we uphold industry Customer Oriented ",
-        link:'/it-essentials'
-    },
-    {
-        id: 2, 
-        icon: service_icon_2,
-        title: "Machine Learning <br /> And Ai",
-        description: "We uphold industry Customer Oriented Transmax is the world tr ",
-        link:'/it-essentials'
-    },
-    {
-        id: 3, 
-        icon: service_icon_3,
-        title: "It Server & <br /> Cyber Security",
-        description: "World tr we uphold industry Transmax is the Customer Oriented ",
-        link:'/it-essentials'
-    },
-    {
-        id: 4, 
-        icon: service_icon_4,
-        title: "Clouds Backup <br /> Services",
-        description: "Industry Customer Oriented  Transmax is the world tr we uphold ",
-        link:'/it-essentials'
-    },    
-    {
-        id: 5, 
-        icon: service_icon_3,
-        title: "It Server & <br /> Cyber Security",
-        description: "Customer Oriented Transmax is the world tr we uphold industry ",
-        link:'/it-essentials'
-    },
-    {
-        id: 6, 
-        icon: service_icon_4,
-        title: "Clouds Backup <br /> Services",
-        description: "Uphold industry Customer Transmax is the world tr we Oriented ",
-        link:'/it-essentials'
-    },
-    {
-        id: 7, 
-        icon: service_icon_1,
-        title: "It Server & <br /> Cyber Security",
-        description: "industry Customer Oriented Transmax is the world tr we uphold ",
-        link:'/it-essentials'
-    },
-    {
-        id: 8, 
-        icon: service_icon_2,
-        title: "Machine Learning <br /> And Ai",
-        description: "Oriented we uphold industry Customer  Transmax is the world tr ",
-        link:'/it-essentials'
-    },
+  {
+    id: 1,
+    icon: essentials,
+    title: "IT </br> Essentials",
+    description: "Explore our IT Essentials service for streamlined business solutions",
+    link: '/it-essentials'
+  },
+  {
+    id: 2,
+    icon: productivity,
+    title: "ICT Productivity </br> Suites",
+    description: "Boost your business productivity with our advanced ICT solutions",
+    link: '/ict-productivity-suites'
+  },
+  {
+    id: 3,
+    icon: enabler,
+    title: "Digital Trasnsformation Enabler",
+    description: "Empower your digital transformation with our specialized services",
+    link: '/digital-transformation-enabler'
+  },
+  {
+    id: 4,
+    icon: cyseca,
+    title: "Cyber Security Solution",
+    description: "Secure your business with our Cyber Security Solutions",
+    link: '/cyber-security'
+  },
+  {
+    id: 5,
+    icon: telco,
+    title: "Telecommunication",
+    description: "Pernec provides Telco solutions, spanning infrastructure and Telco 2.0",
+    link: '/telecommunication'
+  },
+  {
+    id: 6,
+    icon: publicsafety,
+    title: "Public Safety",
+    description: "Pernec innovates public safety: CCTV, analytics, biometrics for 20 years",
+    link: '/public-safety'
+  },
+  {
+    id: 7,
+    icon: power,
+    title: "Power & </br> Utilities",
+    description: "Empower utilities' digital growth with Renewable Energy, Smart Meters, and Infra Systems",
+    link: '/power-and-utilities'
+  },
+  {
+    id: 8,
+    icon: defence,
+    title: "Defence Tactical </br> Solutions",
+    description: 'Provide "military-grade" defense solutions with ICT expertise: Infrastructure, Systems, Gadgets',
+    link: '/defence-tactical-solutions'
+  },
+  {
+    id: 9,
+    icon: deployment2,
+    title: "Deployment Operation Services",
+    description: "Deliver end-to-end ICT solutions with certified experts, partners, and specialized resources",
+    link: '/deployment-operation-services'
+  },
+  {
+    id: 10,
+    icon: staytuned,
+    title: "Stay Tuned for More Offerings",
+    description: "Stay tuned for exciting updates and upcoming offerings",
+    link: '/service'
+  },
 
 ])
 
@@ -87,14 +108,14 @@ const our_service_data = reactive([
         </div>
         <div class="col-lg-6">
           <div class="tp-service-breadcrumb-title-wrapper justify-content-start justify-content-xl-end d-flex">
-            <p>As the complexity of buildings to increase, the field of architecture <br>
-              became multi-disciplinary with technological expertise.</p>
+            <p>As building complexity rises, the architecture
+              landscape diversifies with technological prowess.</p>
           </div>
         </div>
       </div>
       <div class="row">
 
-        <div v-for="(item, i) in our_service_data" :key="i" class="col-xl-3 col-lg-4 col-md-6">
+        <div v-for="(item, i) in our_service_data" :key="i" class="col-xl-4 col-lg-3 col-md-6">
           <div class="tp-service-3-content breadcrumb-item mb-30">
             <div class="tp-service-3-content-thumb">
               <img :src="item.icon" alt="image-title-here">
@@ -110,6 +131,6 @@ const our_service_data = reactive([
         </div>
 
       </div>
-  </div>
-</section></template>
-
+    </div>
+  </section>
+</template>
