@@ -17,11 +17,10 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
   <main>
     <Breadcrumb title="Our Service"  page_title="Service" />
     <ServiceArea />
-    <VideoArea /> 
-    <IndustryArea />
-    <ServiceBrand />
+
+ 
+
     <ServiceBlogArea />
-    <FooterContact />
   </main>
   <CommonFooter />
 </template>

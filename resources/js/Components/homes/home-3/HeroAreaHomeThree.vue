@@ -21,7 +21,7 @@ const hero_slider = reactive([
         title: "Trusted it &",
         title_color: "Managed",
         title_2: "Service Solutions",
-        bottom_title: "Services",        
+        bottom_title: "PERNEC",        
     },
     {
         id: 2,

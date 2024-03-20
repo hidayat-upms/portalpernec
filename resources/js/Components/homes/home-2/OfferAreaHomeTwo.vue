@@ -9,71 +9,45 @@ import shape_2 from "@/assets/img/offering/shape-2.png";
 import bg_img from "@/assets/img/offering/bg.png";
 
 import offering_img_1 from "@/assets/img/offering/img-1.svg";
-import offering_img_2 from "@/assets/img/offering/img-2.svg";
-import offering_img_3 from "@/assets/img/offering/img-3.svg";
-import offering_img_4 from "@/assets/img/offering/img-4.svg";
 import cyseca from "@/assets/img/offering/cyseca.png";
 import telecom from "@/assets/img/offering/telecom.png";
-import power from "@/assets/img/offering/power.png";
-import publicsafety from "@/assets/img/offering/publicsafety.png";
-import deployment from "@/assets/img/offering/deployment.png";
+import moreservice from "@/assets/img/offering/moreservice.png";
 
 const offering_data = reactive([
     {
         id: 1,
         img: offering_img_1,
-        title: "ICT<br /> Essentials", 
+        title: "ICT<br /> Essentials",
+        link: "it-essentials" 
     },
     {
         id: 2,
-        img: offering_img_2,
-        title: "IT Productivity <br /> Suites", 
+        img: cyseca,
+        title: "Cyber Security <br /> Solution",
+        link: "cyber-security" 
     },
     {
         id: 3,
-        img: offering_img_3,
-        title: "Digital Transformation & <br /> Enabler", 
+        img: telecom,
+        title: "Telecommunication <br /> Solutions",
+        link: "telecommunication"
     },
     {
         id: 4,
-        img: cyseca,
-        title: "Cyber Security <br /> Solution", 
-    },
-    {
-        id: 5,
-        img: telecom,
-        title: "Telecommunication <br /> Solutions", 
-    },
-    {
-        id: 6,
-        img: power,
-        title: "Power &<br /> Utilities", 
-    },
-    {
-        id: 7,
-        img: publicsafety,
-        title: "Public<br /> Safety", 
-    },
-    {
-        id: 8,
-        img: offering_img_4,
-        title: "Defence Tactical <br /> Solutions", 
-    },
-    {
-        id: 9,
-        img: deployment,
-        title: "Deployment Operation <br /> Services", 
+        img: moreservice,
+        title: "Click Here to <br /> Explore More Services",
+        link: "service"
     },
 ])
   
 const offering_content = reactive({
   sub_title: 'feature <span class="title-pre-color">IT Services</span>',
-  title: "Integrate and Our Offerings",
+  title: "Thing that you might be interested",
   info: 'As building complexity rises, the architecture <br> landscape diversifies with technological prowess',
   info_2: 'Bring them together and you overcome the ordinary.',
 
 })
-const {sub_title, title, info, info_2} = offering_content
+const {sub_title, title, info, info_2, link} = offering_content
 
 </script>
 
@@ -91,7 +65,7 @@ const {sub_title, title, info, info_2} = offering_content
                   <span class="tp-section-title__pre"> <span v-html="sub_title"></span> 
                   <TitleUnderIcon />  
                   </span>
-                  <h3 class="tp-section-title">{{title }}
+                  <h3 class="tp-section-title">{{ title }}
                      <span class="title-left-shape">
                         <AboutLineIcon /> 
                      </span>
@@ -113,7 +87,7 @@ const {sub_title, title, info, info_2} = offering_content
                      <img :src="item.img" alt="image-title-here">
                   </div>
                   <div class="tp-offer-wrapper-btn">
-                     <router-link to="/service-details">Read Out More <i class="fa-solid fa-arrow-up-right"></i></router-link>
+                     <router-link :to="`/${item.link}`">Read Out More <i class="fa-solid fa-arrow-up-right"></i></router-link>
                   </div>
                </div>
             </div> 
