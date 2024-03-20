@@ -1,57 +1,57 @@
 <script setup>
-// import shape_img from "@/assets/img/blog/shaep-2.png"; 
+// import shape_img from "/assets/img/blog/shaep-2.png"; 
 // // about
-// import blog_img_4 from "@/assets/img/blog/img-7.jpg";
-// import blog_img_5 from "@/assets/img/blog/img-8.jpg";
-// import blog_img_6 from "@/assets/img/blog/img-9.jpg";
+// import blog_img_4 from "/assets/img/blog/img-7.jpg";
+// import blog_img_5 from "/assets/img/blog/img-8.jpg";
+// import blog_img_6 from "/assets/img/blog/img-9.jpg";
  
-// import blog_user from "@/assets/img/blog/user.png";
+// import blog_user from "/assets/img/blog/user.png";
 // import { inject } from "vue";
-// // blog data
-// const blog_data = [   
-//     // for about 
-//     {
-//         id: 4, 
-//         cls: "",
-//         img: blog_img_4,
-//         user: blog_user,
-//         user_name: "Jamil",
-//         category: "Business",
-//         date: "02 Apr 2023",
-//         comments: "Comments (03)",
-//         title: "Providing solutions for Industrial <br /> men, and restoration.",
-//     },
-//     {
-//         id: 5, 
-//         cls: "active",
-//         img: blog_img_5,
-//         user: blog_user,
-//         user_name: "Rasalina",
-//         category: "Business",
-//         date: "02 Apr 2023",
-//         comments: "Comments (23)",
-//         title: "Everything melancholy uncommonly but solicitude.",
-//     },
-//     {
-//         id: 6, 
-//         cls: "",
-//         img: blog_img_6,
-//         user: blog_user,
-//         user_name: "Pranta",
-//         category: "Business",
-//         date: "02 Apr 2023",
-//         comments: "Comments (15)",
-//         title: "Discovery incommode earnestly commanded mentions.",
-//     },    
-// ]
-// const propValue = inject('addClass');
-// const emit = defineEmits(["handleAddClass"]);
+// blog data
+const blog_data = [   
+    // for about 
+    {
+        id: 4, 
+        cls: "",
+        img: blog_img_4,
+        user: blog_user,
+        user_name: "Jamil",
+        category: "Business",
+        date: "02 Apr 2023",
+        comments: "Comments (03)",
+        title: "Providing solutions for Industrial <br /> men, and restoration.",
+    },
+    {
+        id: 5, 
+        cls: "active",
+        img: blog_img_5,
+        user: blog_user,
+        user_name: "Rasalina",
+        category: "Business",
+        date: "02 Apr 2023",
+        comments: "Comments (23)",
+        title: "Everything melancholy uncommonly but solicitude.",
+    },
+    {
+        id: 6, 
+        cls: "",
+        img: blog_img_6,
+        user: blog_user,
+        user_name: "Pranta",
+        category: "Business",
+        date: "02 Apr 2023",
+        comments: "Comments (15)",
+        title: "Discovery incommode earnestly commanded mentions.",
+    },    
+]
+const propValue = inject('addClass');
+const emit = defineEmits(["handleAddClass"]);
 
 </script>
 
 
 <template>
-   <!-- <section class="tp-blog-3-area p-relative fix" :class="propValue? 'pt-100 pb-90' : 'pt-120 pb-100'">
+   <section class="tp-blog-3-area p-relative fix" :class="propValue? 'pt-100 pb-90' : 'pt-120 pb-100'">
          <div class="tp-blog-3-shape">
             <img class="shape-1" :src="shape_img" alt="image-title-here">
             <img class="shape-2" :src="shape_img" alt="image-title-here">
@@ -107,7 +107,7 @@
 
             </div>
          </div>
-      </section> -->
+      </section>
 </template>
 
  

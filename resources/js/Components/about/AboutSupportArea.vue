@@ -1,84 +1,114 @@
-<script setup> 
-// import VideoModal from "../common/VideoModal.vue";
+<script setup>
+import { reactive, onMounted } from 'vue';
 
-// import AboutTitleUnderLineIcon from "@/svg/AboutTitleUnderLineIcon.vue";
-// import AboutLineIcon from "@/svg/AboutLineIcon.vue";
-// import RightSymble from "@/svg/RightSymble.vue";
+// Import images
+import p_img_1 from "@/assets/img/blog/img1.png"
+import p_img_2 from "@/assets/img/blog/img2.png"
+import p_img_3 from "@/assets/img/blog/img3.png"
+import p_img_4 from "@/assets/img/blog/img4.png"
+import bar from "@/assets/img/blog/img5.png"
+import AOS from 'aos';
+import '@/assets/css/aos.css';
 
-// import support_img_1 from "@/assets/img/about/home-3/img-1.jpg";
-// import support_img_2 from "@/assets/img/about/home-3/img-2.jpg";
-// import support_img_3 from "@/assets/img/about/home-3/img-3.jpg";
-// import support_shape from "@/assets/img/about/home-3/shape-1.png";
+const pernec = reactive([
+   {
+      id: 1,
+      img: p_img_1,
+      child: [
 
-// const support_contact = {
-//    sub_title_1: "We've been stay",
-//    sub_title_2: " 38 years",
-//    info: 'Our company provides a full range of services for the <br /> construction of private houses and cottages since 19',
-//    lists: [
-//       'series of manual and semi-manual activities.',
-//       'Construction is different from other industries.',
-//       'Construction is different from other industries.',
-//    ]   
-// }
-// const {sub_title_1, sub_title_2, info, lists} = support_contact
+         {
+            id: 2,
+            img: p_img_2,
+         },
 
- 
-// import {useVideoModal} from '@/composables/useVideoModal';
-// const {playVideo } = useVideoModal();
-// const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
+         {
+            id: 3,
+            img: p_img_3,
+         },
+         {
+            id: 4,
+            img: p_img_4,
+         },
 
- 
 
+
+      ]
+   }
+]);
+
+onMounted(() => {
+   AOS.init();
+});
 </script>
 
 <template>
-  <!-- <section class="tp-support-breadcrumb fix pt-120 pb-210">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6">
-                  <div class="tp-fun-fact-title-wrapper support-breadcrumb">
-                     <span class="tp-section-title__pre">
-                        service <span class="title-pre-color">IT Solutions</span>
-                        <AboutTitleUnderLineIcon />  
-                     </span>
-                     <h3 class="tp-section-title">{{ sub_title_1 }} <span class="title-color">{{ sub_title_2 }}</span>
-                        <span class="title-left-shape">
-                          <AboutLineIcon /> 
-                        </span>
-                     </h3>
-                     <p v-html="info"></p>
-                     <ul class="mb-65">
-                        <li v-for="(item, i) in lists" :key="i">
-                          <span>
-                          <RightSymble /></span>{{ item }}
-                        </li> 
-                     </ul>
-                     <div class="tp-support-breadcrumb-btn mb-30">
-                        <router-link class="tp-btn" to="/service-details">Tell us How Can We Help</router-link>
+   <div class="org-chart">
+      <template v-for="person in pernec" :key="person.id">
+         <div class="person">
+            <img :src="person.img" alt="Person Image" data-aos="flip-left" />
+
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+               <br>
+               <img :src="bar" alt="Bar Image" />
+            </div>
+            <div v-if="person.child && person.child.length" class="children">
+               <template v-for="child in person.child" :key="child.id">
+                  <div class="child" data-aos="zoom-in" data-aos-delay="500">
+                     <div class="child">
+                        <img :src="child.img" alt="Child Image" />
                      </div>
                   </div>
-               </div>
-               <div class="col-lg-6">
-                  <div class="tp-about-3-img p-relative fadeRight">
-                     <img :src="support_img_1" alt="image">
-                     <img class="shape-1" :src="support_img_2" alt="image">
-                     <div class="shape-2 p-relative">
-                        <img :src="support_img_3" alt="image">
-                        <div class="tp-video-play">
-                           <a class="popup-video"
-                           @click.prevent="playVideo(videoUrl)"
-                            ><i class="fa-sharp fa-solid fa-play"></i></a>
-                        </div>
-                     </div>
-                     <img class="shape-3" :src="support_shape" alt="image-title-here">
-                  </div>
-               </div>
+               </template>
             </div>
          </div>
-      </section> -->
-
-        <!-- video modal start -->
-        <!-- <video-modal ref="video_modal" :video-url="videoUrl" /> -->
-        <!-- video modal end -->
+      </template>
+   </div>
 </template>
 
+<style scoped>
+.org-chart {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.person {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+}
+
+.person p {
+   margin: 0;
+   text-align: center;
+}
+
+.children {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.child {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+}
+
+
+.grandchildren {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.grandchild {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+}
+</style>

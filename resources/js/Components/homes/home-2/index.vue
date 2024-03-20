@@ -5,7 +5,7 @@ import CtaAreaHomeTwo from "./CtaAreaHomeTwo.vue";
 import BlogAreaHomeTwo from "./BlogAreaHomeTwo.vue";
 import HeroAreaHomeThree from "@/Components/homes/home-3/HeroAreaHomeThree.vue";
 import OfferAreaHomeTwo from "./OfferAreaHomeTwo.vue";
-import FooterTwo from "@/Layouts/footers/FooterTwo.vue";
+import CommonFooter from "@/Layouts/footers/CommonFooter.vue"; 
 import BusinessAreaHomeTwo from "./BusinessAreaHomeTwo.vue";
 import TestimonialAreaHomeTwo from "./TestimonialAreaHomeTwo.vue";
 import { provide, ref } from "vue";
@@ -29,7 +29,7 @@ provide('addClass', addClass)
     <TestimonialAreaHomeTwo />
     <BrandHomeTwo />
   </main>
-  <FooterTwo />
+  <CommonFooter />
 </template>
  
  
