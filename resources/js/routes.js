@@ -50,7 +50,6 @@ import ms10 from '@/Pages/Teams-details/ms10.vue';
 import ms11 from '@/Pages/Teams-details/ms11.vue';
 import ms12 from '@/Pages/Teams-details/ms12.vue';
 import ms13 from '@/Pages/Teams-details/ms13.vue';
-import '@/assets/css/transitions.css';
 
 const router = createRouter({ 
   history: createWebHistory(),
