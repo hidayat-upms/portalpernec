@@ -8,7 +8,7 @@ import {Navigation, Autoplay} from "swiper/modules";
 import blog_slide_img_1 from "@/assets/img/blog/img-6.png";
 import antibribery from "@/assets/img/blog/antibribery.png";
 import blog_img_3 from "@/assets/img/blog/img-5.png";
-import shape_1 from "@/assets/img/blog/shape-1.png";
+import test from "@/assets/img/blog/test.png";
 
 
 const blog_data = reactive([ 
@@ -39,7 +39,7 @@ const blog_data = reactive([
   <section class="tp-blog-2-area p-relative pt-120">
     <div class="tp-blog-2-shape">
         <div class="shape-1">
-          <img :src="shape_1" alt="image-title-here">
+          <img :src="test" alt="image-title-here">
         </div>
     </div>
     <div class="container">
