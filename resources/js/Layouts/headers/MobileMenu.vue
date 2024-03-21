@@ -6,15 +6,10 @@ const menu_data = reactive([
   {
     id: 1,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Home",
     link: "/",
     active: "",
-    sub_menus: [
-      { link: "/", title: "Home 1" },
-      { link: "/home-2", title: "Home 2" },
-      { link: "/home-3", title: "Home 3" },
-    ],
   },
   {
     id: 2,
@@ -48,20 +43,6 @@ const menu_data = reactive([
       { link: "/portfolio-details", title: "Portfolio Details" },
       { link: "/team", title: "Team" },
       { link: "/team-details", title: "Team Details" },
-      { link: "/404", title: "404" },
-    ],
-  },
-
-  {
-    id: 5,
-    mega_menu: false,
-    has_dropdown: true,
-    title: "Blog",
-    link: "/blog",
-    active: "",
-    sub_menus: [
-      { link: "/blog", title: "Blog" },
-      { link: "/blog-details", title: "Blog Details" },
     ],
   },
   {
