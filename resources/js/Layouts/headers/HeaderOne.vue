@@ -51,7 +51,7 @@ const toggleActive = () => {
 
 <template>
 	<header class="tp-header-area tp-header-height p-relative">
-		<div class="tp-header-top tp-header-space d-none d-xl-block">
+		<!-- <div class="tp-header-top tp-header-space d-none d-xl-block">
 			<div class="container-fluid">
 				<div class="row align-items-center">
 					<div class="col-xxl-6 col-xl-8">
@@ -96,7 +96,7 @@ const toggleActive = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div id="header-sticky" class="tp-header-bottom header__sticky p-relative" :class="isSticky ?  'tp-header-sticky' : ''" >
 			<div class="tp-header-bottom-space p-relative">
 				<div class="container-fluid gx-0">

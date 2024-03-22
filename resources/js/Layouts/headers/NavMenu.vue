@@ -32,17 +32,10 @@ const menu_data = reactive([
   {
     id: 4,
     mega_menu: false,
-    has_dropdown: true,
-    title: "Pages",
-    link: "/about",
+    has_dropdown: false,
+    title: "Team",
+    link: "/team",
     active: "",
-    sub_menus: [
-      { link: "/portfolio", title: "Portfolio" },
-      { link: "/portfolio-details", title: "Portfolio Details" },
-      { link: "/team", title: "Team" },
-      { link: "/team-details", title: "Team Details" },
-      { link: "/404", title: "404" },
-    ],
   },
   {
     id: 5,

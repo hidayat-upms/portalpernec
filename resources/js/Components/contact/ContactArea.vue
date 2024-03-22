@@ -7,25 +7,20 @@ import PhoneContactIcon from "../../svg/PhoneContactIcon.vue";
 const contact_area_content = {
 	title: 'Contact <span class="title-color">With us</span>',
 	info: 'Email, call, or complete the form to learn how Kion can <br> solve your cloud management and governance cha.',
-	email: 'marketing@pernec.com.my',
-	phone: '+1 9266688000',
-	office_data: [
-		{
+	email_pernec: 'marketing@pernec.com.my',
+	email_cyseca: 'marketing@cyseca.com.my',
+	phone_tel: '603-42596000',
+	phone_fax: '603-42596080',
+	office_data: {
 			id: 1, 
 			title: 'Office Location',
-			location: '4517 Washington Ave. Manch ester, Kentucky 39495',
+			location: 'No. 21, Jalan Setiawangsa 8, Taman Setiawangsa, 54200, Kuala Lumpur',
 		},
-		{
-			id: 2, 
-			title: 'Office Location',
-			location: '4520 Washington Ave. Manch ester, Kentucky 39420',
-		},
-	], 
 	contact_title: 'Contact Us',
 	contact_info: 'Your email address will not be published. Required fields <br> are marked *',
 
 }
-const {title, info, email, phone, office_data, contact_title, contact_info} = contact_area_content
+const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_data, contact_title, contact_info} = contact_area_content
 
 
 
@@ -48,7 +43,7 @@ const {title, info, email, phone, office_data, contact_title, contact_info} = co
 										<EmailContactIcon /> 
 									</span>
 								</div>
-								<h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email">{{ email}}</router-link></h3>
+								<h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email_pernec">{{ email_pernec }}</router-link></h3>
 							</div>
 							<div class="tp-contact-content-phone d-flex align-items-center">
 								<div class="tp-contact-content-phone-icon">
@@ -56,13 +51,13 @@ const {title, info, email, phone, office_data, contact_title, contact_info} = co
 										<PhoneContactIcon />
 									</span>
 								</div>
-								<h3 class="tp-contact-item-title"><a href="'tel:' + phone">{{ phone }}</a></h3>
+								<h3 class="tp-contact-item-title"><a href="'Tel:' + phone_tel">Tel: {{ phone_tel }}</a></h3>
 							</div>
 							<div class="tp-contact-location-wrapper d-flex">
-								<div v-for="(item, i) in office_data" :key="i" class="tp-contact-location">
-									<h3 class="tp-contact-location-title">{{ item.title }} <i class="fa-regular fa-arrow-down"></i></h3>
-									<p>{{ item.location }}</p>
-								</div> 
+								<div class="tp-contact-location">
+									<h3 class="tp-contact-location-title">{{ office_data.title }} <i class="fa-regular fa-arrow-down"></i></h3>
+									<p>{{ office_data.location }}</p>
+								</div>
 							</div>
 						</div>
 					</div>
