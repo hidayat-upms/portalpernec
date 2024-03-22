@@ -7,18 +7,11 @@ import PhoneContactIcon from "../../svg/PhoneContactIcon.vue";
 const contact_area_content = {
 	title: 'Contact <span class="title-color">With us</span>',
 	info: 'Email, call, or complete the form to learn how Kion can <br> solve your cloud management and governance cha.',
-<<<<<<< HEAD
 	email_pernec: 'marketing@pernec.com.my',
 	email_cyseca: 'marketing@cyseca.com.my',
 	phone_tel: '603-42596000',
 	phone_fax: '603-42596080',
 	office_data: {
-=======
-	email: 'marketing@pernec.com.my',
-	phone: '+1 9266688000',
-	office_data: [
-		{
->>>>>>> 67c0387c1dbbd27b459ce1c003693fb18fc6e067
 			id: 1, 
 			title: 'Office Location',
 			location: 'No. 21, Jalan Setiawangsa 8, Taman Setiawangsa, 54200, Kuala Lumpur',
@@ -50,7 +43,7 @@ const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_dat
 										<EmailContactIcon /> 
 									</span>
 								</div>
-								<h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email">{{ email}}</router-link></h3>
+								<h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email_pernec">{{ email_pernec }}</router-link></h3>
 							</div>
 							<div class="tp-contact-content-phone d-flex align-items-center">
 								<div class="tp-contact-content-phone-icon">
@@ -59,14 +52,6 @@ const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_dat
 									</span>
 								</div>
 								<h3 class="tp-contact-item-title"><a href="'Tel:' + phone_tel">Tel: {{ phone_tel }}</a></h3>
-							</div>
-							<div class="tp-contact-content-phone d-flex align-items-center">
-								<div class="tp-contact-content-phone-icon">
-									<span>
-										<PhoneContactIcon />
-									</span>
-								</div>
-								<h3 class="tp-contact-item-title"><a href="'Fax:' + phone_fax">Fax: {{ phone_fax }}</a></h3>
 							</div>
 							<div class="tp-contact-location-wrapper d-flex">
 								<div class="tp-contact-location">
