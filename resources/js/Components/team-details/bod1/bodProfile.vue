@@ -66,16 +66,21 @@ const { name, job_title, member_info, description, list_title, lists } = team_de
               <ul>
                 <li v-for="(item, i) in lists" :key="i">
                   <span>
-                    <RightSymble /> 
+                    <RightSymble />
                   </span>{{ item }}
                 </li>
-              </ul> 
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <router-link to="/team" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back
+              </router-link>
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
-
-
