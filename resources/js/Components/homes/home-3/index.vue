@@ -27,6 +27,7 @@ const handleAddClass = (value = true) => {
 </script>
 
 <template>
+  <div class="wow bounceIn" data-wow-duration="2s">
   <HeaderThree />
   <main>
     <HeroAreaHomeThree />
@@ -43,6 +44,7 @@ const handleAddClass = (value = true) => {
     <FooterContact />
   </main>
   <CommonFooter />
+</div>
 </template>
 
 
