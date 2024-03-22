@@ -15,8 +15,8 @@ const contact_area_content = {
 			title: 'Office Location',
 			location: 'No. 21, Jalan Setiawangsa 8, Taman Setiawangsa, 54200, Kuala Lumpur',
 		},
-	contact_title: 'Contact Us',
-	contact_info: 'Your email address will not be published. Required fields <br> are marked *',
+	{contact_title: 'Contact Us'},
+	{contact_info: 'Your email address will not be published. Required fields <br> are marked *'},
 	]
 }
 const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_data, contact_title, contact_info} = contact_area_content
