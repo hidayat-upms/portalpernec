@@ -1,7 +1,7 @@
 
 <script setup>
 import { inject } from "vue";
-import HeaderLogo from "@/assets/img/logo/logo.png";
+import FooterLogo from "@/assets/img/logo/PernecLogo.gif";
 import MobileMenu from "@/Layouts/headers/MobileMenu.vue";
 
 const propValue = inject('sidebarOpen');
@@ -52,7 +52,7 @@ const propValue2 = inject('addClass');
         >
           <div class="offcanvas__logo logo">
             <router-link to="/" @click="handleClose(false)">
-              <img :src="HeaderLogo" alt="logo" />
+              <img :src="FooterLogo" alt="logo" />
             </router-link>
           </div>
         </div>
@@ -96,9 +96,8 @@ const propValue2 = inject('addClass');
               <i class="fa-sharp fa-solid fa-location-dot"></i>
             </div>
             <div class="offcanvas__contact-content-content">
-              <a
-                href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1"
-                >86 Road Broklyn Street, 600
+              <a>
+                <img src="@/assets/img/portfolio/qr.png" alt="qr address" />
               </a>
             </div>
           </div>
@@ -107,7 +106,7 @@ const propValue2 = inject('addClass');
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="offcanvas__contact-content-content">
-              <a href="mailto:needhelp@company.com"> Needhelp@company.com </a>
+              <a href="marketing@pernec.com.my"> marketing@pernec.com.my </a>
             </div>
           </div>
           <div class="offcanvas__contact-content d-flex">
@@ -115,17 +114,25 @@ const propValue2 = inject('addClass');
               <i class="fa-solid fa-phone"></i>
             </div>
             <div class="offcanvas__contact-content-content">
-              <a href="tel:01310-069824"> +92 666 888 0000</a>
+              <a href="tel:603 4259 6000"> 603 4259 6000</a>
             </div>
           </div>
+
+          <div class="offcanvas__contact-content d-flex">
+            <div class="offcanvas__contact-content-icon">
+              <i class="fa fa-fax"></i>
+            </div>
+            <div class="offcanvas__contact-content-content">
+              <a href="fax:603 4259 6080">603 4259 6080</a>
+            </div>
+          </div>
+
         </div>
         <div class="offcanvas__social">
-          <a class="icon facebook" href="#"
+          <a class="icon facebook" href="https://m.facebook.com/profile.php/?id=100057577714238"
             ><i class="fab fa-facebook-f"></i
           ></a>
-          <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
-          <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
-          <a class="icon linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+          <a class="icon linkedin" href="https://www.linkedin.com/company/pernec-corporation-berhad/"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>

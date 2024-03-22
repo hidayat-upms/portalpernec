@@ -4,6 +4,7 @@ import { provide, ref } from "vue";
 import NavMenu from "./NavMenu.vue";
 import PernecLogo from "@/assets/img/logo/PernecLogo.gif";
 import SearchIconHomeThree from "@/svg/SearchIconHomeThree.vue";
+import HamburgerButton from "@/svg/HamburgerButton.vue";
 
 import Sidebar from "../../Components/common/Sidebar.vue";
 import SearchPopup from "../../Components/common/SearchPopup.vue";
@@ -82,6 +83,19 @@ const toggleActiveCurrency = () => {
                           <a @click="setSearchOpen(true)" style="cursor: pointer"> 
                             <SearchIconHomeThree /> 
                             </a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2 col-6">
+                    <div class="tp-header-3-right">
+                        <div class="tp-header-3-main-right d-flex align-items-center justify-content-end">
+                          <div class="tp-header-3-hamburger-btn offcanvas-open-btn" @click="setSidebarOpen(true)">
+                              <button class="hamburger-btn" >
+                                <span>
+                                  <HamburgerButton />     
+                                </span>
+                              </button>
+                          </div>                                
                         </div>
                     </div>
                   </div>

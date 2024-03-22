@@ -34,7 +34,7 @@ const feature_data = reactive([
 </script>
 
 <template>
-  <section class="tp-feature-area feature-breadcrumb pb-100">
+  <section class="tp-feature-area feature-breadcrumb">
          <div class="tp-feature-shape">
             <img class="shape-1" :src="shape_1" alt="image-title-here">
          </div>
