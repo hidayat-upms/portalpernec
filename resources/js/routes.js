@@ -56,16 +56,18 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: HomeTwo
+      component: HomeTwo,
+      
     },
     {
       path: '/home',
       component: HomeTwo,
+      
     },
   
     {
       path: '/',
-      component: HomeTwo
+      component: HomeTwo,
     },
     {
       path: '/home-3',
@@ -273,6 +275,7 @@ const router = createRouter({
       component: NotFound
     },
   ]
+ 
 })
 
 // Global navigation guard

@@ -21,7 +21,6 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
     <Breadcrumb title="Company" page_title="Our Company"  />
     <AboutArea />
     <AboutFeatureArea />
-    <!-- <AboutPernec/> -->
     <AboutSupportArea/>
     <TestimonialText/>
     <TestimonialFeature/>
