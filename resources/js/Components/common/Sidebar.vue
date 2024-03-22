@@ -47,9 +47,7 @@ const propValue2 = inject('addClass');
         </button>
       </div>
       <div class="offcanvas__content">
-        <div
-          class="offcanvas__top mb-50 d-flex justify-content-between align-items-center"
-        >
+        <div class="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
           <div class="offcanvas__logo logo">
             <router-link to="/" @click="handleClose(false)">
               <img :src="FooterLogo" alt="logo" />
@@ -63,31 +61,7 @@ const propValue2 = inject('addClass');
           
         </div>
         <div class="offcanvas__popup">
-          <p>
-            Web designing in a powerful way of just not an only professions. We
-            have tendency to believe the idea that smart looking .
-          </p>
-          <div class="offcanvas__popup-gallery">
-            <h4 class="offcanvas__title">Gallery</h4>
-            <a class="popup-image" href="#">
-              <img src="@/assets/img/portfolio/img-1.jpg" alt="image-title-here" />
-            </a>
-            <a class="popup-image" href="#">
-              <img src="@/assets/img/portfolio/img-2.jpg" alt="image-title-here" />
-            </a>
-            <a class="popup-image" href="#">
-              <img src="@/assets/img/portfolio/img-3.jpg" alt="image-title-here" />
-            </a>
-            <a class="popup-image" href="#">
-              <img src="@/assets/img/portfolio/img-4.jpg" alt="image-title-here" />
-            </a>
-            <a class="popup-image" href="#">
-              <img src="@/assets/img/portfolio/img-5.jpg" alt="image-title-here" />
-            </a>
-            <a class="popup-image" href="#">
-              <img src="@/assets/img/portfolio/img-6.jpg" alt="image-title-here" />
-            </a>
-          </div>
+          
         </div>
         <div class="offcanvas__contact">
           <h4 class="offcanvas__title">Contacts</h4>
