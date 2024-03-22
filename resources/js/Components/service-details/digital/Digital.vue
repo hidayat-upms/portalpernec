@@ -1,10 +1,11 @@
 <script setup>
 import { reactive } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
-import cybersecurity2 from "@/assets/img/services/service-details/cybersecurity2.jpg";
+import transformation from "@/assets/img/services/service-details/transformation.jpg";
 import RightSymble from "@/svg/RightSymble.vue";
-import Cyseca2 from "@/assets/img/services/service-details/Cyseca2.png"
-import securityservice from "@/assets/img/services/service-details/securityservice.png"
+import cloud from "@/assets/img/services/service-details/cloud.png"
+import data from "@/assets/img/services/service-details/data.png"
+import vr from "@/assets/img/services/service-details/vr.png"
 
 
 if (typeof window !== 'undefined') {
@@ -50,33 +51,32 @@ const service_details_content = {
     link:"/deployment-operation-services"
     }
   ]),
-  title: "Cyber Security Solutions",
-  description: "Amidst today's constantly evolving business landscape, the expansion of your ecosystem, be it through legacy on-premise systems or cloud infrastructure, exposes your business to heightened risks of cyber threats. PERNEC fully acknowledges the critical importance of shielding your business from these potential dangers. Our comprehensive portfolio is designed to bolster your resilience against cyber threats. From security health-checks to robust IT security systems, we offer a range of solutions tailored to your specific needs. Our in-house endpoint application control ensures that your business users can operate with confidence and safety, knowing that their digital environment is protected",
-  description_2: "At PERNEC, we deliver security solutions that work. With our in-house product development, along with a curated selection of security products and services, we provide the peace of mind that comes from knowing your business is fortified against cyber threats. Trust us to safeguard your digital assets and keep your operations secure.",
+  title: "Digital Transformation Enabler",
+  description: "Elevate your business to new heights by embracing the latest technologies and innovative solutions to enhance business value and drive sustainable growth. In today's dynamic marketplace, staying ahead requires a proactive approach to digital transformation. While there's no universal solution for this journey, our team is dedicated to providing guidance and support every step of the way. We offer intelligent platforms to streamline operations, cutting-edge analytics tools to extract valuable insights from your business data, and user-centric experiences tailored to your unique needs.",
+  description_2: "Our comprehensive Digital Transformation Enabler encompasses a diverse range of services, including intelligent platforms, a robust data landscape, and user experience enhancements. With our expertise and personalized solutions, your business can stay agile and competitive in the rapidly evolving digital landscape. Let us partner with you to navigate the complexities of digital transformation and unlock new opportunities for sustainable growth and success.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 
 const business_data = reactive([
   {
-    id: 1, img: Cyseca2, title: "Security Products Product", sm_des: [
-      "CYSECA Application Whitelist",
-      "Next Generation Anti-Virus",
-      "Endpoint Detection & Response (EDR)",
-      "Next Generation Firewall",
-      "Web Application Firewall",
-      "Email Security",
-      "Network Access Control & SIEM"
+    id: 1, img: cloud, title: "Intelligent Platforms", sm_des: [
+      "Cloud Platforms",
+      "Virtualization",
+      "Software Defined Network"
     ]
   },
   {
-    id: 2, img: securityservice, title: "Security Services", sm_des: [
-      "Managed Security Services (MSS)",
-      "Security Operation Center (SOC)",
-      "Security Posture Assessment (SPA)",
-      "Cyber Threat Forensics",
-      "Penetration Testing",
-      "Security Training ",
-      "Awareness"
+    id: 2, img: data, title: "Data Landscape", sm_des: [
+      "Big Data",
+      "Data Analytics",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    id: 3, img: vr, title: "User Experience", sm_des: [
+      "Smart Glass",
+      "Virtual Reality",
+      "Augmented Reality"
     ]
   }
 ])
@@ -119,7 +119,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="cybersecurity2" alt="image-title-here" v-motion-pop-visible>
+              <img :src="transformation" alt="image-title-here" v-motion-pop-visible>
             </div>
             <h3 class="tp-service-details-title" v-motion-slide-visible-left>{{ title }}</h3>
             <p class="desc" v-motion-slide-visible-right>{{ description }}</p>
@@ -130,6 +130,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
                   <div class="tp-business-box-title d-flex align-items-center">
                     <span v-if="index === 0"> <img :src="item.img"> </span>
                     <span v-if="index === 1"> <img :src="item.img"> </span>
+                    <span v-if="index === 2"> <img :src="item.img"> </span>
                     <h4 class="tp-business-title">{{ item.title }}</h4>
                   </div>
                   <div class="tp-service-details-list">
@@ -152,9 +153,3 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
-
-<style>
-.desc{
-  text-align: justify;
-}
-</style>

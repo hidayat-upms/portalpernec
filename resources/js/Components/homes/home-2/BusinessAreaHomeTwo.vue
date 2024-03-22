@@ -80,9 +80,3 @@ const business_data = reactive([
       </div>
     </section>
 </template>
-
-<style>
-.desc{
-  text-align: justify;
-}
-</style>

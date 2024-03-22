@@ -10,9 +10,9 @@ import Tags from './Tags.vue';
 
 </script>
 <template>
-  <UserProfile />
-  <SearchArea />
-  <RecentPost />
+  <!-- <UserProfile />
+  <SearchArea /> -->
+  <!-- <RecentPost /> -->
   <Category />
-  <Tags />
+  <!-- <Tags /> -->
 </template>

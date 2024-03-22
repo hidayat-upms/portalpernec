@@ -50,9 +50,9 @@ const service_details_content = {
     link:"/deployment-operation-services"
     }
   ]),
-  title: "Cyber Security Solutions",
-  description: "Amidst today's constantly evolving business landscape, the expansion of your ecosystem, be it through legacy on-premise systems or cloud infrastructure, exposes your business to heightened risks of cyber threats. PERNEC fully acknowledges the critical importance of shielding your business from these potential dangers. Our comprehensive portfolio is designed to bolster your resilience against cyber threats. From security health-checks to robust IT security systems, we offer a range of solutions tailored to your specific needs. Our in-house endpoint application control ensures that your business users can operate with confidence and safety, knowing that their digital environment is protected",
-  description_2: "At PERNEC, we deliver security solutions that work. With our in-house product development, along with a curated selection of security products and services, we provide the peace of mind that comes from knowing your business is fortified against cyber threats. Trust us to safeguard your digital assets and keep your operations secure.",
+  title: "IT Essentials",
+  description: "In today’s fast-paced digital world, the performance of your business is intricately linked to the quality and efficiency of your IT infrastructure. A robust and adaptable infrastructure not only ensures swift adaptation to evolving technological landscapes but also serves as the cornerstone for innovation, enabling you to stay ahead of the competition, streamline operations, and explore new avenues for growth and expansion",
+  description_2: "With over two decades of expertise in ICT System Integration, we at PERNEC stand ready to collaborate with you in deploying a tailored IT infrastructure that aligns seamlessly with your business objectives. Whether you require server and storage solutions or networking services, our team of dedicated professionals will work closely with you to design and implement a cloud-ready infrastructure that not only meets your current needs but also lays a solid foundation for future growth and expansion. Trust PERNEC to be your partner in navigating the complexities of the digital age and unlocking the full potential of your business.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 
@@ -92,7 +92,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             <div class="tp-service-widget-item mb-40">
               <div class="tp-service-widget-tab">
                 <ul>
-                  <li v-for="(item, i) in service_details_tab" :key="i">
+                  <li v-for="(item, i) in service_details_tab" :key="i" v-motion-slide-visible-left>
                     <router-link :class="i === 0 ? 'active' : ''" :to="item.link">
                       {{ item.service }}
                       <i class="fa-regular fa-arrow-right-long"></i></router-link>
@@ -102,7 +102,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             </div>
             <div class="tp-service-widget-item mb-40">
               <div class="tp-service-contact">
-                <div class="tp-service-contact-form">
+                <div class="tp-service-contact-form" v-motion-slide-visible-left>
                   <ContactFormServiceDetails />
                   <p class="ajax-response"></p>
                 </div>
@@ -113,13 +113,13 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="itessentials" alt="image-title-here">
+              <img :src="itessentials" alt="image-title-here" v-motion-pop-visible>
             </div>
-            <h3 class="tp-service-details-title">{{ title }}</h3>
-            <p class="desc">{{ description }}</p>
-            <p class="desc">{{ description_2 }}</p>
+            <h3 class="tp-service-details-title" v-motion-slide-visible-left>{{ title }}</h3>
+            <p class="desc" v-motion-slide-visible-right>{{ description }}</p>
+            <p class="desc" v-motion-slide-visible-left>{{ description_2 }}</p>
             <div class="row">
-              <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6">
+              <div v-for="(item, index) in business_data" :key="index" class="col-lg-5 col-md-6" v-motion-slide-visible-left>
                 <div class="tp-business-box mb-30">
                   <div class="tp-business-box-title d-flex align-items-center">
                     <span v-if="index === 0"> <img :src="item.img"> </span>
@@ -146,9 +146,3 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
-
-<style>
-.desc {
-  text-align: justify;
-}
-</style>

@@ -1,10 +1,11 @@
 <script setup>
 import { reactive } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
-import cybersecurity2 from "@/assets/img/services/service-details/cybersecurity2.jpg";
+import operation from "@/assets/img/services/service-details/operation.jpg";
 import RightSymble from "@/svg/RightSymble.vue";
-import Cyseca2 from "@/assets/img/services/service-details/Cyseca2.png"
-import securityservice from "@/assets/img/services/service-details/securityservice.png"
+import consultancy from "@/assets/img/services/service-details/consultancy.png"
+import helpdesk from "@/assets/img/services/service-details/helpdesk.png"
+import deploy from "@/assets/img/services/service-details/deploy.png"
 
 
 if (typeof window !== 'undefined') {
@@ -50,33 +51,33 @@ const service_details_content = {
     link:"/deployment-operation-services"
     }
   ]),
-  title: "Cyber Security Solutions",
-  description: "Amidst today's constantly evolving business landscape, the expansion of your ecosystem, be it through legacy on-premise systems or cloud infrastructure, exposes your business to heightened risks of cyber threats. PERNEC fully acknowledges the critical importance of shielding your business from these potential dangers. Our comprehensive portfolio is designed to bolster your resilience against cyber threats. From security health-checks to robust IT security systems, we offer a range of solutions tailored to your specific needs. Our in-house endpoint application control ensures that your business users can operate with confidence and safety, knowing that their digital environment is protected",
-  description_2: "At PERNEC, we deliver security solutions that work. With our in-house product development, along with a curated selection of security products and services, we provide the peace of mind that comes from knowing your business is fortified against cyber threats. Trust us to safeguard your digital assets and keep your operations secure.",
+  title: "Deployment & Operation Services",
+  description: "Pernec prides itself on its robust team, which includes certified Project Managers, skilled IT engineers, proficient programmers, and accredited technical support professionals. Collaborating seamlessly with our network of specialized partners and sub-contractors, we offer an extensive range of ICT services tailored to meet your organization's needs at every stage of development. From the earliest phases of presales consultancy to the meticulous execution of projects and ongoing post-project support, we are dedicated to ensuring that your objectives are not only met but exceeded.",
+  description_2: "Our Deployment and Operation Services encompass a comprehensive suite of offerings, including consultancy, deployment, and operational assistance. Whether you require expert guidance to refine project concepts, meticulous deployment of technological solutions, or ongoing operational support to maintain optimal functionality, Pernec is committed to providing tailored solutions that drive your organization towards success. With our collaborative approach and unwavering commitment to excellence, we stand ready to partner with you on your journey towards achieving your ICT goals.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 
 const business_data = reactive([
   {
-    id: 1, img: Cyseca2, title: "Security Products Product", sm_des: [
-      "CYSECA Application Whitelist",
-      "Next Generation Anti-Virus",
-      "Endpoint Detection & Response (EDR)",
-      "Next Generation Firewall",
-      "Web Application Firewall",
-      "Email Security",
-      "Network Access Control & SIEM"
+    id: 1, img: consultancy, title: "Consultancy Services", sm_des: [
+      "ICT Consultancy",
+      "Network Design"
     ]
   },
   {
-    id: 2, img: securityservice, title: "Security Services", sm_des: [
-      "Managed Security Services (MSS)",
-      "Security Operation Center (SOC)",
-      "Security Posture Assessment (SPA)",
-      "Cyber Threat Forensics",
-      "Penetration Testing",
-      "Security Training ",
-      "Awareness"
+    id: 2, img: helpdesk, title: "Operation Services", sm_des: [
+      "Helpdesk & Support Maintenance",
+      "Managed Services"
+    ]
+  },
+  {
+    id: 3, img: deploy, title: "Deployment Services", sm_des: [
+      "Project Management",
+      "Site Acquisition",
+      "Install, Test, Commission",
+      "Integration, Migration",
+      "Change Management",
+      "Software Development"
     ]
   }
 ])
@@ -119,7 +120,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="cybersecurity2" alt="image-title-here" v-motion-pop-visible>
+              <img :src="operation" alt="image-title-here" v-motion-pop-visible>
             </div>
             <h3 class="tp-service-details-title" v-motion-slide-visible-left>{{ title }}</h3>
             <p class="desc" v-motion-slide-visible-right>{{ description }}</p>
@@ -130,6 +131,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
                   <div class="tp-business-box-title d-flex align-items-center">
                     <span v-if="index === 0"> <img :src="item.img"> </span>
                     <span v-if="index === 1"> <img :src="item.img"> </span>
+                    <span v-if="index === 2"> <img :src="item.img"> </span>
                     <h4 class="tp-business-title">{{ item.title }}</h4>
                   </div>
                   <div class="tp-service-details-list">
@@ -152,9 +154,3 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
-
-<style>
-.desc{
-  text-align: justify;
-}
-</style>

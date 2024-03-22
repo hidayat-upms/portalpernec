@@ -50,9 +50,9 @@ const service_details_content = {
     link:"/deployment-operation-services"
     }
   ]),
-  title: "Cyber Security Solutions",
-  description: "Amidst today's constantly evolving business landscape, the expansion of your ecosystem, be it through legacy on-premise systems or cloud infrastructure, exposes your business to heightened risks of cyber threats. PERNEC fully acknowledges the critical importance of shielding your business from these potential dangers. Our comprehensive portfolio is designed to bolster your resilience against cyber threats. From security health-checks to robust IT security systems, we offer a range of solutions tailored to your specific needs. Our in-house endpoint application control ensures that your business users can operate with confidence and safety, knowing that their digital environment is protected",
-  description_2: "At PERNEC, we deliver security solutions that work. With our in-house product development, along with a curated selection of security products and services, we provide the peace of mind that comes from knowing your business is fortified against cyber threats. Trust us to safeguard your digital assets and keep your operations secure.",
+  title: "Telecommunication",
+  description: "Since its establishment in 1973, Telco (Telecommunication) has remained a central focus of Pernec's business operations. This encompasses various facets such as infrastructure setup including towers, transmission, switching, and systems management. Leveraging our expertise in ICT, we've embraced Telco 2.0, marking the convergence of ICT and Telco to facilitate enhanced value exchange among upstream and downstream stakeholders. This strategic alignment allows us to drive innovation and deliver tailored solutions that cater to the evolving needs of the telecommunications industry.",
+  description_2: "Our Telecommunication offerings comprise Core & Access Network solutions and Telco Systems & Applications. These encompass a wide range of services aimed at providing comprehensive solutions to our clients' telecommunications needs. From building robust network infrastructures to developing innovative systems and applications, we strive to deliver cutting-edge solutions that drive efficiency and innovation in the telecommunications industry. With a focus on quality, reliability, and customer satisfaction, Pernec is committed to providing exceptional Telecommunication services that empower businesses to thrive in the digital age.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 
@@ -93,7 +93,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             <div class="tp-service-widget-item mb-40">
               <div class="tp-service-widget-tab">
                 <ul>
-                  <li v-for="(item, i) in service_details_tab" :key="i">
+                  <li v-for="(item, i) in service_details_tab" :key="i" v-motion-slide-visible-left>
                     <router-link :class="i === 4 ? 'active' : ''" :to="item.link">
                       {{ item.service }}
                       <i class="fa-regular fa-arrow-right-long"></i></router-link>
@@ -103,7 +103,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
             </div>
             <div class="tp-service-widget-item mb-40">
               <div class="tp-service-contact">
-                <div class="tp-service-contact-form">
+                <div class="tp-service-contact-form" v-motion-slide-visible-left>
                   <ContactFormServiceDetails />
                   <p class="ajax-response"></p>
                 </div>
@@ -114,13 +114,13 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="telco" alt="image-title-here">
+              <img :src="telco" alt="image-title-here" v-motion-pop-visible>
             </div>
-            <h3 class="tp-service-details-title">{{ title }}</h3>
-            <p class="desc">{{ description }}</p>
-            <p class="desc"> {{ description_2 }}</p>
+            <h3 class="tp-service-details-title" v-motion-slide-visible-left>{{ title }}</h3>
+            <p class="desc" v-motion-slide-visible-right>{{ description }}</p>
+            <p class="desc" v-motion-slide-visible-left> {{ description_2 }}</p>
             <div class="row">
-              <div v-for="(item, index) in business_data" :key="index" class="col-lg-9 col-md-6">
+              <div v-for="(item, index) in business_data" :key="index" class="col-lg-9 col-md-6" v-motion-slide-visible-left>
                 <div class="tp-business-box mb-30">
                   <div class="tp-business-box-title d-flex align-items-center">
                     <span v-if="index === 0"> <img :src="item.img"> </span>

@@ -1,10 +1,10 @@
 <script setup>
 import { reactive } from "vue";
 import ContactFormServiceDetails from "@/Components/forms/ContactFormServiceDetails.vue";
-import cybersecurity2 from "@/assets/img/services/service-details/cybersecurity2.jpg";
+import productivity from "@/assets/img/services/service-details/productivity.jpg";
 import RightSymble from "@/svg/RightSymble.vue";
-import Cyseca2 from "@/assets/img/services/service-details/Cyseca2.png"
-import securityservice from "@/assets/img/services/service-details/securityservice.png"
+import enterprise from "@/assets/img/services/service-details/enterprise.png"
+import specific from "@/assets/img/services/service-details/specific.png"
 
 
 if (typeof window !== 'undefined') {
@@ -50,33 +50,30 @@ const service_details_content = {
     link:"/deployment-operation-services"
     }
   ]),
-  title: "Cyber Security Solutions",
-  description: "Amidst today's constantly evolving business landscape, the expansion of your ecosystem, be it through legacy on-premise systems or cloud infrastructure, exposes your business to heightened risks of cyber threats. PERNEC fully acknowledges the critical importance of shielding your business from these potential dangers. Our comprehensive portfolio is designed to bolster your resilience against cyber threats. From security health-checks to robust IT security systems, we offer a range of solutions tailored to your specific needs. Our in-house endpoint application control ensures that your business users can operate with confidence and safety, knowing that their digital environment is protected",
-  description_2: "At PERNEC, we deliver security solutions that work. With our in-house product development, along with a curated selection of security products and services, we provide the peace of mind that comes from knowing your business is fortified against cyber threats. Trust us to safeguard your digital assets and keep your operations secure.",
+  title: "ICT Productivity Suites",
+  description: "In the dynamic realm of ICT, software systems and applications undergo rapid changes, often rendering them outdated and potentially disrupting business productivity. Recognizing this challenge, we at PERNEC offer a diverse application portfolio sourced from established partners and reliable commercial open systems. Our solutions cater to both general enterprise requirements and specific vertical industry needs, providing comprehensive and adaptable solutions to address various business demands.",
+  description_2: "Our meticulously curated productivity suites are designed to deliver the perfect mix and types of applications tailored to your unique needs. Leveraging emerging technologies, we ensure your business maintains agility and relevance in the ever-evolving digital landscape. Whether you require general enterprise solutions or industry-specific tools, our ICT Productivity Suites are crafted to empower your organization, foster innovation, and drive sustained growth.",
 }
 const { service_details_tab, title, description, description_2 } = service_details_content
 
 const business_data = reactive([
   {
-    id: 1, img: Cyseca2, title: "Security Products Product", sm_des: [
-      "CYSECA Application Whitelist",
-      "Next Generation Anti-Virus",
-      "Endpoint Detection & Response (EDR)",
-      "Next Generation Firewall",
-      "Web Application Firewall",
-      "Email Security",
-      "Network Access Control & SIEM"
+    id: 1, img: enterprise, title: "General Enterprise", sm_des: [
+      "Unified Communications",
+      "HRIMS",
+      "Library Management",
+      "Document Management",
+      "Enterprise Mobile Management",
+      "Device Management",
+      "Building and Facility Management"
     ]
   },
   {
-    id: 2, img: securityservice, title: "Security Services", sm_des: [
-      "Managed Security Services (MSS)",
-      "Security Operation Center (SOC)",
-      "Security Posture Assessment (SPA)",
-      "Cyber Threat Forensics",
-      "Penetration Testing",
-      "Security Training ",
-      "Awareness"
+    id: 2, img: specific, title: "Specific Industry", sm_des: [
+      "Fund / Investment Management",
+      "Traffic / Highway Management",
+      "Fleet Management",
+      "Logistics / Port Management",
     ]
   }
 ])
@@ -119,7 +116,7 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
         <div class="col-lg-8">
           <div class="tp-service-details-wrapper">
             <div class="tp-service-details-thumb">
-              <img :src="cybersecurity2" alt="image-title-here" v-motion-pop-visible>
+              <img :src="productivity" alt="image-title-here" v-motion-pop-visible>
             </div>
             <h3 class="tp-service-details-title" v-motion-slide-visible-left>{{ title }}</h3>
             <p class="desc" v-motion-slide-visible-right>{{ description }}</p>
@@ -152,9 +149,3 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
-
-<style>
-.desc{
-  text-align: justify;
-}
-</style>

@@ -2,9 +2,9 @@
     <section class="tp-testimonial-2-area p-relative pt-150 pb-120">
       <div class="tp-testimonial-2-shape">
           <img class="shape-1" :src="testimonial_shape_1" alt="image-title-here">
-          <img class="shape-2" :src="testimonial_shape_2" alt="image-title-here">
-          <img class="shape-3" :src="testimonial_shape_3" alt="image-title-here">
-          <img class="shape-4" :src="testimonial_shape_4" alt="image-title-here">
+          <img class="shape-2" :src="testi" alt="image-title-here">
+          <img class="shape-3" :src="network" alt="image-title-here">
+          <img class="shape-4" :src="teamwork1" alt="image-title-here">
           <img class="shape-5" :src="testimonial_shape_5" alt="image-title-here">
       </div>
       <div class="tp-testimonial-2-np">
@@ -48,7 +48,7 @@
                               <p class="tp-testimonial-2-info-designation text-center">({{ item.title }})</p>
                           </div>
                           <div class="tp-testimonial-2-text text-center">
-                              <p v-html="item.description"></p>
+                              <p class="desc" v-html="item.description"></p>
                           </div>
                         </div>
                     </swiper-slide>  
@@ -76,8 +76,13 @@ import testimonial_shape_2 from "@/assets/img/testimonial/shape-2.png";
 import testimonial_shape_3 from "@/assets/img/testimonial/shape-3.png";
 import testimonial_shape_4 from "@/assets/img/testimonial/shape-4.png";
 import testimonial_shape_5 from "@/assets/img/testimonial/shape-blur.png";
-import quote from "@/assets/img/testimonial/quot2.png";
 import hidayat3 from "@/assets/img/testimonial/hidayat3.png";
+import adry from "@/assets/img/testimonial/adry.png";
+import anat from "@/assets/img/testimonial/anat.png";
+import nuh from "@/assets/img/testimonial/nuh.png";
+import testi from "@/assets/img/testimonial/testi.gif";
+import teamwork1 from "@/assets/img/testimonial/teamwork1.gif";
+import network from "@/assets/img/testimonial/network.gif";
 
 // Testimonial data
 const testimonial_data = reactive([
@@ -86,21 +91,28 @@ const testimonial_data = reactive([
         name: "Mohamed Hidayat",
         title: "Software Developer, Team Lead",
         img: hidayat3,
-        description: "Within our esteemed company, we cherish more than just our renowned reputation. Our office transcends a mere workspace; it's a dynamic environment pulsating with creativity and teamwork. Just like a magnetic pull, upon entering, you'll feel compelled to stay, enchanted by the lively atmosphere and strong sense of camaraderie that characterizes our culture."
+        description: `"Within our esteemed company, we cherish more than just our renowned reputation. Our office transcends a mere workspace; it's a dynamic environment pulsating with creativity and teamwork. Just like a magnetic pull, upon entering, you'll feel compelled to stay, enchanted by the lively atmosphere and strong sense of camaraderie that characterizes our culture."`
     },
     {
         id: 2,
-        name: "Akuma Till",
-        title: "UI/UX Developer",
-        img: quote,
-        description: "A big name Our office is additionally. Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it."
+        name: "Anatasia",
+        title: "Frontend Software Developer",
+        img: anat,
+        description: `"Pernec is more than just a workplace; it's a place for personal and professional growth. The company invests in its employees, providing opportunities for learning and development. Whether it's through workshops, training programs, or mentorship, I've been able to expand my skill set and take on new challenges."`
     },
     {
         id: 3,
-        name: "Moktir Rahman",
-        title: "Graphics Developer",
-        img: quote,
-        description: "Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name."
+        name: "Nuh Hidayat",
+        title: "Backend Software Developer",
+        img: nuh,
+        description: `"It's my first company, and I've been warmly welcomed into a friendly, beginner-friendly environment. We're a tight-knit team that enjoys tasty free food every Friday. Thrilled to be part of this supportive community as we grow together."`
+    },
+    {
+        id: 4,
+        name: "Muhammad Adry",
+        title: "Backend Software Developer",
+        img: adry,
+        description: `"At PERNEC, where I began my career journey, I found a warm and supportive environment. It's incredibly beginner-friendly, allowing for exploration of various roles for those with the determination to advance their careers"`
     },
 ])
 </script>
