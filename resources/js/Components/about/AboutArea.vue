@@ -18,9 +18,6 @@ const today = date.getDate();
 </script>
 
 <template>
-  <div class="wow fadeIn">
-
-
     <section class="tp-about-breadcrumb p-relative pt-100 pb-90">
       <div class="tp-about-3-shape d-none d-lg-block">
         <img :src="about_shape" alt="shape" />
@@ -77,7 +74,6 @@ const today = date.getDate();
         </div>
       </div>
     </section>
-  </div>
 </template>
 
 <style>
