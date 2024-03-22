@@ -7,7 +7,7 @@ import team_img_1 from '@/assets/img/breadcrumb/team/img-1.jpg';
 import team_img_2 from '@/assets/img/breadcrumb/team/img-2.jpg';
 import team_img_3 from '@/assets/img/breadcrumb/team/img-3.jpg';
 import team_img_4 from '@/assets/img/breadcrumb/team/img-4.jpg';
-import team_img_5 from '@/assets/img/breadcrumb/team/img-5.jpg';
+import team_img_5 from '@/assets/img/breadcrumb/team/img5.png';
 import team_img_6 from '@/assets/img/breadcrumb/team/img-6.jpg';
 
 const tabs = reactive([
@@ -29,16 +29,19 @@ const subTabsBoard = reactive([
         img: team_img_1,
         name: 'Datuk Zainun Aishah Ahmad',
         job_title: 'position',
+        link:'/bod1',
       },
       {
         img: team_img_2,
         name: 'Hizam Shah Azaime',
         job_title: 'position',
+        link:'/bod2',
       },
       {
         img: team_img_3,
         name: 'Eiji Obana',
         job_title: 'position',
+        link:'/bod3',
       },
     ],
   },
@@ -49,36 +52,43 @@ const subTabsBoard = reactive([
         img: team_img_2,
         name: 'Datuk Zainun Aishah Ahmad',
         job_title: 'position',
+        link:'/bod1',
       },
       {
         img: team_img_1,
         name: 'Tengku Datuk Dr. Mohd Azzman Shariffadeen Tengku Ibrahim',
         job_title: 'position',
+        link:'/bod4',
       },
       {
         img: team_img_4,
         name: 'En Hizam Shah Azaime',
         job_title: 'position',
+        link:'/bod2',
       },
       {
         img: team_img_6,
         name: 'Khalil Abdul Jabar',
         job_title: 'position',
+        link:'/bod5',
       },
       {
         img: team_img_3,
         name: 'Takeshi Tsukamoto',
         job_title: 'position',
+        link:'/bod6',
       },
       {
         img: team_img_4,
         name: 'Hideharu Suzuki',
         job_title: 'position',
+        link:'/bod9',
       },
       {
         img: team_img_5,
         name: 'Takashi Sugimori',
         job_title: 'position',
+        link:'/bod10',
       },
     ],
   },
@@ -89,11 +99,13 @@ const subTabsBoard = reactive([
         img: team_img_3,
         name: 'Lt. General Dato Sri Wan Normazlan bin Che Jaafar RMAF',
         job_title: 'position',
+        link:'/bod7',
       },
       {
         img: team_img_2,
         name: 'Azizul Abdul Aziz',
         job_title: 'CEO',
+        link:'/bod8',
       },
     ],
   },
@@ -104,16 +116,19 @@ const subTabsBoard = reactive([
         img: team_img_4,
         name: 'Shahrin bin Ali',
         job_title: 'position',
+        link:'/bod11',
       },
       {
         img: team_img_5,
         name: 'Ainul Azam bin Ahmad Khamal',
         job_title: 'position',
+        link:'/bod12',
       },
       {
         img: team_img_5,
         name: 'Azhar Abu  Bakar',
         job_title: 'position',
+        link:'/bod13',
       },
     ],
   },
@@ -127,36 +142,43 @@ const subTabsSenior = reactive([
         img: team_img_2,
         name: 'Azizul Abdul Aziz',
         job_title: 'CEO',
+        link:'/ms1',
       },
       {
         img: team_img_1,
         name: 'Ariff Fadzli Fadzi',
         job_title: 'CFO',
+        link:'/ms2',
       },
       {
         img: team_img_3,
         name: 'Azmi Abdul Wahid',
         job_title: 'CMO',
+        link:'/ms3',
       },
       {
         img: team_img_4,
         name: 'Wan Kamaruddin Wan Mustaffa',
         job_title: 'CPO',
+        link:'/ms4',
       },
       {
         img: team_img_5,
         name: 'Abdul Latif Allah Pitchy',
         job_title: 'CIO',
+        link:'/ms5',
       },
       {
         img: team_img_6,
         name: 'Adnan Zamri Abdullah',
         job_title: 'Head, Human Resources & Administration',
+        link:'/ms6',
       },
       {
         img: team_img_3,
         name: 'Noralida Shamsudin',
         job_title: 'Company Secretary',
+        link:'/ms7',
       },
     ],
   },
@@ -167,31 +189,37 @@ const subTabsSenior = reactive([
         img: team_img_4,
         name: 'Norazmi bin Mohd Yusoff',
         job_title: 'CEO',
+        link:'/ms8',
       },
       {
         img: team_img_5,
         name: 'Hisham bin Pandak Hamzah',
         job_title: 'CCO',
+        link:'/ms9',
       },
       {
         img: team_img_1,
         name: 'Azlan Mukhtar',
         job_title: 'Head Software Development',
+        link:'/ms10',
       },
       {
         img: team_img_1,
         name: 'Nurul Azuma Makmor',
         job_title: 'Head Business Development',
+        link:'/ms11',
       },
       {
         img: team_img_1,
         name: 'Junaidi Zainuddin',
         job_title: 'Head Business Support & Operation',
+        link:'/ms12',
       },
       {
         img: team_img_1,
         name: 'Ahmad Nawawi Abdul Rahman',
         job_title: 'Head Managed Security Services',
+        link:'/ms13',
       },
     ],
   },
@@ -238,7 +266,7 @@ if (typeof window !== 'undefined') {
                           </div>
                           <div class="tp-team-wrapper-content d-flex justify-content-between">
                             <div class="tp-team-wrapper-content-text">
-                              <h3 class="team-title"><router-link to="/team-details">{{ member.name }}</router-link></h3>
+                              <h3 class="team-title"><router-link :to="member.link">{{ member.name }}</router-link></h3>
                               <p>{{ member.job_title }}</p>
                             </div>
                             
@@ -260,7 +288,7 @@ if (typeof window !== 'undefined') {
                           </div>
                           <div class="tp-team-wrapper-content d-flex justify-content-between">
                             <div class="tp-team-wrapper-content-text">
-                              <h3 class="team-title"><router-link to="/team-details">{{ member.name }}</router-link></h3>
+                              <h3 class="team-title"><router-link :to="member.link">{{ member.name }}</router-link></h3>
                               <p>{{ member.job_title }}</p>
                             </div>
                             

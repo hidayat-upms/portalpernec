@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted} from 'vue'
 
 onMounted(async () => {
   const wow = await import('wow.js')
@@ -8,8 +8,8 @@ onMounted(async () => {
 </script>
   
 <template>
-  <router-view />
+  <router-view/>
 </template>
- 
- 
- 
+
+
+
