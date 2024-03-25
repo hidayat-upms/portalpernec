@@ -9,6 +9,7 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 </script>
 
 <template>
+  <div class="wow fadeInLeft" data-wow-duration="2s"> 
   <HeaderThree/>
   <main>
     <Breadcrumb title="Contact Us" page_title="Contact Us" />
@@ -17,4 +18,5 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
     <!-- <FooterContact /> -->
   </main>
   <CommonFooter />
+  </div>
 </template>

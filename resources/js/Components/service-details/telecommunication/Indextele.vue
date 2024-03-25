@@ -7,10 +7,12 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 </script>
 
 <template>
-  <HeaderThree />
-  <main>
-    <Breadcrumb title="Telecommunication" page_title="Telecommunication" />
-    <Telecommunication />
-  </main>
-  <CommonFooter />
+  <div class="wow fadeInRight" data-wow-duration="2s">
+    <HeaderThree />
+    <main>
+      <Breadcrumb title="Telecommunication" page_title="Telecommunication" />
+      <Telecommunication />
+    </main>
+    <CommonFooter />
+  </div>
 </template>

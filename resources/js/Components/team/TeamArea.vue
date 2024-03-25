@@ -3,12 +3,12 @@ import SocailLinks from "../common/SocailLinks.vue";
 import PlusCrosIicon from "../../svg/PlusCrosIicon.vue";
 import { reactive } from 'vue';
 
-import team_img_1 from '@/assets/img/breadcrumb/team/img-1.jpg';
-import team_img_2 from '@/assets/img/breadcrumb/team/img-2.jpg';
-import team_img_3 from '@/assets/img/breadcrumb/team/img-3.jpg';
-import team_img_4 from '@/assets/img/breadcrumb/team/img-4.jpg';
-import team_img_5 from '@/assets/img/breadcrumb/team/img5.png';
-import team_img_6 from '@/assets/img/breadcrumb/team/img-6.jpg';
+import team_img_1 from '@/assets/img/breadcrumb/team/team1.png';
+// import team_img_2  from '@/assets/img/breadcrumb/team/img-2.jpg';
+// import team_img_2  from '@/assets/img/breadcrumb/team/img-3.jpg';
+// import team_img_1  from '@/assets/img/breadcrumb/team/img-4.jpg';
+// import team_img_1  from '@/assets/img/breadcrumb/team/img5.png';
+// import team_img_1  from '@/assets/img/breadcrumb/team/img-6.jpg';
 
 const tabs = reactive([
   {
@@ -32,13 +32,13 @@ const subTabsBoard = reactive([
         link:'/bod1',
       },
       {
-        img: team_img_2,
+        img: team_img_1 ,
         name: 'Hizam Shah Azaime',
         job_title: 'position',
         link:'/bod2',
       },
       {
-        img: team_img_3,
+        img: team_img_1 ,
         name: 'Eiji Obana',
         job_title: 'position',
         link:'/bod3',
@@ -49,7 +49,7 @@ const subTabsBoard = reactive([
     title: 'Pernec Integrated Network System',
     members: [
       {
-        img: team_img_2,
+        img: team_img_1 ,
         name: 'Datuk Zainun Aishah Ahmad',
         job_title: 'position',
         link:'/bod1',
@@ -61,31 +61,31 @@ const subTabsBoard = reactive([
         link:'/bod4',
       },
       {
-        img: team_img_4,
+        img: team_img_1 ,
         name: 'En Hizam Shah Azaime',
         job_title: 'position',
         link:'/bod2',
       },
       {
-        img: team_img_6,
+        img: team_img_1 ,
         name: 'Khalil Abdul Jabar',
         job_title: 'position',
         link:'/bod5',
       },
       {
-        img: team_img_3,
+        img: team_img_1 ,
         name: 'Takeshi Tsukamoto',
         job_title: 'position',
         link:'/bod6',
       },
       {
-        img: team_img_4,
+        img: team_img_1 ,
         name: 'Hideharu Suzuki',
         job_title: 'position',
         link:'/bod9',
       },
       {
-        img: team_img_5,
+        img: team_img_1 ,
         name: 'Takashi Sugimori',
         job_title: 'position',
         link:'/bod10',
@@ -96,13 +96,13 @@ const subTabsBoard = reactive([
     title: 'Pernec Advance Technology',
     members: [
       {
-        img: team_img_3,
+        img: team_img_1 ,
         name: 'Lt. General Dato Sri Wan Normazlan bin Che Jaafar RMAF',
         job_title: 'position',
         link:'/bod7',
       },
       {
-        img: team_img_2,
+        img: team_img_1 ,
         name: 'Azizul Abdul Aziz',
         job_title: 'CEO',
         link:'/bod8',
@@ -113,19 +113,19 @@ const subTabsBoard = reactive([
     title: 'Cyseca Solution',
     members: [
       {
-        img: team_img_4,
+        img: team_img_1 ,
         name: 'Shahrin bin Ali',
         job_title: 'position',
         link:'/bod11',
       },
       {
-        img: team_img_5,
+        img: team_img_1 ,
         name: 'Ainul Azam bin Ahmad Khamal',
         job_title: 'position',
         link:'/bod12',
       },
       {
-        img: team_img_5,
+        img: team_img_1 ,
         name: 'Azhar Abu  Bakar',
         job_title: 'position',
         link:'/bod13',
@@ -139,7 +139,7 @@ const subTabsSenior = reactive([
     title: 'Pernec Integrated Network System',
     members: [
       {
-        img: team_img_2,
+        img: team_img_1 ,
         name: 'Azizul Abdul Aziz',
         job_title: 'CEO',
         link:'/ms1',
@@ -151,31 +151,31 @@ const subTabsSenior = reactive([
         link:'/ms2',
       },
       {
-        img: team_img_3,
+        img: team_img_1 ,
         name: 'Azmi Abdul Wahid',
         job_title: 'CMO',
         link:'/ms3',
       },
       {
-        img: team_img_4,
+        img: team_img_1 ,
         name: 'Wan Kamaruddin Wan Mustaffa',
         job_title: 'CPO',
         link:'/ms4',
       },
       {
-        img: team_img_5,
+        img: team_img_1 ,
         name: 'Abdul Latif Allah Pitchy',
         job_title: 'CIO',
         link:'/ms5',
       },
       {
-        img: team_img_6,
+        img: team_img_1,
         name: 'Adnan Zamri Abdullah',
         job_title: 'Head, Human Resources & Administration',
         link:'/ms6',
       },
       {
-        img: team_img_3,
+        img: team_img_1 ,
         name: 'Noralida Shamsudin',
         job_title: 'Company Secretary',
         link:'/ms7',
@@ -186,13 +186,13 @@ const subTabsSenior = reactive([
     title: 'Cyseca Solution',
     members: [
       {
-        img: team_img_4,
+        img: team_img_1 ,
         name: 'Norazmi bin Mohd Yusoff',
         job_title: 'CEO',
         link:'/ms8',
       },
       {
-        img: team_img_5,
+        img: team_img_1 ,
         name: 'Hisham bin Pandak Hamzah',
         job_title: 'CCO',
         link:'/ms9',

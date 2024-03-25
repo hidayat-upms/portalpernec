@@ -1,4 +1,4 @@
-  <script setup>
+<script setup>
 import Breadcrumb from "../common/Breadcrumb.vue";
 import TeamDetailsArea from "./TeamDetailsArea.vue";
 import FooterContact from "../portfolio/FooterContact.vue";
@@ -7,12 +7,14 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 </script>
 
 <template>
-  <HeaderThree />
-  <main>
-    <Breadcrumb title="Team Details" page_title="Team Details" />
-    <TeamDetailsArea />
-    <FooterContact />
-  </main>
-  <CommonFooter />
-</template>
+  <div class="wow fadeInRight" data-wow-duration="2s">
+    <HeaderThree />
+    <main>
 
+      <Breadcrumb title="Team Details" page_title="Team Details" />
+      <TeamDetailsArea />
+      <FooterContact />
+    </main>
+    <CommonFooter />
+  </div>
+</template>

@@ -9,10 +9,12 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 
 
 <template>
+   <div class="wow fadeInLeft" data-wow-duration="2s"> 
    <HeaderThree />
    <main>
       <Breadcrumb title="Team" page_title="Team" />
       <TeamArea />
    </main>
    <CommonFooter />
+   </div>
 </template>

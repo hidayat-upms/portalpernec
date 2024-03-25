@@ -19,7 +19,7 @@ provide('addClass', addClass)
 
 
 <template>
-  <div class="wow zoomInUp" data-wow-duration="2s">
+  <div class="wow slideInLeft" data-wow-duration="2s">
   <HeaderThree />
   <main>
     <HeroAreaHomeThree />
