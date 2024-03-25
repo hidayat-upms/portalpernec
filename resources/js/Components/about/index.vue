@@ -8,22 +8,22 @@ import AboutPernec from "./AboutPernec.vue";
 import TestimonialFeature from "./TestimonialFeature.vue";
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
+import loadingSpinner from "@/Components/loadingSpinner.vue";
 
 
 
 </script>
 <template>
-  <<div class="wow fadeInLeft" data-wow-duration="2s">
-    <HeaderThree />
-    <main>
-      <Breadcrumb title="Company" page_title="Our Company" />
-      <AboutArea />
-      <AboutFeatureArea />
-      <AboutPernec /> 
-      <AboutSupportArea />
-      <TestimonialText />
-      <TestimonialFeature />
-    </main>
+  <loadingSpinner></loadingSpinner>
+  <HeaderThree />
+  <main>  
+    <Breadcrumb title="Company" page_title="Our Company"  />
+    <AboutArea />
+    <AboutFeatureArea />
+    <TestimonialFeature />
+    <AboutBrand />
+    <FooterContact />
+  </main>
     <CommonFooter />
   </div>
 
