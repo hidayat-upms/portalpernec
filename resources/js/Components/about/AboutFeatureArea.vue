@@ -84,5 +84,9 @@ const feature_data = reactive([
       </section>
 </template>
 
-
+<style scoped>
+.tp-feature-item-content p {
+  text-align: center;
+}
+</style>
  

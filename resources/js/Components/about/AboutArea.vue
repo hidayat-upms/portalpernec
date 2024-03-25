@@ -51,7 +51,7 @@ const today = date.getDate();
               through land transport. -->
               </p>
               <p class="text">
-                We have been involved in turnkey Telco solutions to the nation’s </br>
+                We have been involved in Turnkey Telco solutions to the nation’s </br>
                 telecommunication network, as well as people-centric business systems. </br>
                 Our involvement require that we interact closely with stakeholders, </br>
                 understand the functional and business requirements and propose </br>

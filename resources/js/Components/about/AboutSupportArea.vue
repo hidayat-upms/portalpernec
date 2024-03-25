@@ -42,7 +42,7 @@ onMounted(() => {
 </script>
 
 <template>
-   <div class="org-chart">
+   <div class="org-chart fix pt-120 pb-210">
       <template v-for="person in pernec" :key="person.id">
          <div class="person">
             <img :src="person.img" alt="Person Image" data-aos="flip-left" />
@@ -71,6 +71,8 @@ onMounted(() => {
    flex-wrap: wrap;
    justify-content: center;
    margin-top: 20px;
+
+   
 }
 
 .person {
