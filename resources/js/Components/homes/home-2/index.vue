@@ -19,6 +19,7 @@ provide('addClass', addClass)
 
 
 <template>
+  <div class="wow slideInLeft" data-wow-duration="2s">
   <HeaderThree />
   <main>
     <HeroAreaHomeThree />
@@ -29,6 +30,7 @@ provide('addClass', addClass)
     <BrandHomeTwo />
   </main>
   <CommonFooter />
+</div>
 </template>
  
  

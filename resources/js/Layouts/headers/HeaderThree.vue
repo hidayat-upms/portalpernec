@@ -79,11 +79,11 @@ const toggleActiveCurrency = () => {
                             <NavMenu /> 
                           </nav>
                         </div>
-                        <div class="tp-header-search search-open-btn d-none d-xl-block">
+                        <!-- <div class="tp-header-search search-open-btn d-none d-xl-block">
                           <a @click="setSearchOpen(true)" style="cursor: pointer"> 
                             <SearchIconHomeThree /> 
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                   </div>
                   <div class="col-xl-2 col-6">

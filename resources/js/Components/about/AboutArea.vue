@@ -18,9 +18,6 @@ const today = date.getDate();
 </script>
 
 <template>
-  <div class="wow fadeIn">
-
-
     <section class="tp-about-breadcrumb p-relative pt-100 pb-90">
       <div class="tp-about-3-shape d-none d-lg-block">
         <img :src="about_shape" alt="shape" />
@@ -54,7 +51,7 @@ const today = date.getDate();
               through land transport. -->
               </p>
               <p class="text">
-                We have been involved in turnkey Telco solutions to the nation’s </br>
+                We have been involved in Turnkey Telco solutions to the nation’s </br>
                 telecommunication network, as well as people-centric business systems. </br>
                 Our involvement require that we interact closely with stakeholders, </br>
                 understand the functional and business requirements and propose </br>
@@ -77,7 +74,6 @@ const today = date.getDate();
         </div>
       </div>
     </section>
-  </div>
 </template>
 
 <style>

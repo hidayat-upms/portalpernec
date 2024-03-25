@@ -6,10 +6,12 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 </script>
 
 <template>
-  <HeaderThree />
-  <main>
-    <Breadcrumb title="Board of Director" page_title="Board of Director" />
-    <bodProfile />
-  </main>
-  <CommonFooter />
+  <div class="wow fadeInRight" data-wow-duration="2s">
+    <HeaderThree />
+    <main>
+      <Breadcrumb title="Board of Director" page_title="Board of Director" />
+      <bodProfile />
+    </main>
+    <CommonFooter />
+  </div>
 </template>
