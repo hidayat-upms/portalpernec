@@ -47,8 +47,6 @@ const today = date.getDate();
                 Through our end-to-end system integration solutions and services,</br>
                 we enable organizations to navigate the complexities of modern</br>
                 technology and emerge stronger, more efficient, and more competitive.
-                <!-- <br />
-              through land transport. -->
               </p>
               <p class="text">
                 We have been involved in Turnkey Telco solutions to the nation’s </br>

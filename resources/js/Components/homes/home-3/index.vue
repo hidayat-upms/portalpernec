@@ -8,10 +8,6 @@ import ServiceAreaHomeThree from "./ServiceAreaHomeThree.vue";
 import CtaAreaHomeThree from "./CtaAreaHomeThree.vue";
 import FeatureAreaHomeThree from "./FeatureAreaHomeThree.vue";
 import TestimonialFeature from "../../about/TestimonialFeature.vue";
-import AboutBrand from "../../about/AboutBrand.vue";
-import AboutTeamArea from "../../about/AboutTeamArea.vue";
-import AboutBlogArea from "../../about/AboutBlogArea.vue";
-import FooterContact from "../../service/FooterContact.vue";
 import CommonFooter from "../../../Layouts/footers/CommonFooter.vue";
 import { provide, ref } from "vue";
 
@@ -38,10 +34,6 @@ const handleAddClass = (value = true) => {
     <CtaAreaHomeThree />
     <FeatureAreaHomeThree />
     <TestimonialFeature />
-    <AboutBrand />
-    <AboutTeamArea @handleAddClass="handleAddClass" />
-    <AboutBlogArea @handleAddClass="handleAddClass" />
-    <FooterContact />
   </main>
   <CommonFooter />
 </div>

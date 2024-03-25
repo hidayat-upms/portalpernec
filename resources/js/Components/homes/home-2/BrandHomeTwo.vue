@@ -31,6 +31,7 @@ import shape_bg from "@/assets/img/brand/home-2/shape-bg.png";
             <img class="shape-5" :src="brand_img_5" alt="image-title-here" />
           </div>
         </div>
+
       </div>
     </div>
   </div>

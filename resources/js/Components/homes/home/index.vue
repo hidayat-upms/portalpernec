@@ -9,8 +9,8 @@ import ServiceAreaHomeOne from "./ServiceAreaHomeOne.vue";
 import SliderAreaHomeOne from "./SliderAreaHomeOne.vue";
 import SupportAreaHomeOne from "./SupportAreaHomeOne.vue";
 import TestimonialHomeOne from "./TestimonialHomeOne.vue";
-import FooterOne from "@/Layouts/footers/FooterOne.vue";
 import HeaderOne from "@/Layouts/headers/HeaderOne.vue"; 
+import CommonFooter from "../../../Layouts/footers/CommonFooter.vue";
 
 
 </script>
@@ -29,6 +29,6 @@ import HeaderOne from "@/Layouts/headers/HeaderOne.vue";
     <FaqAreaHomeOne />
     <BlogAreaHomeOne />
   </main>
-  <FooterOne />
+  <CommonFooter />
 </template>
 

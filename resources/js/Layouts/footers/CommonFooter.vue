@@ -66,7 +66,7 @@ const { address, email_p, email_c, phone, series, Text, Text1, Text2, enquiry, t
 								{{ Text }} <br> {{ Text1 }} <br>{{ Text2 }}
 							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 			<div class="tp-footer-copyright-area p-relative">

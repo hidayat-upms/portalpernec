@@ -1,17 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Team from '@/Pages/Team.vue';
-import Blog from '@/Pages/Blog.vue';
 import HomeTwo from '@/Pages/HomeTwo.vue';
 import Contact from '@/Pages/Contact.vue';
 import HomeThree from '@/Pages/HomeThree.vue';
-import Portfolio from '@/Pages/Portfolio.vue';
-import TeamDetails from '@/Pages/TeamDetails.vue';
-import BlogDetails from '@/Pages/BlogDetails.vue';
 import Whistleblowing from '@/Pages/Governance/Whistleblowing.vue';
 import AntiBribery from '@/Pages/Governance/AntiBribery.vue';
 import Nogift from '@/Pages/Governance/Nogift.vue'
-import PortfolioDetails from '@/Pages/PortfolioDetails.vue';
-import ServiceDetails from '@/Pages/ServiceDetails.vue';
 import Service from '@/Pages/Service.vue';
 import About from '@/Pages/About.vue'; 
 import NotFound from '@/Pages/NotFound.vue' 
@@ -78,20 +72,8 @@ const router = createRouter({
       component: Contact,
     },
     {
-      path: '/portfolio',
-      component: Portfolio
-    },
-    {
-      path: '/portfolio-details',
-      component: PortfolioDetails
-    },
-    {
       path: '/team',
       component: Team
-    },
-    {
-      path: '/team-details',
-      component: TeamDetails
     },
     {
       path: '/bod1',
@@ -213,10 +195,10 @@ const router = createRouter({
       path: '/service',
       component: Service
     }, 
-    {
-      path: '/service-details',
-      component: ServiceDetails
-    }, 
+    // {
+    //   path: '/service-details',
+    //   component: ServiceDetails
+    // }, 
     {
       path: '/it-essentials',
       component: Itessentials
