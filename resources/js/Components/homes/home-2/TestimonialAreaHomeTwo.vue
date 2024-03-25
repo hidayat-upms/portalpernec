@@ -116,9 +116,3 @@ const testimonial_data = reactive([
     },
 ])
 </script>
-<style>
-.desc{
-    align-items: justify;
-}
-
-</style>

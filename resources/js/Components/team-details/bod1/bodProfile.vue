@@ -43,7 +43,7 @@ const { name, job_title, member_info, description, list_title, lists } = team_de
                 <div class="tp-team-detials-designation-wrapper">
                   <div class="tp-team-details-designation-content">
                     <h4 class="tp-team-details-designation-title">{{ name }}</h4>
-                    <p class="tp-team-details-designation">{{ job_title }}</p>
+                    <p class="desc">{{ job_title }}</p>
                     <div class="tp-team-details-meta d-flex">
                       <div class="tp-team-details-meta-thumb">
                         <img :src="flag" alt="image-title-here">
@@ -66,16 +66,21 @@ const { name, job_title, member_info, description, list_title, lists } = team_de
               <ul>
                 <li v-for="(item, i) in lists" :key="i">
                   <span>
-                    <RightSymble /> 
+                    <RightSymble />
                   </span>{{ item }}
                 </li>
-              </ul> 
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <router-link to="/team" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back
+              </router-link>
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
-
-

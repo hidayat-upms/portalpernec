@@ -89,3 +89,4 @@ const { address, email_p, email_c, phone, series, Text, Text1, Text2, enquiry, t
         </div>
     </footer>
 </template>
+ 

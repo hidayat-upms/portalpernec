@@ -149,9 +149,3 @@ const videoUrl = 'https://www.youtube.com/embed/ddvKoj_CWl8';
 
   <video-modal ref="video_modal" :video-url="videoUrl" />
 </template>
-
-<style>
-.desc{
-  text-align: justify;
-}
-</style>
