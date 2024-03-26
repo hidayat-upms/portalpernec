@@ -8,12 +8,11 @@ import AboutPernec from "./AboutPernec.vue";
 import TestimonialFeature from "./TestimonialFeature.vue";
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
-import loadingSpinner from "@/Components/loadingSpinner.vue";
+// import loadingSpinner from "@/Components/loadingSpinner.vue";
 
 
 
 </script>
-
 <template>
   <div class="wow fadeInLeft" data-wow-duration="2s">
   <loadingSpinner></loadingSpinner>
@@ -29,5 +28,4 @@ import loadingSpinner from "@/Components/loadingSpinner.vue";
   </main>
     <CommonFooter />
   </div>
-
 </template>

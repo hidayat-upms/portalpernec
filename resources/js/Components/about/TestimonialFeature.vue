@@ -89,9 +89,7 @@ onMounted(() => {
                         <SplideSlide v-for="(item, i) in testimonial_images" :key="i" class="splide__slide">
                            <img class="slide" :src="item" alt="image-title-here">
                         </SplideSlide> 
-
                      </Splide>
-                     <img class="shape-1" :src="testimonial_img_1" alt="image-title-here">
                   </div>
                </div>
             </div>

@@ -947,6 +947,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  -webkit-animation-duration: 1s; /* Duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out; /* Timing function for smoothness */
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both; /* Ensure the element stays at the end of the animation */
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInDown {
