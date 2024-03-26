@@ -20,7 +20,8 @@ import image_3 from '@/assets/img/about/home-3/pernec.png'
 .tp-feature-3-area {
   background-size: cover;
   background-position: center;
-  padding: 100px 0; /* Adjust the padding as needed */
+  padding: 50px 50px; /* Adjust the padding as needed */
+  
 }
 
 .tp-feature-3-text-style {
