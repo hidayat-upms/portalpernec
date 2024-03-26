@@ -5,10 +5,12 @@ import TeamArea from "./TeamArea.vue";
 import Breadcrumb from "../common/Breadcrumb.vue"; 
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
+import loadingSpinner from "@/Components/loadingSpinner.vue";
 </script>
 
 
 <template>
+   <loadingSpinner></loadingSpinner>
    <div class="wow fadeInLeft" data-wow-duration="2s"> 
    <HeaderThree />
    <main>

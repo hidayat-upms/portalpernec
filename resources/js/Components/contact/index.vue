@@ -6,10 +6,14 @@ import GoogleMapArea from "./GoogleMapArea.vue";
 import Breadcrumb from "../common/Breadcrumb.vue";
 import CommonFooter from "@/Layouts/footers/CommonFooter.vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
+import loadingSpinner from "@/Components/loadingSpinner.vue";
+
+
 </script>
 
 <template>
   <div class="wow fadeInLeft" data-wow-duration="2s"> 
+  <loadingSpinner></loadingSpinner>
   <HeaderThree/>
   <main>
     <Breadcrumb title="Contact Us" page_title="Contact Us" />
