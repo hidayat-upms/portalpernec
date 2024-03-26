@@ -23,8 +23,9 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
     <AboutFeatureArea />
     <AboutPernec />
     <AboutSupportArea />
-    <TestimonialFeature />
     <TestimonialText />
+    <TestimonialFeature />
+    
   </main>
     <CommonFooter />
   </div>

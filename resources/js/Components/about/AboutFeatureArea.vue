@@ -87,6 +87,10 @@ const feature_data = reactive([
 <style scoped>
 .tp-feature-item-content p {
   text-align: center;
+  
+}
+.tp-section-title {
+   margin-top: 50px;
 }
 </style>
  

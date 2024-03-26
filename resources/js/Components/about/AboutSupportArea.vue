@@ -42,7 +42,7 @@ onMounted(() => {
 </script>
 
 <template>
-   <div class="org-chart fix pt-120 pb-210">
+   <div class="org-chart fix pt-90 pb-90">
       <template v-for="person in pernec" :key="person.id">
          <div class="person">
             <img :src="person.img" alt="Person Image" data-aos="flip-left" />

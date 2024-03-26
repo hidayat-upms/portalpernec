@@ -4,7 +4,7 @@ import img_2 from '@/assets/img/feature/home-3/text-img.jpg'
 </script>
 
 <template>
-   <section class="tp-feature-3-area" :style="{ backgroundImage: `url(${img_1})` }">
+   <section class="tp-feature-3-area pt-50" :style="{ backgroundImage: `url(${img_1})` }">
          <div class="row gx-0">
             <div class="col-xl-12">
                <div class="tp-feature-3-text-style text-center fadeUp">
