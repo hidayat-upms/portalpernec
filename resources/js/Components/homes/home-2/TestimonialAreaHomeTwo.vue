@@ -95,7 +95,7 @@ const testimonial_data = reactive([
     },
     {
         id: 2,
-        name: "Anatasia",
+        name: "Anatassia",
         title: "Frontend Software Developer",
         img: anat,
         description: `"Pernec is more than just a workplace; it's a place for personal and professional growth. The company invests in its employees, providing opportunities for learning and development. Whether it's through workshops, training programs, or mentorship, I've been able to expand my skill set and take on new challenges."`
