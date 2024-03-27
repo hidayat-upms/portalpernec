@@ -14,12 +14,9 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import router from '@/routes';
-import App from "@/Pages/App.vue";
 import { MotionPlugin } from "@vueuse/motion";
-
  
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
-const app = createApp(App); 
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
@@ -36,4 +33,3 @@ createInertiaApp({
         color: '#4B5563',
     },
 });
-
