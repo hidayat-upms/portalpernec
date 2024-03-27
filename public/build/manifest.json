@@ -1,0 +1,1008 @@
+{
+  "_ApplicationLogo-DDpabsGm.js": {
+    "file": "assets/ApplicationLogo-DDpabsGm.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_AuthenticatedLayout-CchpZUfe.js": {
+    "file": "assets/AuthenticatedLayout-CchpZUfe.js",
+    "imports": [
+      "_ApplicationLogo-DDpabsGm.js",
+      "resources/js/app.js"
+    ]
+  },
+  "_GuestLayout-vEdHWAcg.js": {
+    "file": "assets/GuestLayout-vEdHWAcg.js",
+    "imports": [
+      "_ApplicationLogo-DDpabsGm.js",
+      "resources/js/app.js"
+    ]
+  },
+  "_PrimaryButton-Dfoh89KZ.js": {
+    "file": "assets/PrimaryButton-Dfoh89KZ.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_TextInput-CcvFSBM_.js": {
+    "file": "assets/TextInput-CcvFSBM_.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_bootstrap-AVMTETt2.js": {
+    "file": "assets/bootstrap-AVMTETt2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/Pages/App.vue": {
+    "file": "assets/App-B0PhFKjX.js",
+    "src": "resources/js/Pages/App.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "dynamicImports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ConfirmPassword.vue": {
+    "file": "assets/ConfirmPassword-BdvylFw6.js",
+    "src": "resources/js/Pages/Auth/ConfirmPassword.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-vEdHWAcg.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ForgotPassword.vue": {
+    "file": "assets/ForgotPassword-BWBeoQIS.js",
+    "src": "resources/js/Pages/Auth/ForgotPassword.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-vEdHWAcg.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Login.vue": {
+    "file": "assets/Login-DempbTRB.js",
+    "src": "resources/js/Pages/Auth/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-vEdHWAcg.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Register.vue": {
+    "file": "assets/Register-BV5jJmTV.js",
+    "src": "resources/js/Pages/Auth/Register.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-vEdHWAcg.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Auth/ResetPassword.vue": {
+    "file": "assets/ResetPassword-o3TgVO3H.js",
+    "src": "resources/js/Pages/Auth/ResetPassword.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-vEdHWAcg.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Auth/VerifyEmail.vue": {
+    "file": "assets/VerifyEmail-C25zd3BL.js",
+    "src": "resources/js/Pages/Auth/VerifyEmail.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_GuestLayout-vEdHWAcg.js",
+      "_PrimaryButton-Dfoh89KZ.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Dashboard.vue": {
+    "file": "assets/Dashboard-DdEBrzQh.js",
+    "src": "resources/js/Pages/Dashboard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AuthenticatedLayout-CchpZUfe.js",
+      "resources/js/app.js",
+      "_ApplicationLogo-DDpabsGm.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Edit.vue": {
+    "file": "assets/Edit-DeqvsUj_.js",
+    "src": "resources/js/Pages/Profile/Edit.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AuthenticatedLayout-CchpZUfe.js",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.vue",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
+      "resources/js/app.js",
+      "_ApplicationLogo-DDpabsGm.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/DeleteUserForm.vue": {
+    "file": "assets/DeleteUserForm-DXtCdLck.js",
+    "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_TextInput-CcvFSBM_.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue": {
+    "file": "assets/UpdatePasswordForm-RIBrpwVb.js",
+    "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue": {
+    "file": "assets/UpdateProfileInformationForm-CY-I206M.js",
+    "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_TextInput-CcvFSBM_.js",
+      "_PrimaryButton-Dfoh89KZ.js"
+    ]
+  },
+  "resources/js/Pages/Welcome.vue": {
+    "file": "assets/Welcome-uUWXkwe8.js",
+    "src": "resources/js/Pages/Welcome.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/Welcome-CSsUW0tK.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-D2-Pjjbm.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "dynamicImports": [
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "_bootstrap-AVMTETt2.js",
+      "resources/js/Pages/App.vue",
+      "resources/js/Pages/Auth/ConfirmPassword.vue",
+      "resources/js/Pages/Auth/ForgotPassword.vue",
+      "resources/js/Pages/Auth/Login.vue",
+      "resources/js/Pages/Auth/Register.vue",
+      "resources/js/Pages/Auth/ResetPassword.vue",
+      "resources/js/Pages/Auth/VerifyEmail.vue",
+      "resources/js/Pages/Dashboard.vue",
+      "resources/js/Pages/Profile/Edit.vue",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.vue",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
+      "resources/js/Pages/Welcome.vue"
+    ],
+    "css": [
+      "assets/app-DZ_lwHaF.css"
+    ],
+    "assets": [
+      "assets/team1-BozOFDuQ.png",
+      "assets/breadcrumb-bg-2-F1xttaz3.gif",
+      "assets/titile-BCDAup-J.svg",
+      "assets/PernecLogo-D1QqY2Dv.gif",
+      "assets/footer-bg-BFUoGbb2.jpg",
+      "assets/qr-C7lhuWX9.png",
+      "assets/footer-logo-BquweRkU.png",
+      "assets/client1-CbN32kNk.svg",
+      "assets/client2-ClUrTeXO.svg",
+      "assets/client3-NWe26cDy.svg",
+      "assets/client4-D9AgAaRT.svg",
+      "assets/client5-BI27EqN-.svg",
+      "assets/1-CxY_0lgY.png",
+      "assets/2-FGLy1NLK.png",
+      "assets/3-C4KHlupr.png",
+      "assets/4-C7ztQG7u.png",
+      "assets/5-wM-AUFEi.png",
+      "assets/6-DiHr8eDW.png",
+      "assets/7-CpjSZizf.png",
+      "assets/8-Ysf-csjG.png",
+      "assets/9-BlIBVAfk.png",
+      "assets/10-Csxa7I2T.png",
+      "assets/11-Ct3JS9Yf.png",
+      "assets/12-CPvop5KN.png",
+      "assets/13-BPoh2Tob.png",
+      "assets/14-LIA1hTt5.png",
+      "assets/15-BoVYXOo3.png",
+      "assets/16-8tXaeZ1_.png",
+      "assets/17-CJMsG95F.png",
+      "assets/18-BIfjWZ5G.png",
+      "assets/19-DdejENK3.png",
+      "assets/20-CIZC_ltO.png",
+      "assets/shape-bg-ZUss3KUf.png",
+      "assets/img-6-Cclnr1wE.png",
+      "assets/antibribery-Ckv7rm70.png",
+      "assets/img-5-C0YrrbMf.png",
+      "assets/test-CalTjPo_.png",
+      "assets/shape-1-pv2tcVK_.png",
+      "assets/shape-2-BXukri5V.png",
+      "assets/shape-3-Cm1pi7sM.png",
+      "assets/cyber-BAGKh3sZ.jpg",
+      "assets/pernecHero-Sodiw1DQ.jpg",
+      "assets/Pins-BXs_xaLG.jpg",
+      "assets/shape-CgMbESEJ.png",
+      "assets/shape-2-90xhY4nD.png",
+      "assets/bg-gFOScMit.png",
+      "assets/telco-CRNNML-e.png",
+      "assets/essentials3-DMmIcYpD.png",
+      "assets/cyseca-BOb1TP8h.png",
+      "assets/moreservice-C7WV4BBO.png",
+      "assets/shape-2-DfJ7N94M.png",
+      "assets/shape-4-BHO6uaRf.png",
+      "assets/img-3-BGhMHfrw.png",
+      "assets/PernecHQ-C3PPW7f2.png",
+      "assets/PERNECALL-DJPCCu_x.png",
+      "assets/ELEMENT-RlJRQkg2.png",
+      "assets/pernecshape3-D4bCPxcK.png",
+      "assets/shape-blur-L8zhhzV5.png",
+      "assets/hidayat3-BkpnLUHE.png",
+      "assets/adry-zloDU9hT.png",
+      "assets/anat-BLrRsVQp.png",
+      "assets/nuh-Co56P4LU.png",
+      "assets/testi-DqZ6GVLl.gif",
+      "assets/teamwork1-DgjdN15T.gif",
+      "assets/network-Ci827b3B.gif",
+      "assets/blog-1-EHPHFaV8.jpg",
+      "assets/essentials-BYCRC2m3.png",
+      "assets/productivity-qWcQihe4.png",
+      "assets/enabler-BmHGXFcC.png",
+      "assets/public-safety-CuFIA_A4.png",
+      "assets/power-CGDRcagK.png",
+      "assets/defence-pbGFCbMO.png",
+      "assets/deploy-BnA5fnPT.png",
+      "assets/staytuned-B3mDW3hU.png",
+      "assets/shape-5-DTkhFWro.png",
+      "assets/about-2-bovkwX_S.png",
+      "assets/img1-DhD9cKB_.png",
+      "assets/img2-CJ7Sz7WQ.png",
+      "assets/img3-daBqSrno.png",
+      "assets/img4-hKhBnyUB.png",
+      "assets/img5-Dchz0QuQ.png",
+      "assets/shape-1-DoGZK6ph.png",
+      "assets/shape-2-B5aJJvk7.png",
+      "assets/img-shape-YkV751mM.png",
+      "assets/m1--ztBgIjd.jpg",
+      "assets/v1-B9_7NCX_.jpg",
+      "assets/feature-bg-xtJ3ZomR.png",
+      "assets/text-img-D7Bt2082.jpg",
+      "assets/pernec-DJnXNTIz.png",
+      "assets/shape-1-C-UbNJ-C.png",
+      "assets/shape-2-M9pnmyOZ.png",
+      "assets/img1-pgqRY8rj.jpg",
+      "assets/img2-vhi2bxOw.jpg",
+      "assets/img3-CHe7eGY4.jpg",
+      "assets/img4-BV-yIJIX.jpg",
+      "assets/img5-D-j13a_9.jpg",
+      "assets/img6--Jtf9DjZ.jpg",
+      "assets/error-shape-BiAtSVgf.png",
+      "assets/404-DGOmXZDs.png",
+      "assets/itessentials-CrnWgsrI.jpg",
+      "assets/hosting-B8x52yJQ.png",
+      "assets/networking-JArzMwoO.png",
+      "assets/defence-Da9ZnkdS.jpg",
+      "assets/hardenednetwork-Dg-XOChv.png",
+      "assets/securitysystem-3jcu_2MT.png",
+      "assets/gadget-0x30IQqM.png",
+      "assets/operation-DNAeLLPf.jpg",
+      "assets/consultancy-BgqyWmIS.png",
+      "assets/helpdesk-CKcqutMa.png",
+      "assets/transformation-CT4xOrvO.jpg",
+      "assets/cloud-DS8kZkvE.png",
+      "assets/data-CY27JtQk.png",
+      "assets/vr-DSvdKlNV.png",
+      "assets/power-OtKCAv2x.jpg",
+      "assets/energy-DX0np-5w.png",
+      "assets/smartmeter-D_0RCPTU.png",
+      "assets/iot-BokjOe8n.png",
+      "assets/productivity-Ci0kv2Kh.jpg",
+      "assets/enterprise-CymPW_Np.png",
+      "assets/specific-Dis9v6z2.png",
+      "assets/safety-CezAWdUR.jpg",
+      "assets/cctv-Bkk3CLCT.png",
+      "assets/analytics-aaI9KNg1.png",
+      "assets/biometric-icp3HoKh.png",
+      "assets/cybersecurity2-CVgJ2IDt.jpg",
+      "assets/Cyseca2-st25qWcZ.png",
+      "assets/securityservice-CF_5KpVj.png",
+      "assets/telco-US80mw8t.jpg",
+      "assets/connection-cEVrMgmV.png",
+      "assets/system-BNHeSdGo.png",
+      "assets/shape-1-D1CmxLcN.png",
+      "assets/shape-2-dPwTzyg6.png",
+      "assets/img-1-Bzl3GmRp.jpg",
+      "assets/flag-2-DyCdLifZ.png",
+      "assets/flag-3-DyMAhztq.png",
+      "assets/fa-brands-400-P7kvyP95.woff2",
+      "assets/fa-brands-400-GADgr3Or.ttf",
+      "assets/fa-light-300-D4npn_Em.woff2",
+      "assets/fa-light-300-BxGUUM1t.ttf",
+      "assets/fa-regular-400-4Qv4MTlO.woff2",
+      "assets/fa-regular-400-BI9qSWGe.ttf",
+      "assets/fa-solid-900-CUdZ59N1.woff2",
+      "assets/fa-solid-900-DBKKAbIh.ttf",
+      "assets/fa-thin-100-Cnj4OYWf.woff2",
+      "assets/fa-thin-100-jZxqlSz5.ttf",
+      "assets/fa-v4compatibility-D48W2ssU.woff2",
+      "assets/fa-v4compatibility-DiUbXVNU.ttf",
+      "assets/close-D5EOmePE.png"
+    ]
+  },
+  "resources/js/assets/fonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-GADgr3Or.ttf",
+    "src": "resources/js/assets/fonts/fa-brands-400.ttf"
+  },
+  "resources/js/assets/fonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-P7kvyP95.woff2",
+    "src": "resources/js/assets/fonts/fa-brands-400.woff2"
+  },
+  "resources/js/assets/fonts/fa-light-300.ttf": {
+    "file": "assets/fa-light-300-BxGUUM1t.ttf",
+    "src": "resources/js/assets/fonts/fa-light-300.ttf"
+  },
+  "resources/js/assets/fonts/fa-light-300.woff2": {
+    "file": "assets/fa-light-300-D4npn_Em.woff2",
+    "src": "resources/js/assets/fonts/fa-light-300.woff2"
+  },
+  "resources/js/assets/fonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-BI9qSWGe.ttf",
+    "src": "resources/js/assets/fonts/fa-regular-400.ttf"
+  },
+  "resources/js/assets/fonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-4Qv4MTlO.woff2",
+    "src": "resources/js/assets/fonts/fa-regular-400.woff2"
+  },
+  "resources/js/assets/fonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-DBKKAbIh.ttf",
+    "src": "resources/js/assets/fonts/fa-solid-900.ttf"
+  },
+  "resources/js/assets/fonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-CUdZ59N1.woff2",
+    "src": "resources/js/assets/fonts/fa-solid-900.woff2"
+  },
+  "resources/js/assets/fonts/fa-thin-100.ttf": {
+    "file": "assets/fa-thin-100-jZxqlSz5.ttf",
+    "src": "resources/js/assets/fonts/fa-thin-100.ttf"
+  },
+  "resources/js/assets/fonts/fa-thin-100.woff2": {
+    "file": "assets/fa-thin-100-Cnj4OYWf.woff2",
+    "src": "resources/js/assets/fonts/fa-thin-100.woff2"
+  },
+  "resources/js/assets/fonts/fa-v4compatibility.ttf": {
+    "file": "assets/fa-v4compatibility-DiUbXVNU.ttf",
+    "src": "resources/js/assets/fonts/fa-v4compatibility.ttf"
+  },
+  "resources/js/assets/fonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility-D48W2ssU.woff2",
+    "src": "resources/js/assets/fonts/fa-v4compatibility.woff2"
+  },
+  "resources/js/assets/img/about/about-1.png": {
+    "file": "assets/about-1-CFSoMBWY.png",
+    "src": "resources/js/assets/img/about/about-1.png"
+  },
+  "resources/js/assets/img/about/about-2.png": {
+    "file": "assets/about-2-bovkwX_S.png",
+    "src": "resources/js/assets/img/about/about-2.png"
+  },
+  "resources/js/assets/img/about/home-3/pernec.png": {
+    "file": "assets/pernec-DJnXNTIz.png",
+    "src": "resources/js/assets/img/about/home-3/pernec.png"
+  },
+  "resources/js/assets/img/blog/antibribery.png": {
+    "file": "assets/antibribery-Ckv7rm70.png",
+    "src": "resources/js/assets/img/blog/antibribery.png"
+  },
+  "resources/js/assets/img/blog/details/blog-1.jpg": {
+    "file": "assets/blog-1-EHPHFaV8.jpg",
+    "src": "resources/js/assets/img/blog/details/blog-1.jpg"
+  },
+  "resources/js/assets/img/blog/img-5.png": {
+    "file": "assets/img-5-C0YrrbMf.png",
+    "src": "resources/js/assets/img/blog/img-5.png"
+  },
+  "resources/js/assets/img/blog/img-6.png": {
+    "file": "assets/img-6-Cclnr1wE.png",
+    "src": "resources/js/assets/img/blog/img-6.png"
+  },
+  "resources/js/assets/img/blog/img1.png": {
+    "file": "assets/img1-DhD9cKB_.png",
+    "src": "resources/js/assets/img/blog/img1.png"
+  },
+  "resources/js/assets/img/blog/img2.png": {
+    "file": "assets/img2-CJ7Sz7WQ.png",
+    "src": "resources/js/assets/img/blog/img2.png"
+  },
+  "resources/js/assets/img/blog/img3.png": {
+    "file": "assets/img3-daBqSrno.png",
+    "src": "resources/js/assets/img/blog/img3.png"
+  },
+  "resources/js/assets/img/blog/img4.png": {
+    "file": "assets/img4-hKhBnyUB.png",
+    "src": "resources/js/assets/img/blog/img4.png"
+  },
+  "resources/js/assets/img/blog/img5.png": {
+    "file": "assets/img5-Dchz0QuQ.png",
+    "src": "resources/js/assets/img/blog/img5.png"
+  },
+  "resources/js/assets/img/blog/test.png": {
+    "file": "assets/test-CalTjPo_.png",
+    "src": "resources/js/assets/img/blog/test.png"
+  },
+  "resources/js/assets/img/brand/home-2/1.png": {
+    "file": "assets/1-CxY_0lgY.png",
+    "src": "resources/js/assets/img/brand/home-2/1.png"
+  },
+  "resources/js/assets/img/brand/home-2/10.png": {
+    "file": "assets/10-Csxa7I2T.png",
+    "src": "resources/js/assets/img/brand/home-2/10.png"
+  },
+  "resources/js/assets/img/brand/home-2/11.png": {
+    "file": "assets/11-Ct3JS9Yf.png",
+    "src": "resources/js/assets/img/brand/home-2/11.png"
+  },
+  "resources/js/assets/img/brand/home-2/12.png": {
+    "file": "assets/12-CPvop5KN.png",
+    "src": "resources/js/assets/img/brand/home-2/12.png"
+  },
+  "resources/js/assets/img/brand/home-2/13.png": {
+    "file": "assets/13-BPoh2Tob.png",
+    "src": "resources/js/assets/img/brand/home-2/13.png"
+  },
+  "resources/js/assets/img/brand/home-2/14.png": {
+    "file": "assets/14-LIA1hTt5.png",
+    "src": "resources/js/assets/img/brand/home-2/14.png"
+  },
+  "resources/js/assets/img/brand/home-2/15.png": {
+    "file": "assets/15-BoVYXOo3.png",
+    "src": "resources/js/assets/img/brand/home-2/15.png"
+  },
+  "resources/js/assets/img/brand/home-2/16.png": {
+    "file": "assets/16-8tXaeZ1_.png",
+    "src": "resources/js/assets/img/brand/home-2/16.png"
+  },
+  "resources/js/assets/img/brand/home-2/17.png": {
+    "file": "assets/17-CJMsG95F.png",
+    "src": "resources/js/assets/img/brand/home-2/17.png"
+  },
+  "resources/js/assets/img/brand/home-2/18.png": {
+    "file": "assets/18-BIfjWZ5G.png",
+    "src": "resources/js/assets/img/brand/home-2/18.png"
+  },
+  "resources/js/assets/img/brand/home-2/19.png": {
+    "file": "assets/19-DdejENK3.png",
+    "src": "resources/js/assets/img/brand/home-2/19.png"
+  },
+  "resources/js/assets/img/brand/home-2/2.png": {
+    "file": "assets/2-FGLy1NLK.png",
+    "src": "resources/js/assets/img/brand/home-2/2.png"
+  },
+  "resources/js/assets/img/brand/home-2/20.png": {
+    "file": "assets/20-CIZC_ltO.png",
+    "src": "resources/js/assets/img/brand/home-2/20.png"
+  },
+  "resources/js/assets/img/brand/home-2/3.png": {
+    "file": "assets/3-C4KHlupr.png",
+    "src": "resources/js/assets/img/brand/home-2/3.png"
+  },
+  "resources/js/assets/img/brand/home-2/4.png": {
+    "file": "assets/4-C7ztQG7u.png",
+    "src": "resources/js/assets/img/brand/home-2/4.png"
+  },
+  "resources/js/assets/img/brand/home-2/5.png": {
+    "file": "assets/5-wM-AUFEi.png",
+    "src": "resources/js/assets/img/brand/home-2/5.png"
+  },
+  "resources/js/assets/img/brand/home-2/6.png": {
+    "file": "assets/6-DiHr8eDW.png",
+    "src": "resources/js/assets/img/brand/home-2/6.png"
+  },
+  "resources/js/assets/img/brand/home-2/7.png": {
+    "file": "assets/7-CpjSZizf.png",
+    "src": "resources/js/assets/img/brand/home-2/7.png"
+  },
+  "resources/js/assets/img/brand/home-2/8.png": {
+    "file": "assets/8-Ysf-csjG.png",
+    "src": "resources/js/assets/img/brand/home-2/8.png"
+  },
+  "resources/js/assets/img/brand/home-2/9.png": {
+    "file": "assets/9-BlIBVAfk.png",
+    "src": "resources/js/assets/img/brand/home-2/9.png"
+  },
+  "resources/js/assets/img/brand/home-2/client1.svg": {
+    "file": "assets/client1-CbN32kNk.svg",
+    "src": "resources/js/assets/img/brand/home-2/client1.svg"
+  },
+  "resources/js/assets/img/brand/home-2/client2.svg": {
+    "file": "assets/client2-ClUrTeXO.svg",
+    "src": "resources/js/assets/img/brand/home-2/client2.svg"
+  },
+  "resources/js/assets/img/brand/home-2/client3.svg": {
+    "file": "assets/client3-NWe26cDy.svg",
+    "src": "resources/js/assets/img/brand/home-2/client3.svg"
+  },
+  "resources/js/assets/img/brand/home-2/client4.svg": {
+    "file": "assets/client4-D9AgAaRT.svg",
+    "src": "resources/js/assets/img/brand/home-2/client4.svg"
+  },
+  "resources/js/assets/img/brand/home-2/client5.svg": {
+    "file": "assets/client5-BI27EqN-.svg",
+    "src": "resources/js/assets/img/brand/home-2/client5.svg"
+  },
+  "resources/js/assets/img/brand/home-2/shape-bg.png": {
+    "file": "assets/shape-bg-ZUss3KUf.png",
+    "src": "resources/js/assets/img/brand/home-2/shape-bg.png"
+  },
+  "resources/js/assets/img/breadcrumb/breadcrumb-bg-1.jpg": {
+    "file": "assets/breadcrumb-bg-1-B5FevdCU.jpg",
+    "src": "resources/js/assets/img/breadcrumb/breadcrumb-bg-1.jpg"
+  },
+  "resources/js/assets/img/breadcrumb/breadcrumb-bg-2.gif": {
+    "file": "assets/breadcrumb-bg-2-F1xttaz3.gif",
+    "src": "resources/js/assets/img/breadcrumb/breadcrumb-bg-2.gif"
+  },
+  "resources/js/assets/img/breadcrumb/team/team1.png": {
+    "file": "assets/team1-BozOFDuQ.png",
+    "src": "resources/js/assets/img/breadcrumb/team/team1.png"
+  },
+  "resources/js/assets/img/breadcrumb/titile.svg": {
+    "file": "assets/titile-BCDAup-J.svg",
+    "src": "resources/js/assets/img/breadcrumb/titile.svg"
+  },
+  "resources/js/assets/img/business/ELEMENT.png": {
+    "file": "assets/ELEMENT-RlJRQkg2.png",
+    "src": "resources/js/assets/img/business/ELEMENT.png"
+  },
+  "resources/js/assets/img/business/PERNECALL.png": {
+    "file": "assets/PERNECALL-DJPCCu_x.png",
+    "src": "resources/js/assets/img/business/PERNECALL.png"
+  },
+  "resources/js/assets/img/business/PernecHQ.png": {
+    "file": "assets/PernecHQ-C3PPW7f2.png",
+    "src": "resources/js/assets/img/business/PernecHQ.png"
+  },
+  "resources/js/assets/img/business/img-1.jpg": {
+    "file": "assets/img-1-CSjHc5DL.jpg",
+    "src": "resources/js/assets/img/business/img-1.jpg"
+  },
+  "resources/js/assets/img/business/img-2.png": {
+    "file": "assets/img-2-B1ORhjlj.png",
+    "src": "resources/js/assets/img/business/img-2.png"
+  },
+  "resources/js/assets/img/business/img-3.png": {
+    "file": "assets/img-3-BGhMHfrw.png",
+    "src": "resources/js/assets/img/business/img-3.png"
+  },
+  "resources/js/assets/img/business/pernecshape3.png": {
+    "file": "assets/pernecshape3-D4bCPxcK.png",
+    "src": "resources/js/assets/img/business/pernecshape3.png"
+  },
+  "resources/js/assets/img/business/shape-1.png": {
+    "file": "assets/shape-1-Cx0Fp9g8.png",
+    "src": "resources/js/assets/img/business/shape-1.png"
+  },
+  "resources/js/assets/img/business/shape-2.png": {
+    "file": "assets/shape-2-DfJ7N94M.png",
+    "src": "resources/js/assets/img/business/shape-2.png"
+  },
+  "resources/js/assets/img/business/shape-3.png": {
+    "file": "assets/shape-3-u2ou5A3g.png",
+    "src": "resources/js/assets/img/business/shape-3.png"
+  },
+  "resources/js/assets/img/business/shape-4.png": {
+    "file": "assets/shape-4-BHO6uaRf.png",
+    "src": "resources/js/assets/img/business/shape-4.png"
+  },
+  "resources/js/assets/img/business/shape-5.png": {
+    "file": "assets/shape-5-DTkhFWro.png",
+    "src": "resources/js/assets/img/business/shape-5.png"
+  },
+  "resources/js/assets/img/error/404.png": {
+    "file": "assets/404-DGOmXZDs.png",
+    "src": "resources/js/assets/img/error/404.png"
+  },
+  "resources/js/assets/img/error/error-shape.png": {
+    "file": "assets/error-shape-BiAtSVgf.png",
+    "src": "resources/js/assets/img/error/error-shape.png"
+  },
+  "resources/js/assets/img/feature/home-3/feature-bg.png": {
+    "file": "assets/feature-bg-xtJ3ZomR.png",
+    "src": "resources/js/assets/img/feature/home-3/feature-bg.png"
+  },
+  "resources/js/assets/img/feature/home-3/shape-1.png": {
+    "file": "assets/shape-1-DoGZK6ph.png",
+    "src": "resources/js/assets/img/feature/home-3/shape-1.png"
+  },
+  "resources/js/assets/img/feature/home-3/text-img.jpg": {
+    "file": "assets/text-img-D7Bt2082.jpg",
+    "src": "resources/js/assets/img/feature/home-3/text-img.jpg"
+  },
+  "resources/js/assets/img/feature/img-shape.png": {
+    "file": "assets/img-shape-YkV751mM.png",
+    "src": "resources/js/assets/img/feature/img-shape.png"
+  },
+  "resources/js/assets/img/feature/m1.jpg": {
+    "file": "assets/m1--ztBgIjd.jpg",
+    "src": "resources/js/assets/img/feature/m1.jpg"
+  },
+  "resources/js/assets/img/feature/shape-2.png": {
+    "file": "assets/shape-2-B5aJJvk7.png",
+    "src": "resources/js/assets/img/feature/shape-2.png"
+  },
+  "resources/js/assets/img/feature/v1.jpg": {
+    "file": "assets/v1-B9_7NCX_.jpg",
+    "src": "resources/js/assets/img/feature/v1.jpg"
+  },
+  "resources/js/assets/img/footer/footer-bg.jpg": {
+    "file": "assets/footer-bg-BFUoGbb2.jpg",
+    "src": "resources/js/assets/img/footer/footer-bg.jpg"
+  },
+  "resources/js/assets/img/hero/hero-3/Pins.jpg": {
+    "file": "assets/Pins-BXs_xaLG.jpg",
+    "src": "resources/js/assets/img/hero/hero-3/Pins.jpg"
+  },
+  "resources/js/assets/img/hero/hero-3/cyber.jpg": {
+    "file": "assets/cyber-BAGKh3sZ.jpg",
+    "src": "resources/js/assets/img/hero/hero-3/cyber.jpg"
+  },
+  "resources/js/assets/img/hero/hero-3/pernecHero.jpg": {
+    "file": "assets/pernecHero-Sodiw1DQ.jpg",
+    "src": "resources/js/assets/img/hero/hero-3/pernecHero.jpg"
+  },
+  "resources/js/assets/img/hero/hero-3/shape-1.png": {
+    "file": "assets/shape-1-pv2tcVK_.png",
+    "src": "resources/js/assets/img/hero/hero-3/shape-1.png"
+  },
+  "resources/js/assets/img/hero/hero-3/shape-2.png": {
+    "file": "assets/shape-2-BXukri5V.png",
+    "src": "resources/js/assets/img/hero/hero-3/shape-2.png"
+  },
+  "resources/js/assets/img/hero/hero-3/shape-3.png": {
+    "file": "assets/shape-3-Cm1pi7sM.png",
+    "src": "resources/js/assets/img/hero/hero-3/shape-3.png"
+  },
+  "resources/js/assets/img/icon/close.png": {
+    "file": "assets/close-D5EOmePE.png",
+    "src": "resources/js/assets/img/icon/close.png"
+  },
+  "resources/js/assets/img/logo/PernecLogo.gif": {
+    "file": "assets/PernecLogo-D1QqY2Dv.gif",
+    "src": "resources/js/assets/img/logo/PernecLogo.gif"
+  },
+  "resources/js/assets/img/logo/footer-logo.png": {
+    "file": "assets/footer-logo-BquweRkU.png",
+    "src": "resources/js/assets/img/logo/footer-logo.png"
+  },
+  "resources/js/assets/img/offering/bg.png": {
+    "file": "assets/bg-gFOScMit.png",
+    "src": "resources/js/assets/img/offering/bg.png"
+  },
+  "resources/js/assets/img/offering/cyseca.png": {
+    "file": "assets/cyseca-BOb1TP8h.png",
+    "src": "resources/js/assets/img/offering/cyseca.png"
+  },
+  "resources/js/assets/img/offering/essentials3.png": {
+    "file": "assets/essentials3-DMmIcYpD.png",
+    "src": "resources/js/assets/img/offering/essentials3.png"
+  },
+  "resources/js/assets/img/offering/moreservice.png": {
+    "file": "assets/moreservice-C7WV4BBO.png",
+    "src": "resources/js/assets/img/offering/moreservice.png"
+  },
+  "resources/js/assets/img/offering/shape-2.png": {
+    "file": "assets/shape-2-90xhY4nD.png",
+    "src": "resources/js/assets/img/offering/shape-2.png"
+  },
+  "resources/js/assets/img/offering/shape.png": {
+    "file": "assets/shape-CgMbESEJ.png",
+    "src": "resources/js/assets/img/offering/shape.png"
+  },
+  "resources/js/assets/img/portfolio/qr.png": {
+    "file": "assets/qr-C7lhuWX9.png",
+    "src": "resources/js/assets/img/portfolio/qr.png"
+  },
+  "resources/js/assets/img/services/home-3/defence.png": {
+    "file": "assets/defence-pbGFCbMO.png",
+    "src": "resources/js/assets/img/services/home-3/defence.png"
+  },
+  "resources/js/assets/img/services/home-3/deployment2.png": {
+    "file": "assets/deploy-BnA5fnPT.png",
+    "src": "resources/js/assets/img/services/home-3/deployment2.png"
+  },
+  "resources/js/assets/img/services/home-3/enabler.png": {
+    "file": "assets/enabler-BmHGXFcC.png",
+    "src": "resources/js/assets/img/services/home-3/enabler.png"
+  },
+  "resources/js/assets/img/services/home-3/essentials.png": {
+    "file": "assets/essentials-BYCRC2m3.png",
+    "src": "resources/js/assets/img/services/home-3/essentials.png"
+  },
+  "resources/js/assets/img/services/home-3/power.png": {
+    "file": "assets/power-CGDRcagK.png",
+    "src": "resources/js/assets/img/services/home-3/power.png"
+  },
+  "resources/js/assets/img/services/home-3/productivity.png": {
+    "file": "assets/productivity-qWcQihe4.png",
+    "src": "resources/js/assets/img/services/home-3/productivity.png"
+  },
+  "resources/js/assets/img/services/home-3/public-safety.png": {
+    "file": "assets/public-safety-CuFIA_A4.png",
+    "src": "resources/js/assets/img/services/home-3/public-safety.png"
+  },
+  "resources/js/assets/img/services/home-3/staytuned.png": {
+    "file": "assets/staytuned-B3mDW3hU.png",
+    "src": "resources/js/assets/img/services/home-3/staytuned.png"
+  },
+  "resources/js/assets/img/services/home-3/telco.png": {
+    "file": "assets/telco-CRNNML-e.png",
+    "src": "resources/js/assets/img/services/home-3/telco.png"
+  },
+  "resources/js/assets/img/services/service-details/Cyseca2.png": {
+    "file": "assets/Cyseca2-st25qWcZ.png",
+    "src": "resources/js/assets/img/services/service-details/Cyseca2.png"
+  },
+  "resources/js/assets/img/services/service-details/analytics.png": {
+    "file": "assets/analytics-aaI9KNg1.png",
+    "src": "resources/js/assets/img/services/service-details/analytics.png"
+  },
+  "resources/js/assets/img/services/service-details/biometric.png": {
+    "file": "assets/biometric-icp3HoKh.png",
+    "src": "resources/js/assets/img/services/service-details/biometric.png"
+  },
+  "resources/js/assets/img/services/service-details/cctv.png": {
+    "file": "assets/cctv-Bkk3CLCT.png",
+    "src": "resources/js/assets/img/services/service-details/cctv.png"
+  },
+  "resources/js/assets/img/services/service-details/cloud.png": {
+    "file": "assets/cloud-DS8kZkvE.png",
+    "src": "resources/js/assets/img/services/service-details/cloud.png"
+  },
+  "resources/js/assets/img/services/service-details/connection.png": {
+    "file": "assets/connection-cEVrMgmV.png",
+    "src": "resources/js/assets/img/services/service-details/connection.png"
+  },
+  "resources/js/assets/img/services/service-details/consultancy.png": {
+    "file": "assets/consultancy-BgqyWmIS.png",
+    "src": "resources/js/assets/img/services/service-details/consultancy.png"
+  },
+  "resources/js/assets/img/services/service-details/cybersecurity2.jpg": {
+    "file": "assets/cybersecurity2-CVgJ2IDt.jpg",
+    "src": "resources/js/assets/img/services/service-details/cybersecurity2.jpg"
+  },
+  "resources/js/assets/img/services/service-details/data.png": {
+    "file": "assets/data-CY27JtQk.png",
+    "src": "resources/js/assets/img/services/service-details/data.png"
+  },
+  "resources/js/assets/img/services/service-details/defence.jpg": {
+    "file": "assets/defence-Da9ZnkdS.jpg",
+    "src": "resources/js/assets/img/services/service-details/defence.jpg"
+  },
+  "resources/js/assets/img/services/service-details/deploy.png": {
+    "file": "assets/deploy-BnA5fnPT.png",
+    "src": "resources/js/assets/img/services/home-3/deployment2.png"
+  },
+  "resources/js/assets/img/services/service-details/energy.png": {
+    "file": "assets/energy-DX0np-5w.png",
+    "src": "resources/js/assets/img/services/service-details/energy.png"
+  },
+  "resources/js/assets/img/services/service-details/enterprise.png": {
+    "file": "assets/enterprise-CymPW_Np.png",
+    "src": "resources/js/assets/img/services/service-details/enterprise.png"
+  },
+  "resources/js/assets/img/services/service-details/gadget.png": {
+    "file": "assets/gadget-0x30IQqM.png",
+    "src": "resources/js/assets/img/services/service-details/gadget.png"
+  },
+  "resources/js/assets/img/services/service-details/hardenednetwork.png": {
+    "file": "assets/hardenednetwork-Dg-XOChv.png",
+    "src": "resources/js/assets/img/services/service-details/hardenednetwork.png"
+  },
+  "resources/js/assets/img/services/service-details/helpdesk.png": {
+    "file": "assets/helpdesk-CKcqutMa.png",
+    "src": "resources/js/assets/img/services/service-details/helpdesk.png"
+  },
+  "resources/js/assets/img/services/service-details/hosting.png": {
+    "file": "assets/hosting-B8x52yJQ.png",
+    "src": "resources/js/assets/img/services/service-details/hosting.png"
+  },
+  "resources/js/assets/img/services/service-details/iot.png": {
+    "file": "assets/iot-BokjOe8n.png",
+    "src": "resources/js/assets/img/services/service-details/iot.png"
+  },
+  "resources/js/assets/img/services/service-details/itessentials.jpg": {
+    "file": "assets/itessentials-CrnWgsrI.jpg",
+    "src": "resources/js/assets/img/services/service-details/itessentials.jpg"
+  },
+  "resources/js/assets/img/services/service-details/networking.png": {
+    "file": "assets/networking-JArzMwoO.png",
+    "src": "resources/js/assets/img/services/service-details/networking.png"
+  },
+  "resources/js/assets/img/services/service-details/operation.jpg": {
+    "file": "assets/operation-DNAeLLPf.jpg",
+    "src": "resources/js/assets/img/services/service-details/operation.jpg"
+  },
+  "resources/js/assets/img/services/service-details/power.jpg": {
+    "file": "assets/power-OtKCAv2x.jpg",
+    "src": "resources/js/assets/img/services/service-details/power.jpg"
+  },
+  "resources/js/assets/img/services/service-details/productivity.jpg": {
+    "file": "assets/productivity-Ci0kv2Kh.jpg",
+    "src": "resources/js/assets/img/services/service-details/productivity.jpg"
+  },
+  "resources/js/assets/img/services/service-details/safety.jpg": {
+    "file": "assets/safety-CezAWdUR.jpg",
+    "src": "resources/js/assets/img/services/service-details/safety.jpg"
+  },
+  "resources/js/assets/img/services/service-details/securityservice.png": {
+    "file": "assets/securityservice-CF_5KpVj.png",
+    "src": "resources/js/assets/img/services/service-details/securityservice.png"
+  },
+  "resources/js/assets/img/services/service-details/securitysystem.png": {
+    "file": "assets/securitysystem-3jcu_2MT.png",
+    "src": "resources/js/assets/img/services/service-details/securitysystem.png"
+  },
+  "resources/js/assets/img/services/service-details/smartmeter.png": {
+    "file": "assets/smartmeter-D_0RCPTU.png",
+    "src": "resources/js/assets/img/services/service-details/smartmeter.png"
+  },
+  "resources/js/assets/img/services/service-details/specific.png": {
+    "file": "assets/specific-Dis9v6z2.png",
+    "src": "resources/js/assets/img/services/service-details/specific.png"
+  },
+  "resources/js/assets/img/services/service-details/system.png": {
+    "file": "assets/system-BNHeSdGo.png",
+    "src": "resources/js/assets/img/services/service-details/system.png"
+  },
+  "resources/js/assets/img/services/service-details/telco.jpg": {
+    "file": "assets/telco-US80mw8t.jpg",
+    "src": "resources/js/assets/img/services/service-details/telco.jpg"
+  },
+  "resources/js/assets/img/services/service-details/transformation.jpg": {
+    "file": "assets/transformation-CT4xOrvO.jpg",
+    "src": "resources/js/assets/img/services/service-details/transformation.jpg"
+  },
+  "resources/js/assets/img/services/service-details/vr.png": {
+    "file": "assets/vr-DSvdKlNV.png",
+    "src": "resources/js/assets/img/services/service-details/vr.png"
+  },
+  "resources/js/assets/img/team/details/flag-2.png": {
+    "file": "assets/flag-2-DyCdLifZ.png",
+    "src": "resources/js/assets/img/team/details/flag-2.png"
+  },
+  "resources/js/assets/img/team/details/flag-3.png": {
+    "file": "assets/flag-3-DyMAhztq.png",
+    "src": "resources/js/assets/img/team/details/flag-3.png"
+  },
+  "resources/js/assets/img/team/details/img-1.jpg": {
+    "file": "assets/img-1-Bzl3GmRp.jpg",
+    "src": "resources/js/assets/img/team/details/img-1.jpg"
+  },
+  "resources/js/assets/img/team/details/shape-1.png": {
+    "file": "assets/shape-1-D1CmxLcN.png",
+    "src": "resources/js/assets/img/team/details/shape-1.png"
+  },
+  "resources/js/assets/img/team/details/shape-2.png": {
+    "file": "assets/shape-2-dPwTzyg6.png",
+    "src": "resources/js/assets/img/team/details/shape-2.png"
+  },
+  "resources/js/assets/img/testimonial/adry.png": {
+    "file": "assets/adry-zloDU9hT.png",
+    "src": "resources/js/assets/img/testimonial/adry.png"
+  },
+  "resources/js/assets/img/testimonial/anat.png": {
+    "file": "assets/anat-BLrRsVQp.png",
+    "src": "resources/js/assets/img/testimonial/anat.png"
+  },
+  "resources/js/assets/img/testimonial/hidayat3.png": {
+    "file": "assets/hidayat3-BkpnLUHE.png",
+    "src": "resources/js/assets/img/testimonial/hidayat3.png"
+  },
+  "resources/js/assets/img/testimonial/home-3/img-2.png": {
+    "file": "assets/img-2-E6cy_dCT.png",
+    "src": "resources/js/assets/img/testimonial/home-3/img-2.png"
+  },
+  "resources/js/assets/img/testimonial/home-3/img1.jpg": {
+    "file": "assets/img1-pgqRY8rj.jpg",
+    "src": "resources/js/assets/img/testimonial/home-3/img1.jpg"
+  },
+  "resources/js/assets/img/testimonial/home-3/img2.jpg": {
+    "file": "assets/img2-vhi2bxOw.jpg",
+    "src": "resources/js/assets/img/testimonial/home-3/img2.jpg"
+  },
+  "resources/js/assets/img/testimonial/home-3/img3.jpg": {
+    "file": "assets/img3-CHe7eGY4.jpg",
+    "src": "resources/js/assets/img/testimonial/home-3/img3.jpg"
+  },
+  "resources/js/assets/img/testimonial/home-3/img4.jpg": {
+    "file": "assets/img4-BV-yIJIX.jpg",
+    "src": "resources/js/assets/img/testimonial/home-3/img4.jpg"
+  },
+  "resources/js/assets/img/testimonial/home-3/img5.jpg": {
+    "file": "assets/img5-D-j13a_9.jpg",
+    "src": "resources/js/assets/img/testimonial/home-3/img5.jpg"
+  },
+  "resources/js/assets/img/testimonial/home-3/img6.jpg": {
+    "file": "assets/img6--Jtf9DjZ.jpg",
+    "src": "resources/js/assets/img/testimonial/home-3/img6.jpg"
+  },
+  "resources/js/assets/img/testimonial/home-3/shape-1.png": {
+    "file": "assets/shape-1-C-UbNJ-C.png",
+    "src": "resources/js/assets/img/testimonial/home-3/shape-1.png"
+  },
+  "resources/js/assets/img/testimonial/home-3/shape-2.png": {
+    "file": "assets/shape-2-M9pnmyOZ.png",
+    "src": "resources/js/assets/img/testimonial/home-3/shape-2.png"
+  },
+  "resources/js/assets/img/testimonial/network.gif": {
+    "file": "assets/network-Ci827b3B.gif",
+    "src": "resources/js/assets/img/testimonial/network.gif"
+  },
+  "resources/js/assets/img/testimonial/nuh.png": {
+    "file": "assets/nuh-Co56P4LU.png",
+    "src": "resources/js/assets/img/testimonial/nuh.png"
+  },
+  "resources/js/assets/img/testimonial/shape-2.png": {
+    "file": "assets/shape-2-rmgKFDnS.png",
+    "src": "resources/js/assets/img/testimonial/shape-2.png"
+  },
+  "resources/js/assets/img/testimonial/shape-3.png": {
+    "file": "assets/shape-3-1vhJHuTm.png",
+    "src": "resources/js/assets/img/testimonial/shape-3.png"
+  },
+  "resources/js/assets/img/testimonial/shape-4.png": {
+    "file": "assets/shape-4-zRzE8pUV.png",
+    "src": "resources/js/assets/img/testimonial/shape-4.png"
+  },
+  "resources/js/assets/img/testimonial/shape-blur.png": {
+    "file": "assets/shape-blur-L8zhhzV5.png",
+    "src": "resources/js/assets/img/testimonial/shape-blur.png"
+  },
+  "resources/js/assets/img/testimonial/teamwork1.gif": {
+    "file": "assets/teamwork1-DgjdN15T.gif",
+    "src": "resources/js/assets/img/testimonial/teamwork1.gif"
+  },
+  "resources/js/assets/img/testimonial/testi.gif": {
+    "file": "assets/testi-DqZ6GVLl.gif",
+    "src": "resources/js/assets/img/testimonial/testi.gif"
+  }
+}
