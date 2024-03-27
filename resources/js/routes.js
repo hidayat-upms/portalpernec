@@ -43,7 +43,8 @@ import ms9 from '@/Pages/Teams-details/ms9.vue';
 import ms10 from '@/Pages/Teams-details/ms10.vue';
 import ms11 from '@/Pages/Teams-details/ms11.vue';
 import ms12 from '@/Pages/Teams-details/ms12.vue';
-import ms13 from '@/Pages/Teams-details/ms13.vue';
+import ms13 from '@/Pages/Teams-details/ms13.vue'
+import policy from './Pages/policy.vue';
 
 const router = createRouter({ 
   history: createWebHistory(),
@@ -251,6 +252,11 @@ const router = createRouter({
       path: '/about',
       component: About
     }, 
+
+    { 
+      path: '/policy', 
+      component: policy
+    },
 
     { 
       path: '/:pathMatch(.*)*', 

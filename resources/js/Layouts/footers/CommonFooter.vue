@@ -2,6 +2,7 @@
 import FooterCopyright from "@/Components/common/FooterCopyright.vue";
 import SocailLinkTwo from "@/Components/common/SocailLinkTwo.vue";
 
+
 import FooterLogo from "@/assets/img/logo/PernecLogo.gif";
 
 import footer from "@/assets/img/footer/footer-bg.jpg"
@@ -19,6 +20,8 @@ const footer_content = {
 	terms: "Terms & Conditions",
 	policy: "Privacy Policy",
 }
+const pdf= "/image/general-tc-to-purchase-order.pdf"
+
 const { address, email_p, email_c, phone, series, Text, Text1, Text2, enquiry, terms, policy } = footer_content
 
 
@@ -52,9 +55,9 @@ const { address, email_p, email_c, phone, series, Text, Text1, Text2, enquiry, t
 						<div class="tp-footer-widget tp-footer-3-col-3">
 							<h3 class="tp-footer-widget-title">{{ enquiry }}</h3>
 							<div class="tp-footer-main-mail">
-								<a href="marketing@pernec.com.my"><i class="fa-light fa-message-dots"></i>
+								<a href="mailto:marketing@pernec.com.my"><i class="fa-light fa-message-dots"></i>
 									{{ email_p }}</a>
-								<a href="marketing@cyseca.com.my"><i class="fa-light fa-message-dots"></i>
+								<a href="mailto:marketing@cyseca.com.my"><i class="fa-light fa-message-dots"></i>
 									{{ email_c }}</a>
 							</div>
 						</div>
@@ -80,8 +83,8 @@ const { address, email_p, email_c, phone, series, Text, Text1, Text2, enquiry, t
 					</div>
 					<div class="col-md-12 col-lg-6">
 						<div class="tp-footer-copyright-inner text-lg-end">
-							<a href="#">{{ terms }}</a>
-							<a class="ml-50" to="#">{{ policy }}</a>
+							<a :href="pdf" target="_blank">{{ terms }}</a>
+							<a class="ml-50" href="/policy">{{ policy }}</a>
 						</div>
 					</div>
 				</div>
