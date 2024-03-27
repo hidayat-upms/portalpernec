@@ -71,8 +71,6 @@ onMounted(() => {
    flex-wrap: wrap;
    justify-content: center;
    margin-top: 20px;
-
-   
 }
 
 .person {
@@ -80,11 +78,12 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    margin: 20px;
+   max-width: 100%; /* Take full width on mobile */
 }
 
-.person p {
-   margin: 0;
-   text-align: center;
+.person img {
+   max-width: 100%; /* Added to ensure images don't overflow their container */
+   height: auto;
 }
 
 .children {
@@ -98,19 +97,12 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    margin: 20px;
+   max-width: 100%; /* Take full width on mobile */
 }
 
-
-.grandchildren {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+.child img {
+   max-width: 100%; /* Added to ensure images don't overflow their container */
+   height: auto;
 }
 
-.grandchild {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 20px;
-}
 </style>

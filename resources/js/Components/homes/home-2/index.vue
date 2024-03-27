@@ -15,20 +15,11 @@ import Preloader from "@/Components/custPreloader.vue";
 const addClass = ref(true);
 provide('addClass', addClass)
 
-const loading = ref(true);
 
-// Simulate server-side loading
-onMounted(() => {
-  setTimeout(() => {
-    loading.value = false; // Once server data is loaded, hide the preloader
-  }, 2000); // Simulating 2 seconds of loading time
-});
 </script>
 
 
 <template>
-  <Preloader v-if="loading" />
-  <div v-else>
     <div class="wow fadeIn" data-wow-duration="2s">
       <HeaderThree />
       <main>
@@ -41,5 +32,4 @@ onMounted(() => {
       </main>
       <CommonFooter />
     </div>
-  </div>
 </template>
