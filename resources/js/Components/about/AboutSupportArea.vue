@@ -126,4 +126,4 @@ onMounted(() => {
 }
 
 
-</style>
+</style> 
