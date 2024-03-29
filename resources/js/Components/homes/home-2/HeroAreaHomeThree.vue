@@ -24,7 +24,7 @@ const hero_slider = reactive([
   {
     id: 2,
     bg_slider_img: Pins,
-    title: "Pernec,",
+    title: "PERNEC,",
     title_color: "Integrated",
     title_2: "Network Systems",
     bottom_title: "PINS",

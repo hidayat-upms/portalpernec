@@ -72,9 +72,6 @@ import NextIconHomeTwo from "@/svg/NextIconHomeTwo.vue";
 
 // Import shape images
 import testimonial_shape_1 from "@/assets/img/testimonial/shape-blur.png";
-import testimonial_shape_2 from "@/assets/img/testimonial/shape-2.png";
-import testimonial_shape_3 from "@/assets/img/testimonial/shape-3.png";
-import testimonial_shape_4 from "@/assets/img/testimonial/shape-4.png";
 import testimonial_shape_5 from "@/assets/img/testimonial/shape-blur.png";
 import hidayat3 from "@/assets/img/testimonial/hidayat3.png";
 import adry from "@/assets/img/testimonial/adry.png";

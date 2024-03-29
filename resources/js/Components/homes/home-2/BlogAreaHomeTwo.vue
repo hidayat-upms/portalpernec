@@ -5,16 +5,16 @@ import { reactive } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import {Navigation, Autoplay} from "swiper/modules";
 
-import blog_slide_img_1 from "@/assets/img/blog/img-6.png";
+import whistle from "@/assets/img/blog/whistle.jpg";
 import antibribery from "@/assets/img/blog/antibribery.png";
-import blog_img_3 from "@/assets/img/blog/img-5.png";
+import nogift from "@/assets/img/blog/nogift.png";
 import test from "@/assets/img/blog/test.png";
 
 
 const blog_data = reactive([ 
     {
         id: 1, 
-        img: blog_slide_img_1,
+        img: whistle,
         title: "Whistleblowing",
         link: "/whistleblowing",
     }, 
@@ -26,7 +26,7 @@ const blog_data = reactive([
     },
     {
         id: 3, 
-        img: blog_img_3,
+        img: nogift,
         title: "No Gift",
         link: "/no-gift",
     },
@@ -48,7 +48,7 @@ const blog_data = reactive([
               <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="tp-blog-2-title-wrapper">
-                      <h3 class="tp-section-title">Governance
+                      <h3 class="tp-section-title" v-motion-slide-visible-left>Governance
                           <span class="title-left-shape">
                             <svg width="194" height="5" viewBox="0 0 194 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M193.649 4.22307C129.517 2.55338 65.7543 2.288 1.66891 4.99709C-0.571625 5.09661 -0.540924 2.60867 1.66891 2.48703C65.34 -0.962917 130.116 -1.06243 193.649 3.70336C194.109 3.73653 194.125 4.23412 193.649 4.22307Z" fill="#05DAC3"/>
@@ -59,14 +59,14 @@ const blog_data = reactive([
                 </div>
                 <div class="col-lg-6">
                     <div class="tp-blog-text justify-content-start justify-content-lg-end d-flex">
-                      <p>As a PNB subsidiary, Pernec prioritizes transparency and follows corporate governance principles, striving to meet Malaysian standards.</p>
+                      <p v-motion-slide-visible-left>As a PNB subsidiary, Pernec prioritizes transparency and follows corporate governance principles, striving to meet Malaysian standards.</p>
                     </div>
                 </div>
               </div>
           </div>
 
 
-          <div v-for="(item, index) in blog_data" :key="index" class="col-lg-4 col-md-6">
+          <div v-for="(item, index) in blog_data" :key="index" class="col-lg-4 col-md-6" v-motion-slide-visible-left>
             <div class="tp-blog-2-wrapper mb-30">
               <div class="tp-blog-2-thumb">
 

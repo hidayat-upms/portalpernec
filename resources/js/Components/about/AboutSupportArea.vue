@@ -49,7 +49,7 @@ onMounted(() => {
 
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                <br>
-               <img :src="bar" alt="Bar Image" />
+               <img class="large-img" :src="bar" alt="Bar Image" />
             </div>
             <div v-if="person.child && person.child.length" class="children">
                <template v-for="child in person.child" :key="child.id">
@@ -66,6 +66,25 @@ onMounted(() => {
 </template>
 
 <style scoped>
+/* Define styles for larger screens */
+.large-img {
+   display: block;
+   width: 100%;
+   /* Make the image take up the full width of its container */
+   max-width: 100%;
+   /* Ensure the image doesn't exceed its natural size */
+   height: auto;
+   /* Maintain the aspect ratio of the image */
+}
+
+/* Define styles for smaller screens */
+@media (max-width: 600px) {
+   .large-img {
+      display: none;
+      /* Hide the image on smaller screens */
+   }
+}
+
 .org-chart {
    display: flex;
    flex-wrap: wrap;
@@ -78,11 +97,13 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    margin: 20px;
-   max-width: 100%; /* Take full width on mobile */
+   max-width: 100%;
+   /* Take full width on mobile */
 }
 
 .person img {
-   max-width: 100%; /* Added to ensure images don't overflow their container */
+   max-width: 100%;
+   /* Added to ensure images don't overflow their container */
    height: auto;
 }
 
@@ -97,12 +118,13 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    margin: 20px;
-   max-width: 100%; /* Take full width on mobile */
+   max-width: 100%;
+   /* Take full width on mobile */
 }
 
 .child img {
-   max-width: 100%; /* Added to ensure images don't overflow their container */
+   max-width: 100%;
+   /* Added to ensure images don't overflow their container */
    height: auto;
 }
-
 </style>
