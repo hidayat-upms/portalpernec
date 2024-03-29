@@ -59,15 +59,15 @@ const business_data = reactive([
             </div>
             <div class="col-lg-6">
                 <div class="tp-business-title-wrapper">
-                  <h3 class="tp-section-title" v-motion-slide-visible-left>
+                  <h3 class="tp-section-title">
                     {{ title }}
                       <span class="title-left-shape">
                       <AboutLineIcon />  
                       </span>
                   </h3>
-                  <p class="desc" v-motion-slide-visible-right>{{ info }}</p>
+                  <p class="desc">{{ info }}</p>
                   <br>
-                  <p class="desc" v-motion-slide-visible-left>{{ info2 }}</p>
+                  <p class="desc">{{ info2 }}</p>
                 </div>
                 <div class="row">
                 </div>
