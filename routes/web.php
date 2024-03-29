@@ -25,6 +25,10 @@ Route::get('/', function () {
     return Inertia::render('App', 
 );
 });
+Route::get('/version', function () {
+    return Inertia::render('Version', 
+);
+});
 
 
 

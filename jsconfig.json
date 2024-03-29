@@ -17,6 +17,7 @@
     ]
   },
   "exclude": [
-    "babel.config.js"
+    "babel.config.js",
+    "postcss.config.cjs",
   ]
 }

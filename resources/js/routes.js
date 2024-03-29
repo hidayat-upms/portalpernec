@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Team from '@/Pages/Team.vue';
+import Version from '@/Pages/Version.vue';
 import HomeTwo from '@/Pages/HomeTwo.vue';
 import Contact from '@/Pages/Contact.vue';
 import Whistleblowing from '@/Pages/Governance/Whistleblowing.vue';
@@ -252,6 +253,10 @@ const router = createRouter({
     { 
       path: '/:pathMatch(.*)*', 
       component: NotFound
+    },
+    { 
+      path: '/version', 
+      component: Version
     },
   ]
  
