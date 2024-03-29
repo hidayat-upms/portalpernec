@@ -25,10 +25,6 @@ const { name, job_title, member_info, description, list_title, lists } = team_de
 
 <template>
   <section class="tp-team-details-area p-relative pt-120 pb-90">
-    <div class="tp-team-details-shape">
-      <img class="shape-1" :src="team_shape_1" alt="image-title-here">
-      <img class="shape-2" :src="team_shape_2" alt="image-title-here">
-    </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-4">

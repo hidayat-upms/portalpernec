@@ -19,14 +19,14 @@ import testimonial_slider_img_6 from "@/assets/img/testimonial/home-3/img6.jpg";
 
 const testimonial_images = reactive([testimonial_slider_img_1, testimonial_slider_img_2, testimonial_slider_img_3, testimonial_slider_img_4,testimonial_slider_img_5,testimonial_slider_img_6]);
 
-const slider_text = reactive([
+const slider_text = [
     "<span>CORE NETWORK</span></br>Experience seamless connectivity and optimized data routing with our state-of-the-art core network, ensuring reliable communication and efficient resource utilization for your business.",
     "<span>INFRASTRACTURE</span></br> Empower your business with a robust and secure IT infrastructure, featuring cutting-edge hardware, software, and networking solutions tailored to drive efficiency and support your growth",
     "<span>ICT</span></br>Transform your operations with our innovative ICT solutions, leveraging the latest technologies to enhance productivity, collaboration, and efficiency across your organization. ",
     "<span>ACCESS NETWORK</span><br>Unlock reliable and high-speed connectivity with our advanced Access Network solutions, providing seamless access to critical data and applications for your business needs. ",
     "<span>APPLICATIONS</span></br>Elevate your business capabilities with our diverse range of applications, designed to streamline processes, improve customer experiences, and drive growth. ",
     "<span>SERVICES</span></br>Simplify IT management and enhance operational efficiency with our comprehensive managed services, tailored to meet your organization's unique needs and ensure smooth, reliable performance.",
-])
+]
 
 
 const settingImg = {
@@ -114,5 +114,6 @@ onMounted(() => {
 .slider_text{
    text-align: justify;
 }
+
 </style>
 

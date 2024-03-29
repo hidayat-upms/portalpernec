@@ -22,7 +22,6 @@ onMounted(() => {
 
     <!-- Loader wrapper -->
     <div v-if="loading" class="loader-wrapper">
-      <!-- <span class="loader"><span class="loader-inner"></span></span> -->
       <img src="/image/PernecLogo.gif" alt="Loading Spinner">
     </div>
   
@@ -65,5 +64,3 @@ onMounted(() => {
   }
 }
 </style>
-
-has context menu

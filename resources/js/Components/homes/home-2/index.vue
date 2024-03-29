@@ -14,6 +14,7 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 const addClass = ref(true);
 provide('addClass', addClass)
 
+const loading = ref(true);
 
 </script>
 
@@ -31,4 +32,5 @@ provide('addClass', addClass)
       </main>
       <CommonFooter />
     </div>
+
 </template>
