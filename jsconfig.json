@@ -16,14 +16,7 @@
       "scripthost"
     ]
   },
-  "include": [
-    "**/*"
-  ],
   "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    "babel.config.js",
-    "postcss.config.js"
+    "babel.config.js"
   ]
 }
