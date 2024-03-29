@@ -9,12 +9,13 @@ import BusinessAreaHomeTwo from "./BusinessAreaHomeTwo.vue";
 import TestimonialAreaHomeTwo from "./TestimonialAreaHomeTwo.vue";
 import { provide, ref, onMounted } from "vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
-import Preloader from "@/Components/custPreloader.vue";
+
 
 //  props passing
 const addClass = ref(true);
 provide('addClass', addClass)
 
+const loading = ref(true);
 
 </script>
 
@@ -32,4 +33,5 @@ provide('addClass', addClass)
       </main>
       <CommonFooter />
     </div>
+
 </template>

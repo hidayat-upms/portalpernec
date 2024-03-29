@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref} from 'vue'
+import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router';
 import Preloader from "@/Components/custPreloader.vue";
 
@@ -23,11 +23,10 @@ onMounted(async () => {
   new WOW.default().init();
 });
 </script>
-  
+
 <template>
-  <Preloader :loading="loading" />
-  <router-view/>
+  <div id="app">
+    <Preloader :loading="loading" />
+    <router-view />
+  </div>
 </template>
-
-
-
