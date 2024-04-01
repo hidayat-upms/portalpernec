@@ -1,5 +1,18 @@
-
 <script setup>
+import shape_bg from "@/assets/img/brand/home-2/shape-bg.png";
+import { ref } from 'vue';
+
+const paused = ref(false);
+
+const stopMarquee = () => {
+  paused.value = true;
+};
+
+const startMarquee = () => {
+  paused.value = false;
+};
+
+
 import brand_img_1 from "@/assets/img/brand/home-2/client1.svg";
 import brand_img_2 from "@/assets/img/brand/home-2/client2.svg";
 import brand_img_3 from "@/assets/img/brand/home-2/client3.svg";
@@ -66,21 +79,20 @@ import brand_img_25 from "@/assets/img/brand/home-2/20.png";
 // import brand_img_63 from "@/assets/img/brand/home-2/58.png";
 // import brand_img_64 from "@/assets/img/brand/home-2/59.png";
 // import brand_img_65 from "@/assets/img/brand/home-2/60.png";
-
-
-
-import shape_bg from "@/assets/img/brand/home-2/shape-bg.png";
-
 </script>
 
 
-  <template>
-  <div class="tp-brand-2-area p-relative pt-120 pb-80">
+<template>
+
+  <section class="tp-brand-2-area p-relative pt-120 pb-100" @mouseover="stopMarquee" @mouseleave="startMarquee">
+    <div class="tp-section-header">
+      <h3 class="tp-section-title">Our <span class="title-color">Clients</span></h3>
+    </div>
     <div class="tp-brand-2-bg" :style="{ backgroundImage: `url(${shape_bg})` }"></div>
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="tp-brand-2-item">
+          <div class="tp-brand-2-item" :class="{ 'paused': paused }">
             <img class="shape-4" :src="brand_img_6" alt="image-title-here" />
             <img class="shape-4" :src="brand_img_7" alt="image-title-here" />
             <img class="shape-4" :src="brand_img_8" alt="image-title-here" />
@@ -110,37 +122,59 @@ import shape_bg from "@/assets/img/brand/home-2/shape-bg.png";
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
-
 <style scoped>
-.marquee-container {
-  width: 100%; /* Set the width to the container's full width */
-  overflow: hidden; /* Hide the overflowing content */
+.tp-brand-2-area {
+  overflow: hidden;
 }
 
 .tp-brand-2-item {
-  display: inline-block; /* Display items inline */
-  white-space: nowrap; /* Prevent items from wrapping */
-  animation: marquee 20s linear infinite; /* Animation for the marquee effect */
-  
+  display: flex;
+  animation: marquee 20s linear infinite;
 }
 
-.tp-brand-2-item img {
-  flex-shrink: 0;
-  margin-right: 20px; /* Optional: Add spacing between images */
-  animation: marquee 20s linear infinite;
+.tp-brand-2-item.paused {
+  animation-play-state: paused;
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
+.shape-4 {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.tp-brand-2-item img:last-child {
+  margin-right: 0;
+}
+
+.tp-brand-2-bg {
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+}
+.tp-section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tp-section-title {
+  font-size: 32px;
+  color: #333;
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
 </style>
-
-
