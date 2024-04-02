@@ -61,10 +61,10 @@ const {sub_title, title, info, info_2, link} = offering_content
          <div class="row align-items-center">
             <div class="col-lg-6">
                <div class="tp-feature-title-wrapper">
-                  <span class="tp-section-title__pre"> <span v-html="sub_title"></span> 
+                  <span class="tp-section-title__pre" v-motion-slide-visible-left> <span v-html="sub_title"></span> 
                   <TitleUnderIcon />  
                   </span>
-                  <h3 class="tp-section-title">{{ title }}
+                  <h3 class="tp-section-title" v-motion-slide-visible-left>{{ title }}
                      <span class="title-left-shape">
                         <AboutLineIcon /> 
                      </span>
@@ -73,13 +73,13 @@ const {sub_title, title, info, info_2, link} = offering_content
             </div>
             <div class="col-lg-6">
                <div class="tp-feature-wrapper offer p-relative">
-                  <p v-html="info"></p>
+                  <p v-html="info" v-motion-slide-visible-left></p>
                </div>
             </div>
          </div>
          <div class="row">
 
-            <div v-for="(item, index) in offering_data" :key="index" class="col-lg-3 col-md-6 col-sm-6">
+            <div v-for="(item, index) in offering_data" :key="index" class="col-lg-3 col-md-6 col-sm-6" v-motion-slide-visible-left>
                <div class="tp-offer-wrapper text-center mb-30">
                   <h3 class="offer-title" v-html="item.title"></h3>
                   <div class="tp-offer-wrapper-thumb">

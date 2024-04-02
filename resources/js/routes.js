@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Team from '@/Pages/Team.vue';
 import HomeTwo from '@/Pages/HomeTwo.vue';
 import Contact from '@/Pages/Contact.vue';
-
 import Whistleblowing from '@/Pages/Governance/Whistleblowing.vue';
 import AntiBribery from '@/Pages/Governance/AntiBribery.vue';
 import Nogift from '@/Pages/Governance/Nogift.vue'
@@ -64,7 +63,6 @@ const router = createRouter({
       path: '/',
       component: HomeTwo,
     },
-   
     {
       path: '/contact',
       component: Contact,
@@ -192,7 +190,7 @@ const router = createRouter({
     {
       path: '/service',
       component: Service
-    },  
+    }, 
     {
       path: '/it-essentials',
       component: Itessentials

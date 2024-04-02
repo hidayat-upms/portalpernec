@@ -3,12 +3,8 @@
 import { reactive } from "vue";
 import AboutLineIcon from "@/svg/AboutLineIcon.vue";
 
-import  business_shape_1 from "@/assets/img/business/shape-1.png";
 import  business_shape_2 from "@/assets/img/business/shape-2.png";
-import  business_shape_3 from "@/assets/img/business/shape-3.png";
 import  business_shape_4 from "@/assets/img/business/shape-4.png" ;
-import  business_img_1 from "@/assets/img/business/img-1.jpg" ;
-import  business_img_2 from "@/assets/img/business/img-2.png" ;
 import  business_img_3 from "@/assets/img/business/img-3.png" ;
 import  PernecHQ from "@/assets/img/business/PernecHQ.png" ;
 import  PERNECALL from "@/assets/img/business/PERNECALL.png" ;
@@ -20,7 +16,7 @@ const business_content = reactive({
   info: "PERNEC Corporation Bhd stands as a prominent player in Malaysia's telecommunications infrastructure and information, communications, and technology sector. With a strong foothold in the nation, we actively engage in collaborations and smart partnerships to enhance our presence. As part of our strategic growth initiatives, we are diligently venturing into international markets, showcasing our cutting-edge telecommunications services and products. ",
   info2: "For over fifthy years, we have remained steadfast in delivering innovative, dependable, and top-tier products and services alongside unwavering customer support. Our commitment lies in crafting novel solutions for both individual consumers and businesses, propelling innovation within the telecommunications and ICT landscape.",
 })
-const { title, info, info2, info3} = business_content
+const { title, info, info2} = business_content
 
 
 const business_data = reactive([

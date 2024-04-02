@@ -10,7 +10,6 @@ import TestimonialAreaHomeTwo from "./TestimonialAreaHomeTwo.vue";
 import { provide, ref, onMounted } from "vue";
 import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 
-
 //  props passing
 const addClass = ref(true);
 provide('addClass', addClass)
