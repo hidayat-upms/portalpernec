@@ -33,7 +33,7 @@ const menu_data = reactive([
     id: 4,
     mega_menu: false,
     has_dropdown: false,
-    title: "Team",
+    title: "Directors",
     link: "/team",
     active: "",
   },
