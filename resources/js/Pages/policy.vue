@@ -1,12 +1,9 @@
-
-
 <script setup>
-import PortfolioDetails from "../Components/portfolio-details/index.vue";
+import index from "@/Layouts/footers/policy/index.vue";
 import ScrollToTop from "@/Components/common/ScrollToTop.vue";
 </script>
 
 <template>
-  <PortfolioDetails />
+  <index />
   <ScrollToTop />
 </template>
-

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Team from '@/Pages/Team.vue';
 import HomeTwo from '@/Pages/HomeTwo.vue';
 import Contact from '@/Pages/Contact.vue';
-import HomeThree from '@/Pages/HomeThree.vue';
+
 import Whistleblowing from '@/Pages/Governance/Whistleblowing.vue';
 import AntiBribery from '@/Pages/Governance/AntiBribery.vue';
 import Nogift from '@/Pages/Governance/Nogift.vue'
@@ -43,7 +43,8 @@ import ms9 from '@/Pages/Teams-details/ms9.vue';
 import ms10 from '@/Pages/Teams-details/ms10.vue';
 import ms11 from '@/Pages/Teams-details/ms11.vue';
 import ms12 from '@/Pages/Teams-details/ms12.vue';
-import ms13 from '@/Pages/Teams-details/ms13.vue';
+import ms13 from '@/Pages/Teams-details/ms13.vue'
+import policy from './Pages/policy.vue';
 
 const router = createRouter({ 
   history: createWebHistory(),
@@ -63,10 +64,7 @@ const router = createRouter({
       path: '/',
       component: HomeTwo,
     },
-    {
-      path: '/home-3',
-      component: HomeThree
-    },
+   
     {
       path: '/contact',
       component: Contact,
@@ -194,11 +192,7 @@ const router = createRouter({
     {
       path: '/service',
       component: Service
-    }, 
-    // {
-    //   path: '/service-details',
-    //   component: ServiceDetails
-    // }, 
+    },  
     {
       path: '/it-essentials',
       component: Itessentials
@@ -251,6 +245,11 @@ const router = createRouter({
       path: '/about',
       component: About
     }, 
+
+    { 
+      path: '/policy', 
+      component: policy
+    },
 
     { 
       path: '/:pathMatch(.*)*', 

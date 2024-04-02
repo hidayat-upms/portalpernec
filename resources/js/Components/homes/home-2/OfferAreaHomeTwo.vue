@@ -40,7 +40,7 @@ const offering_data = reactive([
 ])
   
 const offering_content = reactive({
-  sub_title: 'feature <span class="title-pre-color">IT Services</span>',
+  sub_title: 'Feature <span class="title-pre-color">IT Services</span>',
   title: "Thing that you might be interested",
   info: 'As building complexity rises, the architecture <br> landscape diversifies with technological prowess',
   info_2: 'Bring them together and you overcome the ordinary.',

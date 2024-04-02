@@ -36,15 +36,25 @@ const pernec = reactive([
    }
 ]);
 
+const isMobile = reactive({
+   value: false
+});
+
 onMounted(() => {
    AOS.init();
+   // Check if mobile
+   isMobile.value = window.innerWidth <= 1024; // Adjust breakpoint as needed
+   window.addEventListener('resize', () => {
+      isMobile.value = window.innerWidth <= 1024; // Adjust breakpoint as needed
+   });
 });
+
 </script>
 
 <template>
    <div class="org-chart fix pt-90 pb-90">
       <template v-for="person in pernec" :key="person.id">
-         <div class="person">
+         <div class="person" :class="{ mobile: isMobile }">
             <img :src="person.img" alt="Person Image" data-aos="flip-left" />
 
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -71,8 +81,6 @@ onMounted(() => {
    flex-wrap: wrap;
    justify-content: center;
    margin-top: 20px;
-
-   
 }
 
 .person {
@@ -80,11 +88,12 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    margin: 20px;
+   max-width: 100%; 
 }
 
-.person p {
-   margin: 0;
-   text-align: center;
+.person img {
+   max-width: 100%; 
+   height: auto;
 }
 
 .children {
@@ -98,19 +107,23 @@ onMounted(() => {
    flex-direction: column;
    align-items: center;
    margin: 20px;
+   max-width: 100%; 
+}
+
+.child img {
+   max-width: 100%; 
+   height: auto;
 }
 
 
-.grandchildren {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+@media (max-width: 1024px) {
+   .person.mobile {
+      position: relative;
+   }
+   .person.mobile > div[data-aos="flip-left"] {
+      display: none;
+   }
 }
 
-.grandchild {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 20px;
-}
-</style>
+
+</style> 

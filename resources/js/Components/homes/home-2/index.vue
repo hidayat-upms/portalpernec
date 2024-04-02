@@ -29,8 +29,6 @@ provide('addClass', addClass)
 
 
 <template>
-  <Preloader v-if="loading" />
-  <div v-else>
     <div class="wow fadeIn" data-wow-duration="2s">
       <HeaderThree />
       <main>
@@ -43,7 +41,7 @@ provide('addClass', addClass)
       </main>
       <CommonFooter />
     </div>
-  </div>
+
 </template>
  
 
