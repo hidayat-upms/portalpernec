@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "",
+  "name": "portalpernec",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
