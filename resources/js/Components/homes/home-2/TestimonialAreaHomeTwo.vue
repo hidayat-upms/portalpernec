@@ -1,5 +1,5 @@
 <template>
-    <section class="tp-testimonial-2-area p-relative pt-150 pb-120">
+    <section class="tp-testimonial-2-area p-relative pt-150 pb-150">
       <div class="tp-testimonial-2-shape">
           <img class="shape-1" :src="testimonial_shape_1" alt="image-title-here">
           <img class="shape-2" :src="testi" alt="image-title-here">
