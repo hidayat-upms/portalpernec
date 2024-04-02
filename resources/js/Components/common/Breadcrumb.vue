@@ -1,7 +1,6 @@
 
 <script setup>
 
-import bgb from  "@/assets/img/breadcrumb/breadcrumb-bg-1.jpg"
 import bgb2 from  "@/assets/img/breadcrumb/breadcrumb-bg-2.gif"
 import titleimg from "@/assets/img/breadcrumb/titile.svg"
 
@@ -38,7 +37,7 @@ defineProps({
             <div class="breadcrumb__list breadcrumb__list-translate">
               <span> <router-link to="/">Home</router-link> </span>
               <span class="dvdr"><i class="fa-regular fa-angle-right"></i></span>
-              <span>pages</span>
+              <span>Pages</span>
               <span class="dvdr"> <i class="fa-regular fa-angle-right"></i> </span>
               <span>{{ page_title }}</span>
             </div>

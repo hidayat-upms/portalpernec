@@ -85,9 +85,9 @@ import brand_img_25 from "@/assets/img/brand/home-2/20.png";
 <template>
 
   <section class="tp-brand-2-area p-relative pt-120 pb-100" @mouseover="stopMarquee" @mouseleave="startMarquee">
-    <div class="tp-section-header">
+    <!-- <div class="tp-section-header">
       <h3 class="tp-section-title">Our <span class="title-color">Clients</span></h3>
-    </div>
+    </div> -->
     <div class="tp-brand-2-bg" :style="{ backgroundImage: `url(${shape_bg})` }"></div>
     <div class="container">
       <div class="row">
@@ -159,22 +159,21 @@ import brand_img_25 from "@/assets/img/brand/home-2/20.png";
 }
 
 .tp-brand-2-bg {
-  position: absolute;
   z-index: -1;
   background-size: cover;
-  background-position: center;
+  background-position: absolute;
   margin-top: 100px;
 }
+
 .tp-section-header {
-  text-align: center;
-  margin-bottom: 30px;
+  position: absolute;
+  left: 50px;
 }
 
 .tp-section-title {
   font-size: 32px;
   color: #333;
   margin-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
-
 </style>
