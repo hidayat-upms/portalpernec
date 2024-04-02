@@ -14,12 +14,23 @@
 		</div>
 		<div class="col-md-6">
 		  <div class="tp-contact-input">
-			<input v-model="formData.service_type" type="text" placeholder="Service Type">
+			<select v-model="formData.service_type" required class="custom-dropdown">
+				<option value="">Select Service Type</option>
+				<option value="IT">IT Essentials</option>
+				<option value="ICT">ICT Productivity</option>
+				<option value="DTE">Digital Transformation Enabler</option>
+				<option value="CSS">Cyber Security Solution</option>
+				<option value="Tele">Telecommunication</option>
+				<option value="PS">Public Safety</option>
+				<option value="P&U">Power & Utilities</option>
+				<option value="DTS">Defence Tactical Solutions</option>
+				<option value="DOS">Deployment Operation Services</option>
+			</select>
 		  </div>
 		</div>
 		<div class="col-md-6">
 		  <div class="tp-contact-input">
-			<input v-model="formData.phone_number" type="text" placeholder="Phone Number">
+			<input v-model="formData.phone_number" type="text" placeholder="Phone Number" pattern="[0-9]*">
 		  </div>
 		</div>
 		<div class="col-md-12">
@@ -79,3 +90,15 @@
   };
   </script>
   
+<style scoped>
+/* Add custom styles for the dropdown button */
+.custom-dropdown {
+  width: 100%; /* Set width to fill the container */
+  height: 61px; /* Adjust height as needed */
+  padding: 8px; /* Add padding to align with other fields */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #ccc; /* Add border for visual clarity */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+</style>

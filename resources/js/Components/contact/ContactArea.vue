@@ -5,9 +5,10 @@ import PhoneContactIcon from "../../svg/PhoneContactIcon.vue";
  
 const contact_area_content = {
     title: 'Contact <span class="title-color">With us</span>',
-    info: 'Email, call, or complete the form to learn how Kion can <br> solve your cloud management and governance cha.',
+    info: 'Email, call, or complete the form and we will <br> be contacting you back soon.',
+    career: 'We are looking for a dynamic and self-driven talent to join our team. At Pernec, we offer opportunities for career development in the Telecommunications and ICT field. ',
     email_pernec: 'marketing@pernec.com.my',
-    email_cyseca: 'marketing@cyseca.com.my',
+    email_hrd: 'hrd@pernec.com.my',
     phone_tel: '603-42596000',
     phone_fax: '603-42596080',
     office_data: {
@@ -19,7 +20,7 @@ const contact_area_content = {
     contact_info: 'Your email address will not be published. Required fields <br> are marked *',
  
 }
-const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_data, contact_title, contact_info} = contact_area_content
+const {career, title, info, email_pernec, email_hrd, phone_tel, phone_fax, office_data, contact_title, contact_info} = contact_area_content
  
  
  
@@ -42,7 +43,7 @@ const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_dat
                                         <EmailContactIcon />
                                     </span>
                                 </div>
-                                <h3 class="tp-contact-item-title"><router-link :to="'mailto:'+ email_pernec">{{ email_pernec }}</router-link></h3>
+                                <h3 class="tp-contact-item-title">{{ email_pernec }}</h3>
                             </div>
                             <div class="tp-contact-content-phone d-flex align-items-center">
                                 <div class="tp-contact-content-phone-icon">
@@ -50,8 +51,25 @@ const {title, info, email_pernec, email_cyseca, phone_tel, phone_fax, office_dat
                                         <PhoneContactIcon />
                                     </span>
                                 </div>
-                                <h3 class="tp-contact-item-title"><a href="'Tel:' + phone_tel">Tel: {{ phone_tel }}</a></h3>
+                                <h3 class="tp-contact-item-title">Tel: {{ phone_tel }}</h3>
                             </div>
+                            <div class="tp-contact-content-career">
+                                <h3 class="tp-contact-career-title">Career</h3>
+                                <p>{{ career }}</p>
+                            </div>
+                            <div class="tp-contact-content-mail d-flex align-items-center">
+                                <div class="tp-contact-content-mail-icon">
+                                    <span>
+                                        <EmailContactIcon />
+                                    </span>
+                                </div>
+                                <div>
+                                    <h3 class="tp-contact-item-title">{{ email_hrd }}</h3>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 50px;"></div>
+
                             <div class="tp-contact-location-wrapper d-flex">
                                 <div class="tp-contact-location">
                                     <h3 class="tp-contact-location-title">{{ office_data.title }} <i class="fa-regular fa-arrow-down"></i></h3>
