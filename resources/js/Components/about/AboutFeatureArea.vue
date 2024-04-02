@@ -42,7 +42,7 @@ const feature_data = reactive([
             <div class="row align-items-center">
                <div class="col-lg-6">
                   <div class="tp-feature-title-wrapper">
-                     <h3 class="tp-section-title">We've Been Stay <span class="title-color">51 years</span>
+                     <h3 class="tp-section-title">Standing by our Vision and Mission for <span class="title-color"> 51 years</span>
                         <span class="title-left-shape">
                           <AboutLineIcon /> 
                         </span>

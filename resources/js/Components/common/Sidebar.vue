@@ -80,7 +80,7 @@ const propValue2 = inject('addClass');
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="offcanvas__contact-content-content">
-              <a href="marketing@pernec.com.my"> marketing@pernec.com.my </a>
+              <a href="mailto:marketing@pernec.com.my"> marketing@pernec.com.my </a>
             </div>
           </div>
           <div class="offcanvas__contact-content d-flex">
