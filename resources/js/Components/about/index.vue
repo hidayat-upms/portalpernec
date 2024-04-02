@@ -14,18 +14,19 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 
 </script>
 <template>
-  <!-- <loadingSpinner></loadingSpinner> -->
   <div class="wow fadeInLeft" data-wow-duration="2s">
-    <HeaderThree />
-    <main>
-      <Breadcrumb title="Company" page_title="Our Company" />
-      <AboutArea />
-      <AboutFeatureArea />
-      <AboutPernec />
-      <AboutSupportArea />
-      <TestimonialText />
-      <TestimonialFeature />
-    </main>
+  <loadingSpinner></loadingSpinner>
+  <HeaderThree />
+  <main>  
+    <Breadcrumb title="Company" page_title="Our Company"  />
+    <AboutArea />
+    <AboutFeatureArea />
+    <AboutPernec />
+    <AboutSupportArea />
+    <TestimonialText />
+    <TestimonialFeature />
+    
+  </main>
     <CommonFooter />
   </div>
 </template>

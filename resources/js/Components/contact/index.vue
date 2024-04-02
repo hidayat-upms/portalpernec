@@ -9,6 +9,7 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 
 <template>
   <div class="wow fadeInLeft" data-wow-duration="2s"> 
+  <loadingSpinner></loadingSpinner> 
   <HeaderThree/>
   <main>
     <Breadcrumb title="Contact Us" page_title="Contact Us" />

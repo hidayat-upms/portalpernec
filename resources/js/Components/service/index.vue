@@ -8,6 +8,7 @@ import HeaderThree from "@/Layouts/headers/HeaderThree.vue";
 </script>
 
 <template>
+  <loadingSpinner></loadingSpinner>
   <div class="wow fadeInLeft" data-wow-duration="2s">
   <HeaderThree />
   <main>

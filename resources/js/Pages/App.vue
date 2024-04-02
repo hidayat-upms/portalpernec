@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router';
-import Preloader from "@/Components/custPreloader.vue";
+import Preloader from "@/Components/loadingSpinner.vue";
 
 const loading = ref(false);
 const router = useRouter();
